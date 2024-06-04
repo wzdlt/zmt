@@ -1,6 +1,5 @@
 <template>
   <view>
-    委屈二位如同一条
     这是首页
   </view>
 </template>
