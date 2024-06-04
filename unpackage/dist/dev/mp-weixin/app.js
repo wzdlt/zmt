@@ -9,6 +9,8 @@ if (!Math) {
   "./pages/mine/mine.js";
   "./pages/enter/enter.js";
   "./pages/L-fenlei/L-fenlei.js";
+  "./pages/hongbao/hongbao.js";
+  "./pages/L-appraise/L-appraise.js";
 }
 const _sfc_main = {
   onLaunch: function() {
@@ -24,6 +26,7 @@ const _sfc_main = {
 const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/Auni-app/zhengmaotong/App.vue"]]);
 function createApp() {
   const app = common_vendor.createSSRApp(App);
+  app.use(common_vendor.uviewPlus);
   return {
     app
   };

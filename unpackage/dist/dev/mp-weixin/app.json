@@ -6,7 +6,9 @@
     "pages/entity/entity",
     "pages/mine/mine",
     "pages/enter/enter",
-    "pages/L-fenlei/L-fenlei"
+    "pages/L-fenlei/L-fenlei",
+    "pages/hongbao/hongbao",
+    "pages/L-appraise/L-appraise"
   ],
   "window": {
     "navigationBarTextStyle": "black",

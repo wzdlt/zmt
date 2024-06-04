@@ -1,6 +1,13 @@
 {
   "easycom": {
-    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+    "autoscan": true,
+    // 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+    "custom": {
+      "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
   },
   "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
@@ -38,22 +45,23 @@
       "style": {
         "navigationBarTitleText": ""
       }
-<<<<<<< HEAD
-    },{
+    }, {
       "path": "pages/L-fenlei/L-fenlei",
       "style": {
         "navigationBarTitleText": "分类"
       }
-    },
-=======
-    },
-    {
-      "path": "/pages/hongbao/hongbao",
+    }, {
+      "path": "pages/hongbao/hongbao",
       "style": {
         "navigationBarTitleText": ""
       }
+    },
+    {
+      "path": "pages/L-appraise/L-appraise",
+      "style": {
+        "navigationBarTitleText": "评价"
+      }
     }
->>>>>>> 7a5343ad478aa93c6770544a07f1e3466d150ba2
   ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
@@ -64,8 +72,7 @@
   "uniIdRouter": {},
   "tabBar": {
     "selectedColor": "#fc4424",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "/static/image/首页.png",
