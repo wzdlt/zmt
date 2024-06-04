@@ -1,10 +1,15 @@
 {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 58682e8be05d51b60f11fe9fab2d3f99b353f48f
   "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
   "projectname": "正茂通",
   "setting": {
     "compileHotReLoad": true
   }
+<<<<<<< HEAD
+=======
 =======
     "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
     "projectname": "正茂通",
@@ -12,4 +17,5 @@
         "compileHotReLoad": true
     }
 >>>>>>> da7fd11f31ef8ef21d5872945727b1a5921363a8
+>>>>>>> 58682e8be05d51b60f11fe9fab2d3f99b353f48f
 }
