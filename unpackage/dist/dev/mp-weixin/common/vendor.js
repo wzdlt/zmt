@@ -1217,8 +1217,18 @@ function populateParameters(fromRes, toRes) {
     appVersion: "1.0.0",
     appVersionCode: "100",
     appLanguage: getAppLanguage(hostLanguage),
+<<<<<<< HEAD
     uniCompileVersion: "4.15",
     uniRuntimeVersion: "4.15",
+=======
+<<<<<<< HEAD
+    uniCompileVersion: "4.15",
+    uniRuntimeVersion: "4.15",
+=======
+    uniCompileVersion: "4.14",
+    uniRuntimeVersion: "4.14",
+>>>>>>> da7fd11f31ef8ef21d5872945727b1a5921363a8
+>>>>>>> 58682e8be05d51b60f11fe9fab2d3f99b353f48f
     uniPlatform: "mp-weixin",
     deviceBrand,
     deviceModel: model,
