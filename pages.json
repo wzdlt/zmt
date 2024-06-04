@@ -38,6 +38,12 @@
       "style": {
         "navigationBarTitleText": ""
       }
+    },
+    {
+      "path": "/pages/hongbao/hongbao",
+      "style": {
+        "navigationBarTitleText": ""
+      }
     }
   ],
   "globalStyle": {
@@ -45,18 +51,16 @@
     "navigationBarTitleText": "首页",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
-
   },
   "uniIdRouter": {},
   "tabBar": {
     "selectedColor": "#fc4424",
-
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "/static/image/首页.png",
         "selectedIconPath": "/static/image/首页1.png"
-
       },
       {
         "pagePath": "pages/car/car",
@@ -82,7 +86,6 @@
         "iconPath": "/static/image/我的.png",
         "selectedIconPath": "/static/image/我的1.png"
       }
-
     ]
   }
 }
