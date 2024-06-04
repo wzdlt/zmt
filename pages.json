@@ -1,16 +1,11 @@
 {
   "easycom": {
-    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
     "autoscan": true,
-    // 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
     "custom": {
-      "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
-      "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
-      "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+      "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
     }
   },
-  "pages": [ 
-    {
+  "pages": [{
       "path": "pages/index/index",
       "style": {
         "navigationBarTitleText": "首页"
@@ -41,21 +36,16 @@
       }
     },
     {
-      "path": "pages/enter/enter",
+      "path": "pages/login/login",
       "style": {
         "navigationBarTitleText": ""
       }
-<<<<<<< HEAD
-    },
-    {
-=======
     }, {
       "path": "pages/L-fenlei/L-fenlei",
       "style": {
         "navigationBarTitleText": "分类"
       }
     }, {
->>>>>>> 81edf51e6225bbfef046d60c04b8b84a84e33715
       "path": "pages/hongbao/hongbao",
       "style": {
         "navigationBarTitleText": ""
@@ -74,7 +64,6 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
-  "uniIdRouter": {},
   "tabBar": {
     "selectedColor": "#fc4424",
     "list": [{
