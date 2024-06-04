@@ -78,6 +78,10 @@
           title: '登录成功！',
           icon: 'none'
         });
+        uni.switchTab({
+          url: '/pages/index/index'
+        })
+
       },
       //获取验证码
       yan() {
@@ -90,20 +94,6 @@
       reg() {
         uni.showToast({
           title: '注册跳转',
-          icon: 'none'
-        });
-      },
-      //等三方微信登录
-      wxLogin() {
-        uni.showToast({
-          title: '微信登录',
-          icon: 'none'
-        });
-      },
-      //第三方支付宝登录
-      zfbLogin() {
-        uni.showToast({
-          title: '支付宝登录',
           icon: 'none'
         });
       }
@@ -159,48 +149,54 @@
       padding: 20px 0;
     }
 
-    .box-center{
-      .t-login{
+    .box-center {
+      .t-login {
         width: 90%;
         margin: auto;
-        .cl{
-          .t-a{
+
+        .cl {
+          .t-a {
             border-radius: 25px;
             border: 1px solid #ccc;
             margin-bottom: 25px;
             box-sizing: border-box;
             position: relative;
-            .t-a1{
+
+            .t-a1 {
               position: absolute;
               right: 15px;
               top: 12px;
               color: #fc4424;
             }
-            image{
+
+            image {
               position: absolute;
               top: 8px;
               left: 15px;
               width: 30px;
               height: 30px;
             }
-            input{
+
+            input {
               height: 45px;
               padding-left: 50px;
             }
           }
-          button{
+
+          button {
             color: #fff;
             background-color: #fc4424;
             border-radius: 25px;
           }
-          .reg{
+
+          .reg {
             margin-top: 20px;
             text-align: center;
           }
         }
       }
     }
-    
+
     .box-bottom {
       width: 100%;
       position: fixed;

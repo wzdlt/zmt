@@ -63,6 +63,13 @@
       {
         "navigationBarTitleText" : "新手指南"
       }
+    },
+    {
+      "path" : "pages/chaojihuiyuan/chaojihuiyuan",
+      "style" : 
+      {
+        "navigationBarTitleText" : "超级会员"
+      }
     }
   ],
   "globalStyle": {
