@@ -1,47 +1,4 @@
 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 58682e8be05d51b60f11fe9fab2d3f99b353f48f
->>>>>>> 86cc34cb03087f000adfc5d4727ad1c9364d7c99
-  "description": "项目配置文件。",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
-  "setting": {
-    "urlCheck": false,
-    "es6": true,
-    "postcss": false,
-    "minified": false,
-    "newFeature": true,
-    "bigPackageSizeSupport": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    }
-  },
-  "compileType": "miniprogram",
-<<<<<<< HEAD
-  "libVersion": "3.4.3",
-=======
-  "libVersion": "3.4.2",
->>>>>>> 58682e8be05d51b60f11fe9fab2d3f99b353f48f
-  "appid": "touristappid",
-  "projectname": "正茂通",
-  "condition": {},
-  "editorSetting": {
-    "tabIndent": "insertSpaces",
-    "tabSize": 2
-  }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
     "description": "项目配置文件。",
     "packOptions": {
         "ignore": [],
@@ -69,7 +26,4 @@
         "tabIndent": "insertSpaces",
         "tabSize": 4
     }
->>>>>>> da7fd11f31ef8ef21d5872945727b1a5921363a8
->>>>>>> 58682e8be05d51b60f11fe9fab2d3f99b353f48f
->>>>>>> 86cc34cb03087f000adfc5d4727ad1c9364d7c99
 }
