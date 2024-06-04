@@ -18,7 +18,7 @@
       }
     },
     {
-      "path": "pages/Snapped/Snapped",
+      "path": "pages/snapped/snapped",
       "style": {
         "navigationBarTitleText": "抢购区"
       }
@@ -79,16 +79,16 @@
         "selectedIconPath": "/static/image/养车记录1.png"
       },
       {
-        "pagePath": "pages/Snapped/Snapped",
-        "text": "抢购",
-        "iconPath": "/static/image/养车记录.png",
-        "selectedIconPath": "/static/image/养车记录1.png"
-      },
-      {
-        "pagePath": "pages/entity/entity",
+        "pagePath": "pages/snapped/snapped",
         "text": "抢购",
         "iconPath": "/static/image/抢购.png",
         "selectedIconPath": "/static/image/抢购1.png"
+      },
+      {
+        "pagePath": "pages/entity/entity",
+        "text": "线下实体",
+        "iconPath": "/static/image/实体.png",
+        "selectedIconPath": "/static/image/实体1.png"
       },
       {
         "pagePath": "pages/mine/mine",
