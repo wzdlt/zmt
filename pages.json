@@ -56,6 +56,13 @@
       "style": {
         "navigationBarTitleText": "评价"
       }
+    },
+    {
+      "path" : "pages/greenhorn/greenhorn",
+      "style" : 
+      {
+        "navigationBarTitleText" : "新手指南"
+      }
     }
   ],
   "globalStyle": {
