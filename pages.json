@@ -63,12 +63,26 @@
       {
         "navigationBarTitleText" : "新手指南"
       }
+    },
+    {
+      "path" : "pages/greenhorn1/greenhorn1",
+      "style" : 
+      {
+        "navigationBarTitleText" : "新手指南"
+      }
+    },
+    {
+      "path" : "pages/shoplist/shoplist",
+      "style" : 
+      {
+        "navigationBarTitleText" : "店铺列表"
+      }
     }
   ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#f8f8f8",
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
