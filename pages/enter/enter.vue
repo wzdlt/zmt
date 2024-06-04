@@ -1,6 +1,6 @@
 <template>
   <view>
-    我是登陆页面
+    等哈速度和刷的hash
   </view>
 </template>
 
