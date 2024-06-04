@@ -3,5 +3,18 @@
     "projectname": "正茂通",
     "setting": {
         "compileHotReLoad": true
+    },
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/entity/entity",
+                    "pathName": "pages/enter/enter",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
     }
 }
