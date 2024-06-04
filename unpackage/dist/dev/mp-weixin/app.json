@@ -5,7 +5,8 @@
     "pages/Snapped/Snapped",
     "pages/entity/entity",
     "pages/mine/mine",
-    "pages/enter/enter"
+    "pages/enter/enter",
+    "pages/L-fenlei/L-fenlei"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -19,28 +20,12 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-<<<<<<< HEAD
         "iconPath": "/static/image/首页.png",
         "selectedIconPath": "/static/image/首页1.png"
-=======
-<<<<<<< HEAD
-        "iconPath": "/static/image/首页.png",
-        "selectedIconPath": "/static/image/首页1.png"
-=======
-<<<<<<< HEAD
-        "iconPath": "image/首页.png",
-        "selectedIconPath": "image/首页1.png"
-=======
-        "iconPath": "/static/image/首页.png",
-        "selectedIconPath": "/static/image/首页1.png"
->>>>>>> da7fd11f31ef8ef21d5872945727b1a5921363a8
->>>>>>> 58682e8be05d51b60f11fe9fab2d3f99b353f48f
->>>>>>> 86cc34cb03087f000adfc5d4727ad1c9364d7c99
       },
       {
         "pagePath": "pages/car/car",
         "text": "养车",
-<<<<<<< HEAD
         "iconPath": "/static/image/养车记录.png",
         "selectedIconPath": "/static/image/养车记录1.png"
       },
@@ -49,78 +34,18 @@
         "text": "抢购",
         "iconPath": "/static/image/养车记录.png",
         "selectedIconPath": "/static/image/养车记录1.png"
-=======
-<<<<<<< HEAD
-        "iconPath": "/static/image/养车记录.png",
-        "selectedIconPath": "/static/image/养车记录1.png"
-=======
-<<<<<<< HEAD
-        "iconPath": "image/养车记录.png",
-        "selectedIconPath": "image/养车记录1.png"
-=======
-        "iconPath": "/static/image/养车记录.png",
-        "selectedIconPath": "/static/image/养车记录1.png"
->>>>>>> da7fd11f31ef8ef21d5872945727b1a5921363a8
->>>>>>> 58682e8be05d51b60f11fe9fab2d3f99b353f48f
-      },
-      {
-        "pagePath": "pages/Snapped/Snapped",
-        "text": "抢购",
-<<<<<<< HEAD
-        "iconPath": "/static/image/养车记录.png",
-        "selectedIconPath": "/static/image/养车记录1.png"
-=======
-<<<<<<< HEAD
-        "iconPath": "image/养车记录.png",
-        "selectedIconPath": "image/养车记录1.png"
-=======
-        "iconPath": "/static/image/养车记录.png",
-        "selectedIconPath": "/static/image/养车记录1.png"
->>>>>>> da7fd11f31ef8ef21d5872945727b1a5921363a8
->>>>>>> 58682e8be05d51b60f11fe9fab2d3f99b353f48f
->>>>>>> 86cc34cb03087f000adfc5d4727ad1c9364d7c99
       },
       {
         "pagePath": "pages/entity/entity",
         "text": "抢购",
-<<<<<<< HEAD
         "iconPath": "/static/image/抢购.png",
         "selectedIconPath": "/static/image/抢购1.png"
-=======
-<<<<<<< HEAD
-        "iconPath": "/static/image/抢购.png",
-        "selectedIconPath": "/static/image/抢购1.png"
-=======
-<<<<<<< HEAD
-        "iconPath": "image/抢购.png",
-        "selectedIconPath": "image/抢购1.png"
-=======
-        "iconPath": "/static/image/抢购.png",
-        "selectedIconPath": "/static/image/抢购1.png"
->>>>>>> da7fd11f31ef8ef21d5872945727b1a5921363a8
->>>>>>> 58682e8be05d51b60f11fe9fab2d3f99b353f48f
->>>>>>> 86cc34cb03087f000adfc5d4727ad1c9364d7c99
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
-<<<<<<< HEAD
         "iconPath": "/static/image/我的.png",
         "selectedIconPath": "/static/image/我的1.png"
-=======
-<<<<<<< HEAD
-        "iconPath": "/static/image/我的.png",
-        "selectedIconPath": "/static/image/我的1.png"
-=======
-<<<<<<< HEAD
-        "iconPath": "image/我的.png",
-        "selectedIconPath": "image/我的1.png"
-=======
-        "iconPath": "/static/image/我的.png",
-        "selectedIconPath": "/static/image/我的1.png"
->>>>>>> da7fd11f31ef8ef21d5872945727b1a5921363a8
->>>>>>> 58682e8be05d51b60f11fe9fab2d3f99b353f48f
->>>>>>> 86cc34cb03087f000adfc5d4727ad1c9364d7c99
       }
     ]
   },

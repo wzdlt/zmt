@@ -38,7 +38,12 @@
       "style": {
         "navigationBarTitleText": ""
       }
-    }
+    },{
+      "path": "pages/L-fenlei/L-fenlei",
+      "style": {
+        "navigationBarTitleText": "分类"
+      }
+    },
   ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
