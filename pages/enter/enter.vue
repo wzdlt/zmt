@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <view class="box">
     <view class="box-top">账号登录</view>
     <view class="box-center">
@@ -34,6 +35,10 @@
         </view>
       </view>
     </view>
+=======
+  <view>
+    登陆页面
+>>>>>>> b98b6a81d3fd985eed552b9a61e4609c24dab323
   </view>
 </template>
 

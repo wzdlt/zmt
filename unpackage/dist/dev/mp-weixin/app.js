@@ -8,6 +8,13 @@ if (!Math) {
   "./pages/entity/entity.js";
   "./pages/mine/mine.js";
   "./pages/enter/enter.js";
+<<<<<<< HEAD
+  "./pages/hongbao/hongbao.js";
+=======
+  "./pages/L-fenlei/L-fenlei.js";
+  "./pages/hongbao/hongbao.js";
+  "./pages/L-appraise/L-appraise.js";
+>>>>>>> 81edf51e6225bbfef046d60c04b8b84a84e33715
 }
 const _sfc_main = {
   onLaunch: function() {
@@ -20,9 +27,18 @@ const _sfc_main = {
     console.log("App Hide");
   }
 };
+<<<<<<< HEAD
 const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/Uniapp-----------/zhengmaotong/App.vue"]]);
+=======
+<<<<<<< HEAD
+const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "E:/Uni-App/zhengmaotong/App.vue"]]);
+=======
+const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/Auni-app/zhengmaotong/App.vue"]]);
+>>>>>>> 81edf51e6225bbfef046d60c04b8b84a84e33715
+>>>>>>> b98b6a81d3fd985eed552b9a61e4609c24dab323
 function createApp() {
   const app = common_vendor.createSSRApp(App);
+  app.use(common_vendor.uviewPlus);
   return {
     app
   };

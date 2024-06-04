@@ -5,7 +5,14 @@
     "pages/Snapped/Snapped",
     "pages/entity/entity",
     "pages/mine/mine",
-    "pages/enter/enter"
+    "pages/enter/enter",
+<<<<<<< HEAD
+    "pages/hongbao/hongbao"
+=======
+    "pages/L-fenlei/L-fenlei",
+    "pages/hongbao/hongbao",
+    "pages/L-appraise/L-appraise"
+>>>>>>> 81edf51e6225bbfef046d60c04b8b84a84e33715
   ],
   "window": {
     "navigationBarTextStyle": "black",

@@ -1,8 +1,23 @@
 {
+<<<<<<< HEAD
   "hash": "601a376c",
   "configHash": "e0562d85",
   "lockfileHash": "07310e54",
   "browserHash": "263c2776",
   "optimized": {},
+=======
+  "hash": "1abe3171",
+  "configHash": "0982c187",
+  "lockfileHash": "a2753d01",
+  "browserHash": "83a7026d",
+  "optimized": {
+    "uview-plus": {
+      "src": "../../../../../node_modules/uview-plus/index.js",
+      "file": "uview-plus.js",
+      "fileHash": "ffb178ed",
+      "needsInterop": false
+    }
+  },
+>>>>>>> b98b6a81d3fd985eed552b9a61e4609c24dab323
   "chunks": {}
 }
