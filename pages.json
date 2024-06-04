@@ -65,6 +65,7 @@
       }
     },
     {
+<<<<<<< HEAD
       "path" : "pages/greenhorn1/greenhorn1",
       "style" : 
       {
@@ -76,6 +77,12 @@
       "style" : 
       {
         "navigationBarTitleText" : "店铺列表"
+=======
+      "path" : "pages/chaojihuiyuan/chaojihuiyuan",
+      "style" : 
+      {
+        "navigationBarTitleText" : "超级会员"
+>>>>>>> 618e4f2c772338645f044c2a21edfdad417ae5c2
       }
     }
   ],
