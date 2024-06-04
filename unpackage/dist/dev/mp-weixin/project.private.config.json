@@ -15,6 +15,19 @@
     "projectname": "正茂通",
     "setting": {
         "compileHotReLoad": true
+    },
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/entity/entity",
+                    "pathName": "pages/enter/enter",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
     }
 >>>>>>> da7fd11f31ef8ef21d5872945727b1a5921363a8
 >>>>>>> 58682e8be05d51b60f11fe9fab2d3f99b353f48f
