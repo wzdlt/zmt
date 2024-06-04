@@ -1,15 +1,13 @@
 <template>
   <view>
-
-    这是首页
+    这是我的页面
   </view>
 </template>
 
 <script setup>
-
-
+  
 </script>
 
 <style>
-
+         
 </style>

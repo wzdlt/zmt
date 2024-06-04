@@ -1,15 +1,13 @@
 <template>
   <view>
-
-    这是首页
+    线下实体
   </view>
 </template>
 
 <script setup>
-
-
+  
 </script>
 
 <style>
-
+         
 </style>
