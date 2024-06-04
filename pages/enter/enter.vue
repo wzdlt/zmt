@@ -4,17 +4,10 @@
   </view>
 </template>
 
-<script>
-  export default {
-    data() {
-      return {
-        
-      }
-    },
-    methods: {
-      
-    }
-  }
+<script set up>
+  
+    
+  
 </script>
 
 <style>
