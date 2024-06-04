@@ -1,6 +1,6 @@
 <template>
   <view>
-    等哈速度和刷的hash
+    登陆页面
   </view>
 </template>
 

@@ -1,1 +1,1 @@
-<view>  </view>
+<view class="box"><view class="box1"><input type="text"></input><image src="/static/image/qiandao.png" alt=""></image></view></view>
