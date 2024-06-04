@@ -57,33 +57,33 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "image/首页.png",
-        "selectedIconPath": "image/首页1.png"
+        "iconPath": "/static/image/首页.png",
+        "selectedIconPath": "/static/image/首页1.png"
         
       },
       {
         "pagePath": "pages/car/car",
         "text": "养车",
-        "iconPath": "image/养车记录.png",
-        "selectedIconPath": "image/养车记录1.png"
+        "iconPath": "/static/image/养车记录.png",
+        "selectedIconPath": "/static/image/养车记录1.png"
       },
       {
         "pagePath": "pages/Snapped/Snapped",
         "text": "抢购",
-        "iconPath": "image/养车记录.png",
-        "selectedIconPath": "image/养车记录1.png"
+        "iconPath": "/static/image/养车记录.png",
+        "selectedIconPath": "/static/image/养车记录1.png"
       },
       {
         "pagePath": "pages/entity/entity",
         "text": "抢购",
-        "iconPath": "image/抢购.png",
-        "selectedIconPath": "image/抢购1.png"
+        "iconPath": "/static/image/抢购.png",
+        "selectedIconPath": "/static/image/抢购1.png"
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
-        "iconPath": "image/我的.png",
-        "selectedIconPath": "image/我的1.png"
+        "iconPath": "/static/image/我的.png",
+        "selectedIconPath": "/static/image/我的1.png"
       }
       
     ]
