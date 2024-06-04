@@ -1,7 +1,11 @@
 {
+<<<<<<< HEAD
   "appid": "wx9976e0e2f1b52e93",
   "compileType": "miniprogram",
   "libVersion": "3.4.5",
+=======
+  "description": "项目配置文件。",
+>>>>>>> 81edf51e6225bbfef046d60c04b8b84a84e33715
   "packOptions": {
     "ignore": [],
     "include": []
@@ -20,6 +24,13 @@
       "outputPath": ""
     }
   },
+<<<<<<< HEAD
+=======
+  "compileType": "miniprogram",
+  "libVersion": "3.4.2",
+  "appid": "touristappid",
+  "projectname": "正茂通",
+>>>>>>> 81edf51e6225bbfef046d60c04b8b84a84e33715
   "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",
