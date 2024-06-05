@@ -1,6 +1,6 @@
 <template>
   <view class="box">
-    选择售后类型
+    
   </view>
 </template>
 
@@ -9,5 +9,8 @@
 </script>
 
 <style lang="scss">
-         
+.box{
+  width: 100%;
+  background-color: #f5f5f5;
+}
 </style>
