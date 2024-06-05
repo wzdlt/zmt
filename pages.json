@@ -97,6 +97,13 @@
       {
         "navigationBarTitleText" : "选择售后类型"
       }
+    },
+    {
+      "path" : "pages/chaojiindex/chaojiindex",
+      "style" : 
+      {
+        "navigationBarTitleText" : "超级会员"
+      }
     }
     
   ],
