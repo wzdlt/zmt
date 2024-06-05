@@ -86,13 +86,6 @@
       }
     },
     {
-      "path" : "pages/greenhorn1/greenhorn1",
-      "style" : 
-      {
-        "navigationBarTitleText" : "新手指南"
-      }
-    },
-    {
       "path": "pages/chaojihuiyuan/chaojihuiyuan",
       "style": {
         "navigationBarTitleText": "超级会员"
@@ -104,7 +97,7 @@
       {
         "navigationBarTitleText" : "选择售后类型"
       }
-    },
+    }
     
   ],
   "globalStyle": {
