@@ -6,15 +6,16 @@
         <view class="t-login">
           <form class="cl">
             <view class="t-a">
-              <text class="txt">手机号</text>
-              <input type="number" name="phone" placeholder="请输入您的手机号" maxlength="11" v-model="phone" />
+              <image src="../../static/image/loginphone.png" mode=""></image>
+              <input type="number" name="phone" placeholder="手机号" maxlength="11" v-model="phone" />
             </view>
             <view class="t-a">
-              <text class="txt">密码</text>
-              <input type="password" name="code" maxlength="18" placeholder="请输入您的密码" v-model="pwd" />
+              <image src="../../static/image/login proving.png" mode=""></image>
+              <input type="number" name="code" maxlength="18" placeholder="验证码" v-model="pwd" />
+              <view class="t-a1" @tap="yan()">获取验证码</view>
             </view>
             <button @tap="login()">登 录</button>
-            <view class="reg" @tap="reg()">新用户注册</view>
+            <view class="reg" @tap="reg()">新用户<text style="color: #fc6045;">注册</text></view>
           </form>
         </view>
       </view>
@@ -68,7 +69,7 @@
         }
         if (!that.pwd) {
           uni.showToast({
-            title: '请输入您的密码',
+            title: '请输入您的验证码',
             icon: 'none'
           });
           return;
@@ -77,25 +78,22 @@
           title: '登录成功！',
           icon: 'none'
         });
+        uni.switchTab({
+          url: '/pages/index/index'
+        })
+
+      },
+      //获取验证码
+      yan() {
+        uni.showToast({
+          title: '您的验证码是：1234',
+          icon: 'none'
+        });
       },
       //注册按钮点击
       reg() {
         uni.showToast({
           title: '注册跳转',
-          icon: 'none'
-        });
-      },
-      //等三方微信登录
-      wxLogin() {
-        uni.showToast({
-          title: '微信登录',
-          icon: 'none'
-        });
-      },
-      //第三方支付宝登录
-      zfbLogin() {
-        uni.showToast({
-          title: '支付宝登录',
           icon: 'none'
         });
       }
@@ -152,48 +150,50 @@
     }
 
     .box-center {
-      .t-b {
-        text-align: left;
-        font-size: 42rpx;
-        color: #ffffff;
-        padding: 130rpx 0 0 70rpx;
-        font-weight: bold;
-        line-height: 70rpx;
-      }
+      .t-login {
+        width: 90%;
+        margin: auto;
 
-      .t-login .t-c {
-        position: absolute;
-        right: 22rpx;
-        top: 22rpx;
-        background: #5677fc;
-        color: #fff;
-        font-size: 24rpx;
-        border-radius: 50rpx;
-        height: 50rpx;
-        line-height: 50rpx;
-        padding: 0 25rpx;
-      }
+        .cl {
+          .t-a {
+            border-radius: 25px;
+            border: 1px solid #ccc;
+            margin-bottom: 25px;
+            box-sizing: border-box;
+            position: relative;
 
-      .t-login .t-d {
-        text-align: center;
-        color: #999;
-        margin: 80rpx 0;
-      }
+            .t-a1 {
+              position: absolute;
+              right: 15px;
+              top: 12px;
+              color: #fc4424;
+            }
 
-      .t-login .t-e {
-        text-align: center;
-        width: 250rpx;
-        margin: 80rpx auto 0;
-      }
+            image {
+              position: absolute;
+              top: 8px;
+              left: 15px;
+              width: 30px;
+              height: 30px;
+            }
 
-      .t-login .t-g {
-        float: left;
-        width: 50%;
-      }
+            input {
+              height: 45px;
+              padding-left: 50px;
+            }
+          }
 
-      .t-login .t-e image {
-        width: 50rpx;
-        height: 50rpx;
+          button {
+            color: #fff;
+            background-color: #fc4424;
+            border-radius: 25px;
+          }
+
+          .reg {
+            margin-top: 20px;
+            text-align: center;
+          }
+        }
       }
     }
 

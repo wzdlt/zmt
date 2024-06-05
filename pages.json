@@ -41,7 +41,7 @@
         "navigationBarTitleText": ""
       }
     }, {
-      "path": "pages/L-fenlei/L-fenlei",
+      "path": "pages/fenlei/fenlei",
       "style": {
         "navigationBarTitleText": "分类"
       }
@@ -53,9 +53,11 @@
       }
     },
     {
-      "path": "pages/L-appraise/L-appraise",
+      "path": "pages/appraise/appraise",
       "style": {
-        "navigationBarTitleText": "评价"
+        "navigationBarTitleText": "评价",
+        // 顶部导航栏背景颜色
+        "navigationBarBackgroundColor": "#fff"
       }
     },
     {
@@ -64,12 +66,33 @@
       {
         "navigationBarTitleText" : "新手指南"
       }
+    },
+    {
+<<<<<<< HEAD
+      "path" : "pages/greenhorn1/greenhorn1",
+      "style" : 
+      {
+        "navigationBarTitleText" : "新手指南"
+      }
+    },
+    {
+      "path" : "pages/shoplist/shoplist",
+      "style" : 
+      {
+        "navigationBarTitleText" : "店铺列表"
+=======
+      "path" : "pages/chaojihuiyuan/chaojihuiyuan",
+      "style" : 
+      {
+        "navigationBarTitleText" : "超级会员"
+>>>>>>> 618e4f2c772338645f044c2a21edfdad417ae5c2
+      }
     }
   ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#f8f8f8",
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {

@@ -1,6 +1,8 @@
 <template>
   <view class="new">
-      <view class="top1">
+    <!-- 新手指南 -->
+      <view class="top1" @click="goto()">
+      
       <p >退款什么时候到账</p> <p>></p>
       </view>
       <view class="top" v-for="item in list" :key="item.id">
@@ -18,10 +20,21 @@
     {id:4,title1:"养车服务如何核销订单",title2:'>'},
     ]
   )
+  // 页面跳转
+  function goto(){
+    uni.navigateTo({
+    	url: '../greenhorn1/greenhorn1'
+    });
+  } 
   
 </script>
 
 <style lang="scss">
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 .new{
   width: 100%;
   .top1{
