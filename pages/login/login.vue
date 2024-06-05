@@ -99,46 +99,6 @@
       }
     }
   };
-  // import {
-  //   ref,
-  //   reactive
-  // } from "vue";
-  // const phone = ref(18263767057)
-  // const pwd = ref(1234)
-  // const login() => {
-  //   var that = this;
-  //   if (!that.phone) {
-  //     uni.showToast({
-  //       title: '请输入您的手机号',
-  //       icon: 'none'
-  //     });
-  //     return;
-  //   }
-  //   if (!/^[1][3,4,5,7,8,9][0-9]{9}$/.test(that.phone)) {
-  //     uni.showToast({
-  //       title: '请输入正确手机号',
-  //       icon: 'none'
-  //     });
-  //     return;
-  //   }
-  //   if (!that.pwd) {
-  //     uni.showToast({
-  //       title: '请输入您的密码',
-  //       icon: 'none'
-  //     });
-  //     return;
-  //   }
-  //   uni.showToast({
-  //     title: '登录成功！',
-  //     icon: 'none'
-  //   });
-  // }
-  // const reg() => {
-  //   uni.showToast({
-  //     title: '注册跳转',
-  //     icon: 'none'
-  //   });
-  // }
 </script>
 
 <style lang="scss">

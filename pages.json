@@ -111,6 +111,27 @@
       {
         "navigationBarTitleText" : "车辆列表"
       }
+    },
+    {
+      "path" : "pages/cardetails/cardetails",
+      "style" : 
+      {
+        "navigationBarTitleText" : "车辆详情"
+      }
+    },
+    {
+      "path" : "pages/dailishang/dailishang",
+      "style" : 
+      {
+        "navigationBarTitleText" : "代理商"
+      }
+    },
+    {
+      "path" : "pages/chongzhi/chongzhi",
+      "style" : 
+      {
+        "navigationBarTitleText" : "充值"
+      }
     }
     
   ],

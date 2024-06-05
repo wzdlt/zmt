@@ -1,7 +1,7 @@
 <template>
   <view class="box">
     <view class="box1">
-      <view class="box1-1">
+      <view class="box1-1" @click="goregirect()">
         <view class="box1-1-top">
           <view class="box1-1-top-left">
             <uv-avatar shape="circle" icon="twitte" size="35" fontSize="20" randomBgColor></uv-avatar>
@@ -35,7 +35,7 @@
           <view class="box1-1-bottom3"></view>
         </view>
       </view>
-      <view class="box1-1">
+      <view class="box1-1" @click="goregirect()">
         <view class="box1-1-top">
           <view class="box1-1-top-left">
             <uv-avatar shape="circle" icon="twitte" size="35" fontSize="20" randomBgColor></uv-avatar>
@@ -83,7 +83,16 @@
           disabled: false
         }],
         radiovalue: '默认'
-      };
+      }
+    },
+    methods: {
+      goregirect() {
+        uni.redirectTo({
+          //关闭当前页面，跳转到应用内的某个页面。
+          url: '/pages/cardetails/cardetails'
+        });
+      }
+
     }
   }
 </script>
@@ -95,6 +104,7 @@
 
     .box1 {
       padding-top: 10px;
+
       .box1-1 {
         width: 90%;
         margin: 0 auto 10px;
@@ -102,6 +112,7 @@
         background-color: #fff;
         padding: 10px;
         box-sizing: border-box;
+
         .box1-1-top {
           display: flex;
           justify-content: space-between;
@@ -116,17 +127,20 @@
             }
           }
         }
-        .box1-1-bottom{
+
+        .box1-1-bottom {
           display: flex;
           justify-content: space-between;
           padding-top: 10px;
-          .box1-1-bottom2{
+
+          .box1-1-bottom2 {
             margin-top: 7px;
             display: flex;
             justify-content: right;
             width: 80%;
-            image{
-              width:20px;
+
+            image {
+              width: 20px;
               height: 20px;
             }
           }
