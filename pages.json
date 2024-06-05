@@ -67,7 +67,6 @@
       }
     },
     {
-<<<<<<< HEAD
       "path": "pages/greenhorn1/greenhorn1",
       "style": {
         "navigationBarTitleText": "新手指南"
@@ -90,7 +89,9 @@
       "style": {
         "navigationBarTitleText": "发布",
         "navigationBarBackgroundColor": "#fff"
-=======
+      }
+    },
+    {
       "path" : "pages/greenhorn1/greenhorn1",
       "style" : 
       {
@@ -109,7 +110,6 @@
       "style" : 
       {
         "navigationBarTitleText" : "超级会员"
->>>>>>> 6199acdba7004b21b592940d4440ae143d823787
       }
     }
   ],
