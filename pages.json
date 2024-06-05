@@ -97,6 +97,13 @@
       {
         "navigationBarTitleText" : "选择售后类型"
       }
+    },
+    {
+      "path" : "pages/maintenance/maintenance",
+      "style" : 
+      {
+        "navigationBarTitleText" : "汽车保养"
+      }
     }
     
   ],

@@ -356,7 +356,8 @@
         width: 100%;
         margin-top: 5%;
         margin-bottom: 10px;
-        
+        display: flex;
+        justify-content: right;
         // border: 1px solid #000;
         button {
           margin-right: 2%;
