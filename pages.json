@@ -56,7 +56,6 @@
       "path": "pages/appraise/appraise",
       "style": {
         "navigationBarTitleText": "评价",
-        // 顶部导航栏背景颜色
         "navigationBarBackgroundColor": "#fff"
       }
     },
@@ -89,6 +88,34 @@
       "path": "pages/chaojihuiyuan/chaojihuiyuan",
       "style": {
         "navigationBarTitleText": "超级会员"
+      }
+    },
+    {
+      "path": "pages/publish/publish",
+      "style": {
+        "navigationBarTitleText": "发布",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    },
+    {
+      "path" : "pages/greenhorn1/greenhorn1",
+      "style" : 
+      {
+        "navigationBarTitleText" : "新手指南"
+      }
+    },
+    {
+      "path" : "pages/shoplist/shoplist",
+      "style" : 
+      {
+        "navigationBarTitleText" : "店铺列表"
+      }
+    },
+    {
+      "path" : "pages/chaojihuiyuan/chaojihuiyuan",
+      "style" : 
+      {
+        "navigationBarTitleText" : "超级会员"
       }
     }
   ],
