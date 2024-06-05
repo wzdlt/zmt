@@ -99,10 +99,10 @@
     .appraise-box {
       width: 90%;
       margin: 0 auto;
-      padding-top: 20px;
+      padding-top: 40rpx;
 
       .top {
-        padding-top: 10px;
+        padding-top: 20rpx;
         background-color: #fff;
 
         .word {
@@ -111,14 +111,14 @@
         }
 
         .star {
-          padding-top: 10px;
+          padding-top: 20rpx;
           margin-left: 24%;
         }
 
         .input {
           width: 90%;
           margin: auto;
-          margin-top: 10px;
+          margin-top: 20rpx;
 
           .uv-textarea {
             background-color: #fafafa;
@@ -127,30 +127,30 @@
 
           uni-view {
             background-color: #fafafa;
-            padding-left: 20px;
+            padding-left: 40rpx;
           }
         }
       }
 
       .bottom {
         background-color: #fff;
-        margin-top: 20px;
+        margin-top: 40rpx;
 
         .word {
-          padding-top: 20px;
+          padding-top: 40rpx;
           font-size: 1.2rem;
           margin-left: 39%;
         }
 
         .star {
-          padding: 10px 0;
+          padding: 20rpx 0;
           margin-left: 24%;
         }
       }
 
       .button {
-        margin-top: 30px;
-        padding-bottom: 30px;
+        margin-top: 60rpx;
+        padding-bottom: 60rpx;
 
         ::v-deep .uv-button--square {
           border-radius: 20px;
