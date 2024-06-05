@@ -99,10 +99,10 @@
       }
     },
     {
-      "path" : "pages/chaojiindex/chaojiindex",
+      "path" : "pages/maintenance/maintenance",
       "style" : 
       {
-        "navigationBarTitleText" : "超级会员"
+        "navigationBarTitleText" : "汽车保养"
       }
     },
     {
