@@ -3,7 +3,7 @@
     <view class="box1">
       <view class="box1-1">
         <view class="box1-1-left">品牌车系</view>
-        <view class="box1-1-right">宝马3系/E90</view>
+        <view class="box1-1-right">宝马3系 / E90</view>
       </view>
       <view class="box1-1">
         <view class="box1-1-left">车型</view>
