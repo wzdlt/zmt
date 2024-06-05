@@ -104,6 +104,13 @@
       {
         "navigationBarTitleText" : "超级会员"
       }
+    },
+    {
+      "path" : "pages/carlist/carlist",
+      "style" : 
+      {
+        "navigationBarTitleText" : "车辆列表"
+      }
     }
     
   ],
