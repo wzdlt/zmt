@@ -152,7 +152,7 @@
         margin-top: 30px;
         padding-bottom: 30px;
 
-        .uv-button {
+        ::v-deep .uv-button--square {
           border-radius: 20px;
         }
       }
