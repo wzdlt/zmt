@@ -66,24 +66,6 @@
       }
     },
     {
-      "path": "pages/greenhorn1/greenhorn1",
-      "style": {
-        "navigationBarTitleText": "新手指南"
-      }
-    },
-    {
-      "path": "pages/shoplist/shoplist",
-      "style": {
-        "navigationBarTitleText": "店铺列表"
-      }
-    },
-    {
-      "path": "pages/chaojihuiyuan/chaojihuiyuan",
-      "style": {
-        "navigationBarTitleText": "超级会员"
-      }
-    },
-    {
       "path": "pages/publish/publish",
       "style": {
         "navigationBarTitleText": "发布",
@@ -102,12 +84,6 @@
       "path": "pages/shoplist/shoplist",
       "style": {
         "navigationBarTitleText": "店铺列表"
-      }
-    },
-    {
-      "path": "pages/chaojihuiyuan/chaojihuiyuan",
-      "style": {
-        "navigationBarTitleText": "超级会员"
       }
     },
     {
