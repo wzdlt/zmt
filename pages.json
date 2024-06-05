@@ -78,12 +78,6 @@
       }
     },
     {
-      "path": "pages/chaojihuiyuan/chaojihuiyuan",
-      "style": {
-        "navigationBarTitleText": "超级会员"
-      }
-    },
-    {
       "path": "pages/publish/publish",
       "style": {
         "navigationBarTitleText": "发布",
@@ -99,12 +93,6 @@
       }
     },
     {
-      "path": "pages/shoplist/shoplist",
-      "style": {
-        "navigationBarTitleText": "店铺列表"
-      }
-    },
-    {
       "path": "pages/chaojihuiyuan/chaojihuiyuan",
       "style": {
         "navigationBarTitleText": "超级会员"
@@ -117,13 +105,7 @@
         "navigationBarTitleText" : "选择售后类型"
       }
     },
-    {
-      "path" : "pages/chaojihuiyuan/chaojihuiyuan",
-      "style" : 
-      {
-        "navigationBarTitleText" : "超级会员"
-      }
-    }
+    
   ],
   "globalStyle": {
     "navigationBarTextStyle": "black",

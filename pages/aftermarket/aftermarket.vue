@@ -1,6 +1,6 @@
 <template>
   <view class="box">
-    
+    <view class="top"></view>
   </view>
 </template>
 
