@@ -41,20 +41,22 @@
         "navigationBarTitleText": ""
       }
     }, {
-      "path": "pages/L-fenlei/L-fenlei",
+      "path": "pages/fenlei/fenlei",
       "style": {
         "navigationBarTitleText": "分类"
       }
     }, {
       "path": "pages/hongbao/hongbao",
       "style": {
-        "navigationBarTitleText": ""
+        "navigationBarTitleText": "红包布局"
+
       }
     },
     {
-      "path": "pages/L-appraise/L-appraise",
+      "path": "pages/appraise/appraise",
       "style": {
-        "navigationBarTitleText": "评价"
+        "navigationBarTitleText": "评价",
+        "navigationBarBackgroundColor": "#fff"
       }
     },
     {
@@ -67,6 +69,20 @@
       "path": "pages/greenhorn1/greenhorn1",
       "style": {
         "navigationBarTitleText": "新手指南"
+      }
+    },
+    {
+      "path": "pages/publish/publish",
+      "style": {
+        "navigationBarTitleText": "发布",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    },
+    {
+      "path" : "pages/greenhorn1/greenhorn1",
+      "style" : 
+      {
+        "navigationBarTitleText" : "新手指南"
       }
     },
     {
@@ -86,6 +102,13 @@
       "style" : 
       {
         "navigationBarTitleText" : "选择售后类型"
+      }
+    },
+    {
+      "path" : "pages/chaojihuiyuan/chaojihuiyuan",
+      "style" : 
+      {
+        "navigationBarTitleText" : "超级会员"
       }
     }
   ],
