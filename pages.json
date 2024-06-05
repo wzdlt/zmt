@@ -66,58 +66,22 @@
       }
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 876c6176466d7d5f6c71d39c3efb8408f90fb0fd
       "path": "pages/greenhorn1/greenhorn1",
       "style": {
         "navigationBarTitleText": "新手指南"
       }
     },
     {
-<<<<<<< HEAD
       "path": "pages/shoplist/shoplist",
       "style": {
         "navigationBarTitleText": "店铺列表"
       }
     },
     {
-      "path": "pages/chaojihuiyuan/chaojihuiyuan",
-      "style": {
-        "navigationBarTitleText": "超级会员"
-      }
-    },
-    {
-=======
->>>>>>> 9388d02c660c42818bb68bec37991bf450746828
-=======
->>>>>>> 876c6176466d7d5f6c71d39c3efb8408f90fb0fd
       "path": "pages/publish/publish",
       "style": {
         "navigationBarTitleText": "发布",
         "navigationBarBackgroundColor": "#fff"
-<<<<<<< HEAD
-=======
-      }
-    },
-    {
-      "path" : "pages/greenhorn1/greenhorn1",
-      "style" : 
-      {
-        "navigationBarTitleText" : "新手指南"
-      }
-    },
-    {
-      "path": "pages/shoplist/shoplist",
-      "style": {
-        "navigationBarTitleText": "店铺列表"
-      }
-    },
-    {
-      "path": "pages/chaojihuiyuan/chaojihuiyuan",
-      "style": {
-        "navigationBarTitleText": "超级会员"
       }
     },
     {
@@ -132,7 +96,6 @@
       "style" : 
       {
         "navigationBarTitleText" : "超级会员"
->>>>>>> 9388d02c660c42818bb68bec37991bf450746828
       }
     }
   ],
