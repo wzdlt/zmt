@@ -48,7 +48,8 @@
     }, {
       "path": "pages/hongbao/hongbao",
       "style": {
-        "navigationBarTitleText": ""
+        "navigationBarTitleText": "红包布局"
+      
       }
     },
     {
