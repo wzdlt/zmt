@@ -140,6 +140,13 @@
       {
         "navigationBarTitleText" : "充值"
       }
+    },
+    {
+      "path" : "pages/kehudingdan/kehudingdan",
+      "style" : 
+      {
+        "navigationBarTitleText" : "客户订单"
+      }
     }
     
   ],
