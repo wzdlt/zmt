@@ -1,29 +1,59 @@
 <template>
   <view class="maintenance">
     <view class="top">
-      <p class="left">
-        <image src="../../static/image/奥迪.png" mode=""></image> &nbsp; 奥迪A6&nbsp;<uv-icon size="15"
-          name="arrow-right"></uv-icon>
-      </p>
-      <p class="right">当前公里数：32874km</p>
+      <view class="left">
+        <image src="../../static/image/奥迪.png" mode=""></image> 奥迪A6 <uv-icon size="15" name="arrow-right"></uv-icon>
+      </view>
+      <text class="right">当前公里数：32874km</text>
     </view>
     <view class="center">
-      <p class="tk">选择主商品</p>
+      <text class="tk">选择主商品</text>
       <view class="body" v-for='item in commodity' :key="item.id">
         <view class="body-left">
           <uv-checkbox-group shape="circle" activeColor="#f7433d">
             <uv-checkbox></uv-checkbox>
-            
+
           </uv-checkbox-group>
         </view>
         <view class="body-center">
           <image :src="item.img" mode=""></image>
         </view>
         <view class="body-right">
-          <p class="one">{{item.title1}}</p>
-          <p class="two">{{item.title2}}</p>
-          <p class="three">{{item.title3}}</p>
-          <p class="four">{{item.title4}} <span>送100%红包</span> </p>
+          <text class="one">{{item.title1}}</text><br />
+          <text class="two">{{item.title2}}</text><br />
+          <text class="three">{{item.title3}}</text><br />
+          <text class="four">{{item.title4}} <text class="span1">送100%红包</text> </text>
+        </view>
+      </view>
+    </view>
+    <!-- 评价 -->
+    <view class="appraise">
+      <view class="appraise-top">
+        <text>评价</text>
+        <view class="gengduo">查看更多<uv-icon color=" #fc6147" size="15" name="arrow-right"></uv-icon></view>
+      </view>
+      <view class="appraise-body" v-for="item in reviews" :key="item.id">
+        <view class="appraise-body-top">
+          <view class="appraise-body-top-left">
+            <view class="left1">
+              <uv-image width="40px" height="40px" :src="item.avatar" shape="circle"></uv-image>
+            </view>
+            <view class="left2">
+              <text>{{item.username}}</text>
+              <uv-rate size="14px" activeColor='#ffb800' :count="count" v-model="value"></uv-rate>
+            </view>
+          </view>
+          <view class="appraise-body-top-right">
+            <text>2021.12.17</text>
+          </view>
+        </view>
+        <view class="appraise-body-center">
+          <text>{{item.content}}</text>
+          <view class="photo" v-show="img?'true':'false'">
+            <image :src="item.img" mode=""></image>
+            <image :src="item.img" mode=""></image>
+            <image :src="item.img" mode=""></image>
+          </view>
         </view>
       </view>
     </view>
@@ -34,6 +64,10 @@
   import {
     ref
   } from 'vue';
+  // 评分
+  const count = ref(5)
+  const value = ref(4)
+  // 第一列表循环
   const commodity = ref([{
       id: 1,
       img: "../../static/image/润滑油1.png",
@@ -59,6 +93,19 @@
       title4: "￥258",
     }
   ])
+  // 用户评论
+  const reviews = ref([{
+    id: 1,
+    avatar: 'https://cdn.uviewui.com/uview/album/1.jpg',
+    username: '雪山飞狐',
+    content: '整个人生就是思想与劳动，劳动虽然是无闻的、平凡的，却是不能间断的。--冈察洛夫',
+    img: '../../static/image/润滑油1.png'
+  }, {
+    id: 2,
+    avatar: 'https://cdn.uviewui.com/uview/album/1.jpg',
+    username: '梦之曦',
+    content: '在进餐、睡眠和运动等时间里能宽心无虑，满怀高兴，这是长寿的妙理之一。--培根',
+  }])
 </script>
 
 <style lang="scss" scoped>
@@ -82,8 +129,10 @@
       .left {
         width: 40%;
         display: flex;
+        // justify-content: space-between;
         align-items: center;
         font-size: 1rem;
+
         image {
           width: 20px;
           height: 20px;
@@ -106,11 +155,13 @@
       border-radius: 10rpx;
 
       .body {
+        margin-top: 3%;
         margin-bottom: 5%;
         display: flex;
         justify-content: space-between;
         padding-bottom: 2%;
         border-bottom: 1px solid #f8f8f8;
+
         .body-left {
           width: 6%;
           margin-top: 13%;
@@ -127,6 +178,7 @@
         }
 
         .body-right {
+
           width: 68%;
 
           .one {
@@ -151,13 +203,10 @@
             padding-bottom: 2%;
             display: flex;
             align-items: center;
-
-            span {
-              padding: 1%;
-              margin-left: 2%;
+            .span1 {
               font-size: 0.7rem;
               text-align: center;
-              width: 33%;
+              width: 50%;
               border-radius: 3px;
               color: #ffffff;
               background-color: #fc4424;
@@ -174,5 +223,88 @@
       }
     }
 
+    // 评价
+    .appraise {
+      width: 90%;
+      margin: auto;
+      margin-top: 2%;
+      padding: 3%;
+      background-color: #ffffff;
+
+      .appraise-top {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        padding-bottom: 3%;
+        border-bottom: 1px solid #f8f8f8;
+
+       .gengduo {
+          color: #fc6147;
+          display: flex;
+          align-items: center;
+          font-size: 1rem;
+        }
+      }
+
+      .appraise-body {
+        border-bottom: 1px solid #fafafa;
+        padding-bottom: 3%;
+
+        .appraise-body-top {
+          width: 100%;
+          display: flex;
+          padding-bottom: 3%;
+          justify-content: space-between;
+
+          .appraise-body-top-left {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left1 {
+              // border: 1px solid orange;
+            }
+
+            .left2 {
+            text{
+              margin-left: 3%;
+            }
+
+              font-size: 0.8rem;
+
+            }
+          }
+
+          .appraise-body-top-right {
+            text {
+              margin-top: 15%;
+              font-size: 0.8rem;
+              color: #b2b2b2;
+            }
+          }
+        }
+
+        .appraise-body-center {
+          p {
+            font-size: 0.8rem;
+          }
+
+          .photo {
+            border: 1px solid #000;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2%;
+
+            image {
+              width: 33%;
+              height: 100%;
+            }
+          }
+        }
+      }
+
+    }
   }
 </style>

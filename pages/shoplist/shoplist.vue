@@ -31,14 +31,14 @@
           <image src="../../static/image/鑫日汽修厂.png" mode=""></image>
         </view>
         <view class="bottom-right">
-          <p class="p1">鑫日汽修厂 <span class="span1">1.2km</span> </p>
+          <view class="p1">鑫日汽修厂 <span class="span1">1.2km</span> </view>
           <view class="bottom-right-top">
             <uv-rate :count="count" v-model="value" activeColor="#ffb800"></uv-rate>
-            <p class="p2">服务次数：235</p>
+            <text class="p2">服务次数：235</text>
           </view>
-          <p class="p3">山东省临沂市河东区香港路与长安路...</p>
+          <text class="p3">山东省临沂市河东区香港路与长安路...</text>
           <view class="bottom-right-bottom">
-            <p v-for="item in list" :key="item.id">{{ item.title }}</p>
+            <text v-for="item in list" :key="item.id">{{ item.title }}</text>
           </view>
 
         </view>
@@ -335,7 +335,7 @@
             display: flex;
             justify-content: left;
 
-            p {
+            text {
               background-color: #ffeae7;
               color: #fc664c;
               border-radius: 5px;
