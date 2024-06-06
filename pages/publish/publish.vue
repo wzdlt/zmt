@@ -1,11 +1,31 @@
+<!-- 发布 -->
 <template>
   <view class="publish">
     <view class="publish-box">
       <view class="top">
         <view class="input">
-          <uv-textarea v-model="value" placeholder="请输入内容"></uv-textarea>
+          <uv-textarea v-model="value" placeholder="买家都关心品牌型号、入手渠道、转手原因……"></uv-textarea>
           <uv-upload :fileList="fileList1" name="1" multiple :maxCount="10" @afterRead="afterRead" @delete="deletePic">
           </uv-upload>
+        </view>
+      </view>
+      <view class="address">
+        <uv-picker ref="picker" :columns="addressList" :loading="loading" keyName="name" @change="change"
+          @confirm="confirm">
+        </uv-picker>
+        <button @click="open">选择位置</button>
+      </view>
+      <view class="bottom" v-for="(item,index) in list" :key="index">
+        <view class="bottom-box">
+          <view class="left">
+            {{item.left}}
+          </view>
+          <view class="right">
+            <text>{{item.right1}}</text>
+            <text>{{item.right2}}</text>
+            <text>{{item.right3}}</text>
+            <text>{{item.right4}}</text>
+          </view>
         </view>
       </view>
     </view>
@@ -17,7 +37,50 @@
     data() {
       return {
         value: '',
-        fileList1: []
+        fileList1: [],
+        loading: true,
+        provinces: [], //省
+        citys: [], //市
+        areas: [], //区
+        pickerValue: [0, 0, 0],
+        defaultValue: [3442, 1, 2],
+        list: [{
+          left: '分类',
+          right1: '手机',
+          right2: '电脑',
+          right3: '普通数码相机',
+          right4: '衣服'
+        }, {
+          left: '品牌',
+          right1: 'vivo',
+          right2: '华为',
+          right3: 'APPle/苹果',
+          right4: 'oppo'
+        }, {
+          left: '容量',
+          right1: '32G',
+          right2: '64G',
+          right3: '128G',
+          right4: '256G'
+        }, {
+          left: '成色',
+          right1: '全新',
+          right2: '几乎全新',
+          right3: '轻微磕碰',
+        }, {
+          left: '拆修',
+          right1: '无任何拆修',
+          right2: '仅更换电池',
+          right3: '仅屏幕有维修'
+        }],
+      }
+    },
+    created() {
+      this.getData();
+    },
+    computed: {
+      addressList() {
+        return [this.provinces, this.citys, this.areas];
       }
     },
     methods: {
@@ -64,15 +127,119 @@
             }
           });
         })
+      },
+      getData() {
+        uni.request({
+          method: 'GET',
+          url: '/static/uvui/example/regions.json',
+          success: res => {
+            const {
+              statusCode,
+              data
+            } = res
+            if (statusCode === 200) {
+              console.log('获取的数据：', res);
+              this.provinces = data.sort((left, right) => (Number(left.code) > Number(right.code) ? 1 : -1));
+              console.log(this.provinces)
+              this.handlePickValueDefault()
+              setTimeout(() => {
+                this.loading = false
+              }, 200)
+            }
+          }
+        })
+      },
+      handlePickValueDefault() {
+        // 设置省
+        this.pickerValue[0] = this.provinces.findIndex(item => Number(item.id) === this.defaultValue[0]);
+        // 设置市
+        this.citys = this.provinces[this.pickerValue[0]]?.children || [];
+        this.pickerValue[1] = this.citys.findIndex(item => Number(item.id) === this.defaultValue[1]);
+        // 设置区
+        this.areas = this.citys[this.pickerValue[1]]?.children || [];
+        this.pickerValue[2] = this.areas.findIndex(item => Number(item.id) === this.defaultValue[2]);
+        // 重置下位置
+        this.$refs.picker.setIndexs([this.pickerValue[0], this.pickerValue[1], this.pickerValue[2]], true);
+      },
+      change(e) {
+        if (this.loading) return;
+        const {
+          columnIndex,
+          index,
+          indexs
+        } = e
+        // 改变了省
+        if (columnIndex === 0) {
+          this.citys = this.provinces[index]?.children || []
+          this.areas = this.citys[0]?.children || []
+          this.$refs.picker.setIndexs([index, 0, 0], true)
+        } else if (columnIndex === 1) {
+          this.areas = this.citys[index]?.children || []
+          this.$refs.picker.setIndexs(indexs, true)
+        }
+      },
+      open() {
+        this.$refs.picker.open();
+        this.handlePickValueDefault()
+      },
+      confirm(e) {
+        console.log('确认选择的地区：', e);
+        uni.showToast({
+          icon: 'none',
+          title: `${e.value[0].name}/${e.value[1].name}/${e.value[2].name}`
+        })
       }
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  * {
+  .publish {
     padding: 0;
     margin: 0;
     border-radius: 20px;
+
+    .publish-box {
+      margin-top: 40rpx;
+      padding: 0 30rpx;
+
+      .top {
+        .input {
+          .uv-textarea {
+            border: none;
+          }
+
+          .uv-upload {
+            padding-bottom: 30rpx;
+            border-bottom: 1px solid #b1b1b1;
+          }
+        }
+      }
+
+      .address {
+        padding: 30rpx 0;
+        border-bottom: 1px solid #b1b1b1;
+      }
+
+      .bottom {
+        margin-top: 40rpx;
+
+        .bottom-box {
+          display: flex;
+
+          .right {
+            margin-left: 12rpx;
+
+            text {
+              margin-left: 16rpx;
+              background-color: #f2f2f2;
+              text-align: center;
+              padding: 10rpx 20rpx;
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+    }
   }
 </style>
