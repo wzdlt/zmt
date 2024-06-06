@@ -20,7 +20,8 @@
     {
       "path": "pages/snapped/snapped",
       "style": {
-        "navigationBarTitleText": "抢购区"
+        "navigationBarTitleText": "抢购专区",
+        "navigationBarBackgroundColor":"#FC4E30"
       }
     },
     {
@@ -48,8 +49,15 @@
     }, {
       "path": "pages/hongbao/hongbao",
       "style": {
-        "navigationBarTitleText": "红包布局"
-
+        "navigationBarTitleText": "红包专区",
+        "navigationBarBackgroundColor":"#FC4E30"
+      }
+    },{
+      "path":"pages/shoukuanhongbao/shoukuan",
+      "style":{
+        "navigationBarBackgroundColor":"#FC4E30",
+        "navigationBarTitleText":"我的红包",
+        "navigationBarTextStyle":"white"
       }
     },
     {
