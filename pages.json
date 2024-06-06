@@ -21,7 +21,7 @@
       "path": "pages/snapped/snapped",
       "style": {
         "navigationBarTitleText": "抢购专区",
-        "navigationBarBackgroundColor":"#FC4E30"
+        "navigationBarBackgroundColor": "#FC4E30"
       }
     },
     {
@@ -50,14 +50,14 @@
       "path": "pages/hongbao/hongbao",
       "style": {
         "navigationBarTitleText": "红包专区",
-        "navigationBarBackgroundColor":"#FC4E30"
+        "navigationBarBackgroundColor": "#FC4E30"
       }
-    },{
-      "path":"pages/shoukuanhongbao/shoukuan",
-      "style":{
-        "navigationBarBackgroundColor":"#FC4E30",
-        "navigationBarTitleText":"我的红包",
-        "navigationBarTextStyle":"white"
+    }, {
+      "path": "pages/shoukuanhongbao/shoukuan",
+      "style": {
+        "navigationBarBackgroundColor": "#FC4E30",
+        "navigationBarTitleText": "我的红包",
+        "navigationBarTextStyle": "white"
       }
     },
     {
@@ -100,45 +100,47 @@
       }
     },
     {
-      "path" : "pages/aftermarket/aftermarket",
-      "style" : 
-      {
-        "navigationBarTitleText" : "选择售后类型"
+      "path": "pages/aftermarket/aftermarket",
+      "style": {
+        "navigationBarTitleText": "选择售后类型"
       }
     },
     {
-      "path" : "pages/maintenance/maintenance",
-      "style" : 
-      {
-        "navigationBarTitleText" : "汽车保养"
+      "path": "pages/maintenance/maintenance",
+      "style": {
+        "navigationBarTitleText": "汽车保养"
       }
     },
     {
-      "path" : "pages/carlist/carlist",
-      "style" : 
-      {
-        "navigationBarTitleText" : "车辆列表"
+      "path": "pages/carlist/carlist",
+      "style": {
+        "navigationBarTitleText": "车辆列表"
       }
     },
     {
-      "path" : "pages/cardetails/cardetails",
-      "style" : 
-      {
-        "navigationBarTitleText" : "车辆详情"
+      "path": "pages/cardetails/cardetails",
+      "style": {
+        "navigationBarTitleText": "车辆详情"
       }
     },
     {
-      "path" : "pages/dailishang/dailishang",
-      "style" : 
-      {
-        "navigationBarTitleText" : "代理商"
+      "path": "pages/dailishang/dailishang",
+      "style": {
+        "navigationBarTitleText": "代理商"
       }
     },
     {
-      "path" : "pages/chongzhi/chongzhi",
-      "style" : 
-      {
-        "navigationBarTitleText" : "充值"
+      "path": "pages/chongzhi/chongzhi",
+      "style": {
+        "navigationBarTitleText": "充值"
+      }
+    },
+    {
+      "path": "pages/pendingpayment/pendingpayment",
+      "style": {
+        "navigationBarTitleText": "待付款",
+        "navigationBarBackgroundColor": "#fc4424",
+        "navigationBarTextStyle": "white"
       }
     },
     {
@@ -148,7 +150,7 @@
         "navigationBarTitleText" : "客户订单"
       }
     }
-    
+
   ],
   "globalStyle": {
     "navigationBarTextStyle": "black",

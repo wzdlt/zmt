@@ -23,10 +23,34 @@
           <view class="right">
             <text>{{item.right1}}</text>
             <text>{{item.right2}}</text>
-            <text>{{item.right3}}</text>
-            <text>{{item.right4}}</text>
+            <text v-if="item.right3 = item.right3">{{item.right3}}</text>
+            <text v-if="item.right4 = item.right4">{{item.right4}}</text>
           </view>
         </view>
+      </view>
+      <view class="contact">
+        <view class="person">
+          <view class="left">
+            <image src="../../static/image/联系人.png" mode=""></image>
+            <text>联系人</text>
+          </view>
+          <view class="right">
+            请输入联系人
+          </view>
+        </view>
+        <view class="phone">
+          <view class="left">
+            <image src="../../static/image/电话.png" mode=""></image>
+            <text>联系电话</text>
+          </view>
+          <view class="right">
+            请输入联系电话
+          </view>
+        </view>
+      </view>
+      <view class="line"></view>
+      <view class="button">
+        <uv-button type="primary" text="发布" color="#f7433d"></uv-button>
       </view>
     </view>
   </view>
@@ -71,7 +95,7 @@
           left: '拆修',
           right1: '无任何拆修',
           right2: '仅更换电池',
-          right3: '仅屏幕有维修'
+          // right3: '仅屏幕有维修'
         }],
       }
     },
@@ -201,9 +225,10 @@
 
     .publish-box {
       margin-top: 40rpx;
-      padding: 0 30rpx;
+      
 
       .top {
+        padding: 0 30rpx;
         .input {
           .uv-textarea {
             border: none;
@@ -217,12 +242,13 @@
       }
 
       .address {
-        padding: 30rpx 0;
+        padding: 30rpx 30rpx;
         border-bottom: 1px solid #b1b1b1;
       }
 
       .bottom {
         margin-top: 40rpx;
+        padding: 0 30rpx;
 
         .bottom-box {
           display: flex;
@@ -238,6 +264,75 @@
               border-radius: 20px;
             }
           }
+        }
+      }
+
+      .contact {
+        margin-top: 60rpx;
+        padding: 0 30rpx;
+
+        .person {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: 1px solid #b1b1b1;
+          padding: 30rpx 10rpx;
+
+          .left {
+            width: 40%;
+
+            image {
+              width: 20%;
+              height: 50rpx;
+            }
+
+            text {
+              margin-left: 20rpx;
+              color: #888888;
+            }
+          }
+
+          .right {
+            color: #888888;
+          }
+        }
+
+        .phone {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: 1px solid #b1b1b1;
+          padding: 30rpx 10rpx;
+
+          .left {
+            width: 40%;
+
+            image {
+              width: 20%;
+              height: 50rpx;
+            }
+
+            text {
+              margin-left: 20rpx;
+              color: #888888;
+            }
+          }
+
+          .right {
+            color: #888888;
+          }
+        }
+      }
+      .line{
+        height: 20rpx;
+        background-color: #f5f5f5;
+      }
+      .button {
+        margin-top: 10rpx;
+        padding:0  30rpx 40rpx;
+      
+        ::v-deep .uv-button--square {
+          border-radius: 20px;
         }
       }
     }
