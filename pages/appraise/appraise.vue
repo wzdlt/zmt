@@ -87,14 +87,11 @@
 </script>
 
 <style lang="scss" scoped>
-  * {
+  .appraise {
+    background-color: #f5f6f7;
     padding: 0;
     margin: 0;
     border-radius: 10px;
-  }
-
-  .appraise {
-    background-color: #f5f6f7;
 
     .appraise-box {
       width: 90%;
