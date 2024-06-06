@@ -18,7 +18,7 @@
           {{ item.time }}
         </view>
       </view>
-        <view>{{ item.price }}</view>
+        <view class="box2-left" >{{ item.price }}</view>
     </view>
     <!-- 收款红包结束 -->
   </view>
@@ -80,7 +80,27 @@ export default {
 .box2{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  border-bottom: 1px solid #c7c5c5;
 }
-.box2-text{}
+.box2-text{
+  width: 80%;
+  margin-top: 20px;
+}
+.box2-left{
+font-weight: bold;
+  margin-top: 40px;
+  color: green;
+}
+.box2-left :nth-child(1){
+  color: red;
+}
+.box2-right-top{
+  margin-bottom: 10px;
+  color: #4C4C4C;
+  font-weight: bold;
+}
+.box2-right-bottom{
+  color: #A4A4A4;
+}
 </style>

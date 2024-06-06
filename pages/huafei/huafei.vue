@@ -1,0 +1,77 @@
+<template>
+  <view class="box">
+    <view class="box1-img">
+      <img src="../../static/image/话费.png" alt="">
+    </view>
+    <!-- 话费图片 -->
+    <!-- 输入手机号 -->
+    <view class="box2">
+      <uv-input placeholder="请输入你想要的内容" style="color: white;" v-model="value" @change="change"></uv-input>
+    </view>
+    <view class="box3" v-for="(item, index) in list" :key="index">
+      <view class="box3-content">
+        <view>{{ item.text1 }}{{ item.text2 }}</view>
+      </view>
+    </view>
+  </view>
+
+</template>
+<script>
+export default {
+  data() {
+    return {
+      list: [{
+        text1: '30元',
+        text2: "送30元红包"
+      }, {
+        text1: '50元',
+        text2: "送50元红包"
+      }, {
+        text1: '50元',
+        text2: "送50元红包"
+      }, {
+        text1: '100元',
+        text2: "送100元红包"
+      }]
+    }
+  }
+}
+</script>
+<style scoped>
+/* 话费充值截图 */
+.box {
+  width: 100%;
+}
+
+.box1-img {
+  width: 95%;
+  margin: auto;
+}
+
+.box1-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* input 输入电话号码框 */
+.box2 {
+  width: 95%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+/* 充值余额 */
+.box3 {
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+
+.box3-content {
+  width: 45%;
+ 
+  margin-top: 20px;
+
+  border: 1px solid red;
+}
+</style>
