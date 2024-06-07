@@ -155,6 +155,16 @@
       "path": "pages/kehudingdan/kehudingdan",
       "style": {
         "navigationBarTitleText": "客户订单"
+<<<<<<< HEAD
+=======
+
+      }
+    },
+    {
+      "path": "pages/maintenance1/maintenance1",
+      "style": {
+        "navigationBarTitleText": "汽车保养"
+>>>>>>> fd300798c28d2b55292c14443a65ec2a215f2183
       }
     },
     {
@@ -190,7 +200,12 @@
         "enablePullDownRefresh": false,
         "navigationBarBackgroundColor": "#FF661A"
       }
+<<<<<<< HEAD
     },
+=======
+
+      },
+>>>>>>> fd300798c28d2b55292c14443a65ec2a215f2183
     {
       "path": "pages/maintenance1/maintenance1",
       "style": {
@@ -226,6 +241,10 @@
       "style": {
         "navigationBarTitleText": "客户订单"
       }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fd300798c28d2b55292c14443a65ec2a215f2183
     }
   ],
   "globalStyle": {
