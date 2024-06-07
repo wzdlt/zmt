@@ -156,7 +156,7 @@
       "path": "pages/kehudingdan/kehudingdan",
       "style": {
         "navigationBarTitleText": "客户订单"
-<<<<<<< HEAD
+
       }
     },
     {
@@ -198,9 +198,8 @@
         "enablePullDownRefresh": false,
         "navigationBarBackgroundColor": "#FF661A"
       }
-=======
-      }
-    },
+
+      },
     {
       "path": "pages/maintenance1/maintenance1",
       "style": {
@@ -262,7 +261,7 @@
       {
         "navigationBarTitleText" : "客户订单"
       }
->>>>>>> 8e1c164791186c7c31e5a5e4729e355d09c46359
+
     }
   ],
   "globalStyle": {
