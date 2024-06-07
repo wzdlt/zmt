@@ -236,7 +236,16 @@
         "navigationBarTitleText" : "个人信息"
       }
     }
-  ],
+      ,{
+            "path" : "pages/carshoper/carshoper",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我是汽车商家1",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
