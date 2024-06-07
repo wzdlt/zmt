@@ -49,13 +49,19 @@
         </view>
         <view class="appraise-body-center">
           <text>{{item.content}}</text>
-          <view class="photo" v-show="img?'true':'false'">
-            <image :src="item.img" mode=""></image>
-            <image :src="item.img" mode=""></image>
-            <image :src="item.img" mode=""></image>
+          <view class="photo" v-if="item.img.length > 0">
+            <image v-for="(imgItem,i) in item.img" :src="imgItem" :key="i" mode=""></image>
           </view>
         </view>
       </view>
+    </view>
+    <!-- 底部 -->
+    <view class="foot">
+      <view class="foot-left">
+        <view>合计：<text>￥890.00</text></view>
+        <view>(含工时费:￥100)</view>
+      </view>
+      <button>确定</button>
     </view>
   </view>
 </template>
@@ -94,18 +100,21 @@
     }
   ])
   // 用户评论
+
   const reviews = ref([{
     id: 1,
     avatar: 'https://cdn.uviewui.com/uview/album/1.jpg',
     username: '雪山飞狐',
     content: '整个人生就是思想与劳动，劳动虽然是无闻的、平凡的，却是不能间断的。--冈察洛夫',
-    img: '../../static/image/润滑油1.png'
+    img: ['../../static/image/润滑油1.png', '../../static/image/润滑油1.png', '../../static/image/润滑油1.png']
   }, {
     id: 2,
     avatar: 'https://cdn.uviewui.com/uview/album/1.jpg',
     username: '梦之曦',
     content: '在进餐、睡眠和运动等时间里能宽心无虑，满怀高兴，这是长寿的妙理之一。--培根',
+    img: []
   }])
+  console.log(reviews.value[0].id);
 </script>
 
 <style lang="scss" scoped>
@@ -203,6 +212,7 @@
             padding-bottom: 2%;
             display: flex;
             align-items: center;
+
             .span1 {
               font-size: 0.7rem;
               text-align: center;
@@ -220,6 +230,7 @@
         margin-bottom: 5%;
         padding-bottom: 2%;
         border-bottom: 1px solid #f5f5f5;
+        font-size: 0.9rem;
       }
     }
 
@@ -228,9 +239,10 @@
       width: 90%;
       margin: auto;
       margin-top: 2%;
+      margin-bottom: 3%;
       padding: 3%;
       background-color: #ffffff;
-
+       
       .appraise-top {
         display: flex;
         justify-content: space-between;
@@ -238,7 +250,7 @@
         padding-bottom: 3%;
         border-bottom: 1px solid #f8f8f8;
 
-       .gengduo {
+        .gengduo {
           color: #fc6147;
           display: flex;
           align-items: center;
@@ -247,9 +259,9 @@
       }
 
       .appraise-body {
+        padding-top: 2%;
         border-bottom: 1px solid #fafafa;
         padding-bottom: 3%;
-
         .appraise-body-top {
           width: 100%;
           display: flex;
@@ -267,9 +279,9 @@
             }
 
             .left2 {
-            text{
-              margin-left: 3%;
-            }
+              text {
+                margin-left: 3%;
+              }
 
               font-size: 0.8rem;
 
@@ -291,7 +303,6 @@
           }
 
           .photo {
-            border: 1px solid #000;
             height: 100px;
             display: flex;
             justify-content: space-between;
@@ -305,6 +316,45 @@
         }
       }
 
+    }
+
+    // 底部
+    .foot {
+      width: 100%;
+      background-color: #ffffff;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      display: flex;
+      justify-content: space-between;
+
+      .foot-left {
+        width: 40%;
+
+        view:nth-child(1) {
+          font-size: 0.8rem;
+
+          text {
+            color: #fc4424;
+          }
+        }
+
+        view:nth-child(2) {
+          color: #999999;
+          font-size: 0.7rem;
+        }
+      }
+
+      button {
+        font-family: 0.8rem;
+        width: 35%;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 20px;
+        color: #f6f6f6;
+        background-color: #fc4424;
+      }
     }
   }
 </style>
