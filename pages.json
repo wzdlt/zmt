@@ -163,6 +163,7 @@
       }
     }
 
+<<<<<<< HEAD
     , {
       "path": "pages/history/history",
       "style": {
@@ -209,6 +210,41 @@
       }
     }
   ],
+=======
+      ,{
+            "path" : "pages/history/history",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "历史",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+        {
+          "path" : "pages/dailishenqing/dailishenqing",
+          "style" : 
+          {
+            "navigationBarTitleText" : "代理申请"
+          }
+        },
+        {
+          "path" : "pages/serve/serve",
+          "style" : 
+          {
+            "navigationBarTitleText" : ""
+          }
+        }
+        ,{
+            "path" : "pages/kehu/kehu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "客户订单1",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+>>>>>>> f44725586ed94d3f98604e448200c5b4458ad01b
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
