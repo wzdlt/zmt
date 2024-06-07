@@ -52,6 +52,10 @@
         </view>
       </view>
     </view>
+    <view class="box3">
+      <view><image src="../../static/image/我的.png"></image></view>
+      <view>核销</view>
+    </view>
   </view>
 </template>
 
@@ -159,6 +163,23 @@
             font-size: 18px;
           }
         }
+      }
+    }
+    .box3{
+      border: 1px solid #ccc;
+      color: #ccc;
+      width: 11%;
+      position: fixed;
+      right: 20px;
+      bottom: 80px;
+      border-radius: 50%;
+      text-align: center;
+      padding: 5px;
+      background-color: #fff;
+      font-size: 12px;
+      image{
+        width: 20px;
+        height: 20px;
       }
     }
   }
