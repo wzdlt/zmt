@@ -173,6 +173,13 @@
                 "enablePullDownRefresh": false
             }
             
+        },
+        {
+          "path" : "pages/dailishenqing/dailishenqing",
+          "style" : 
+          {
+            "navigationBarTitleText" : "代理申请"
+          }
         }
     ],
   "globalStyle": {
