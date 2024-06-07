@@ -174,7 +174,7 @@
     {
       "path": "pages/serve/serve",
       "style": {
-        "navigationBarTitleText": "服务订单"
+        "navigationBarTitleText": ""
       }
     },
     {
@@ -230,22 +230,13 @@
       }
     },
     {
-      "path" : "pages/individual/individual",
+      "path" : "pages/invite/invite",
       "style" : 
       {
-        "navigationBarTitleText" : "个人信息"
+        "navigationBarTitleText" : "邀请好友"
       }
     }
-      ,{
-            "path" : "pages/carshoper/carshoper",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "我是汽车商家1",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
