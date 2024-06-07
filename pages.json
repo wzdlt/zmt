@@ -181,6 +181,15 @@
             "navigationBarTitleText" : "代理申请"
           }
         }
+        ,{
+            "path" : "pages/kehu/kehu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "客户订单1",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
