@@ -174,7 +174,7 @@
     {
       "path": "pages/serve/serve",
       "style": {
-        "navigationBarTitleText": ""
+        "navigationBarTitleText": "服务订单"
       }
     },
     {
@@ -227,6 +227,13 @@
       "path": "pages/client/client",
       "style": {
         "navigationBarTitleText": "客户订单"
+      }
+    },
+    {
+      "path" : "pages/individual/individual",
+      "style" : 
+      {
+        "navigationBarTitleText" : "个人信息"
       }
     }
   ],
