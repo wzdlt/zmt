@@ -3,10 +3,10 @@
     <!-- 新手指南 -->
       <view class="top1" @click="goto()">
       
-      <p >退款什么时候到账</p> <p>></p>
+      <text >退款什么时候到账</text> <text>></text>
       </view>
       <view class="top" v-for="item in list" :key="item.id">
-        <p>{{item.title1}}</p> <p>{{item.title2}}</p>
+        <text>{{item.title1}}</text> <text>{{item.title2}}</text>
       </view>
   </view>
 </template>
