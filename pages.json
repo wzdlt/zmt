@@ -161,10 +161,7 @@
       "style": {
         "navigationBarTitleText": "汽车保养"
       }
-    }
-
-<<<<<<< HEAD
-    , {
+    }, {
       "path": "pages/history/history",
       "style": {
         "navigationBarTitleText": "历史",
@@ -201,50 +198,20 @@
       }
     },
     {
-      "path" : "pages/done/done",
-      "style" : 
-      {
+      "path": "pages/done/done",
+      "style": {
         "navigationBarTitleText": "已完成",
         "navigationBarBackgroundColor": "#fc4424",
         "navigationBarTextStyle": "white"
       }
+    }, {
+      "path": "pages/kehu/kehu",
+      "style": {
+        "navigationBarTitleText": "客户订单1",
+        "enablePullDownRefresh": false
+      }
     }
   ],
-=======
-      ,{
-            "path" : "pages/history/history",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "历史",
-                "enablePullDownRefresh": false
-            }
-            
-        },
-        {
-          "path" : "pages/dailishenqing/dailishenqing",
-          "style" : 
-          {
-            "navigationBarTitleText" : "代理申请"
-          }
-        },
-        {
-          "path" : "pages/serve/serve",
-          "style" : 
-          {
-            "navigationBarTitleText" : ""
-          }
-        }
-        ,{
-            "path" : "pages/kehu/kehu",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "客户订单1",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
->>>>>>> f44725586ed94d3f98604e448200c5b4458ad01b
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
