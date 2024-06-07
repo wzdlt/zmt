@@ -210,6 +210,13 @@
         "navigationBarTitleText": "客户订单1",
         "enablePullDownRefresh": false
       }
+    },
+    {
+      "path" : "pages/client/client",
+      "style" : 
+      {
+        "navigationBarTitleText" : "客户订单"
+      }
     }
   ],
   "globalStyle": {

@@ -1,5 +1,5 @@
 <template>
-  <!-- 服务订单 -->
+  <!-- 客户订单 -->
   <view class="fuwu-box">
     <view class="fuwu-title">
       <uv-tabs :list="list" @click="click" lineColor="#eb5a50" lineWidth="30" :scrollable="false" :activeStyle="{
@@ -27,11 +27,8 @@
             </view>
           </view>
           <view class="fw-but">
-            <!-- <view class="fw-but" v-show="item.id>0?display:none?display:block"> -->
-            <uv-button v-if="item.text1 = item.text1" type="primary" :plain="true" :hairline="true" :text="item.text1" size="large" shape="circle"
-              color="#a8a8a8"></uv-button>
-            <uv-button v-if="item.text2 = item.text2" type="primary" :plain="true" :hairline="true" :text="item.text2" size="large" shape="circle"
-              color="#fc5336"></uv-button>
+            <uv-button v-if="item.text1 = item.text1" type="primary" :plain="true" :hairline="true" :text="item.text1"
+              size="large" shape="circle" color="#fc5336"></uv-button>
           </view>
         </view>
       </view>
@@ -53,9 +50,7 @@
             tex: "待付款",
             img: "../../static/image/汽车保养.png",
             title: "汽车保养",
-            price: "890.00",
-            text1: '取消订单',
-            text2:'立即付款'
+            price: "890.00"
           },
           {
             id: 1,
@@ -64,8 +59,7 @@
             img: "../../static/image/轮胎.png",
             title: "轮胎服务",
             price: "890.00",
-            text1: '取消订单',
-            text2:'立即使用'
+            text1: '核销'
           },
           {
             id: 1,
@@ -73,25 +67,8 @@
             tex: "待评价",
             img: "../../static/image/汽车保养.png",
             title: "汽车保养",
-            price: "890.00",
-            text2:'去评价'
-          },
-          {
-            id: 0,
-            bian: '341245232455',
-            tex: "已完成",
-            img: "../../static/image/轮胎.png",
-            title: "轮胎服务",
             price: "890.00"
-          },
-          {
-            id: 0,
-            bian: '341245232455',
-            tex: "已取消",
-            img: "../../static/image/汽车保养.png",
-            title: "汽车保养",
-            price: "890.00"
-          },
+          }
         ],
         list: [{
             name: "全部",
