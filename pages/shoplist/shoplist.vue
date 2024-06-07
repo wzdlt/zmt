@@ -240,6 +240,10 @@
 </script>
 
 <style lang="scss">
+  page {
+    background-color: #f5f5f5;
+  }
+
   * {
     padding: 0;
     margin: 0;
@@ -248,28 +252,26 @@
 
   .box {
     width: 100%;
-    height: 650px;
-    background-color: #f5f5f5;
-    
-    .box1{
+    .box1 {
       background-color: white;
+
       .top {
         width: 90%;
         margin: auto;
-        margin-top: 1%;
+        padding-top: 3%;
         .uv-input {
-          padding-top: 10px;
           margin-bottom: 10px;
         }
       }
+
       .center {
         width: 90%;
         margin: auto;
       }
-      
+
     }
-   
-    
+
+
 
     .bottom1 {
       width: 90%;
@@ -358,6 +360,7 @@
         margin-bottom: 10px;
         display: flex;
         justify-content: right;
+
         // border: 1px solid #000;
         button {
           margin-right: 2%;

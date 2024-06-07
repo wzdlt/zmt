@@ -156,6 +156,7 @@
       "path": "pages/kehudingdan/kehudingdan",
       "style": {
         "navigationBarTitleText": "客户订单"
+<<<<<<< HEAD
       }
     },
     {
@@ -197,6 +198,71 @@
         "enablePullDownRefresh": false,
         "navigationBarBackgroundColor": "#FF661A"
       }
+=======
+      }
+    },
+    {
+      "path": "pages/maintenance1/maintenance1",
+      "style": {
+        "navigationBarTitleText": "汽车保养"
+      }
+    }, {
+      "path": "pages/history/history",
+      "style": {
+        "navigationBarTitleText": "历史",
+        "enablePullDownRefresh": false
+      }
+
+    },
+    {
+      "path": "pages/dailishenqing/dailishenqing",
+      "style": {
+        "navigationBarTitleText": "代理申请"
+      }
+    },
+    {
+      "path": "pages/serve/serve",
+      "style": {
+        "navigationBarTitleText": "服务订单"
+      }
+    },
+    {
+      "path": "pages/pendingevaluated/pendingevaluated",
+      "style": {
+        "navigationBarTitleText": "待评价",
+        "navigationBarBackgroundColor": "#fc4424",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/pendingused/pendingused",
+      "style": {
+        "navigationBarTitleText": "待使用",
+        "navigationBarBackgroundColor": "#fc4424",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/done/done",
+      "style": {
+        "navigationBarTitleText": "已完成",
+        "navigationBarBackgroundColor": "#fc4424",
+        "navigationBarTextStyle": "white"
+      }
+    }, {
+      "path": "pages/kehu/kehu",
+      "style": {
+        "navigationBarTitleText": "客户订单1",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path" : "pages/client/client",
+      "style" : 
+      {
+        "navigationBarTitleText" : "客户订单"
+      }
+>>>>>>> 8e1c164791186c7c31e5a5e4729e355d09c46359
     }
   ],
   "globalStyle": {

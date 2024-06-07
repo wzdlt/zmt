@@ -5,18 +5,21 @@
       <view class="body" v-for='item in commodity' :key="item.id">
         <view class="body-left">
           <uv-checkbox-group shape="circle" activeColor="#f7433d">
-            <uv-checkbox></uv-checkbox>
-
+            <uv-checkbox name="123"></uv-checkbox>
           </uv-checkbox-group>
         </view>
         <view class="body-center">
           <image :src="item.img" mode=""></image>
         </view>
         <view class="body-right">
-          <text class="one">{{item.title1}}</text><br />
-          <text class="two">{{item.title2}}</text><br />
-          <text class="three">{{item.title3}}</text><br />
-          <text class="four">{{item.title4}} <text class="span2">人￥34</text> <text class="span1">送100%红包</text> </text>
+          <view class="one">{{item.title1}}</view>
+          <view v-if="item.title.length > 0" class="all">
+            <view class="two" v-for="(titleItem,i) in item.title" :key="i.id">{{titleItem.title2}}</view>
+            <view class="three" v-for="(titleItem,i) in item.title" :key="i.id">{{titleItem.title3}}</view>
+          </view>
+          <view class="four">{{item.title4}} <text class="span2" v-for="(priceItem,i) in item.price"
+              :key="i">{{priceItem}}</text> <text v-for="(envelopeItem,a) in item.envelope" :key="a"
+              class="span1">{{envelopeItem}}</text> </view>
         </view>
       </view>
     </view>
@@ -40,46 +43,65 @@
       id: 1,
       img: "../../static/image/全车检测.png",
       title1: "全车检测",
-      title2: "规格:全合成|0W-30|4L",
-      title3: "众多原厂认证 高效节油 强劲动力",
+      title: [],
       title4: "￥0",
+      price: ['￥34'],
+      envelope: []
     },
     {
       id: 2,
       img: "../../static/image/工时费.png",
       title1: "工时费",
-      title2: "规格:全合成|0W-30|4L",
-      title3: "众多原厂认证 高效节油 强劲动力",
+      title: [],
       title4: "￥20",
+      price: ['￥34'],
+      envelope: []
     },
     {
       id: 3,
       img: "../../static/image/润滑油1.png",
-      title1: "美孚(Mobil) 金装美孚1号0W-30全合成机油润滑油",
-      title2: "规格:全合成|0W-30|4L",
-      title3: "众多原厂认证 高效节油 强劲动力",
-      title4: "￥439",
+      title1: "驾驰/THINKAUTO 放油螺栓 发动机油底壳放油螺丝含密封圈",
+      price: ['￥34'],
+      title: [{
+        id: 1,
+        title2: "规格:全合成|0W-30|4L",
+        title3: "众多原厂认证 高效节油 强劲动力",
+      }],
+      title4: "￥11.5",
+      envelope: ['送100%红包']
     },
     {
       id: 4,
       img: "../../static/image/润滑油2.png",
-      title1: "嘉实多(Castrol) 极护 钛流体全合成机油润滑油 5W-30 FE SN级 4L",
-      title2: "规格:全合成|0W-30|4L",
-      title3: "众多原厂认证 高效节油 强劲动力",
-      title4: "￥299",
+      title1: "嘉实多(Castrol)极护 钛流体全合成机油润滑油 5W-30 FE SN级 4L",
+      title: [{
+        id: 2,
+        title2: "规格:全合成|0W-30|4L",
+        title3: "众多原厂认证 高效节油 强劲动力",
+      }],
+      title4: "￥82",
+      envelope: ['送100%红包']
     },
     {
       id: 5,
       img: "../../static/image/润滑油3.png",
-      title1: "壳牌超凡喜力全合成机油 都市光影版灰壳 5W-30 APISP级 4L",
-      title2: "规格:全合成|0W-30|4L",
-      title3: "众多原厂认证 高效节油 强劲动力",
-      title4: "￥258",
+      title1: "马勒PM2.5活性炭空调滤LAK709",
+      title: [{
+        id: 3,
+        title2: "规格:全合成|0W-30|4L",
+        title3: "众多原厂认证 高效节油 强劲动力",
+      }],
+      title4: "￥61",
+      envelope: ['送100%红包']
     },
   ])
 </script>
 
 <style lang="scss" scoped>
+  page {
+    background-color: #f6f6f6;
+  }
+
   * {
     padding: 0;
     margin: 0;
@@ -89,7 +111,7 @@
   .maintenance {
     width: 100%;
     padding-top: 2%;
-    background-color: #f6f6f6;
+
 
     .center {
       width: 90%;
@@ -105,8 +127,9 @@
         margin-bottom: 5%;
         display: flex;
         justify-content: space-between;
-        padding-bottom: 2%;
+        padding-bottom: 4%;
         border-bottom: 1px solid #f8f8f8;
+        height: 110px;
 
         .body-left {
           width: 6%;
@@ -118,41 +141,58 @@
           width: 25%;
 
           image {
+            margin-top: 10%;
             width: 100%;
-            height: 100%;
+            height: 90%;
           }
         }
 
         .body-right {
           width: 68%;
+          position: relative;
 
           .one {
-            font-size: 0.9rem;
-            padding-bottom: 2%;
+            font-size: 0.8rem;
+            padding-top: 2%;
           }
 
-          .two {
-            font-size: 0.7rem;
-            color: #cdcdcd;
-          }
+          .all {
+            height: 40%;
 
-          .three {
-            font-size: 0.7rem;
-            color: #cdcdcd;
+            .two {
+              font-size: 0.7rem;
+              color: #cdcdcd;
+            }
+
+            .three {
+              font-size: 0.7rem;
+              color: #cdcdcd;
+            }
           }
 
           .four {
             font-size: 1rem;
             color: #fc6146;
-            padding-top: 2%;
-            padding-bottom: 2%;
             display: flex;
             align-items: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+
+            .span2 {
+              margin-left: 2%;
+              font-size: 0.8rem;
+              color: #c5c5c5;
+              text-decoration: line-through;
+            }
 
             .span1 {
+
+              margin-left: 2%;
               font-size: 0.7rem;
               text-align: center;
-              width: 50%;
+              height: 100%;
+              width: 40%;
               border-radius: 3px;
               color: #ffffff;
               background-color: #fc4424;
