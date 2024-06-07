@@ -233,7 +233,8 @@
       "path" : "pages/individual/individual",
       "style" : 
       {
-        "navigationBarTitleText" : "个人信息"
+        "navigationBarTitleText" : "个人信息",
+        "navigationBarBackgroundColor": "#fff"
       }
     }
   ],
