@@ -52,12 +52,19 @@
         "navigationBarTitleText": "红包专区",
         "navigationBarBackgroundColor": "#FC4E30"
       }
-    }, {
-      "path": "pages/shoukuanhongbao/shoukuan",
-      "style": {
-        "navigationBarBackgroundColor": "#FC4E30",
-        "navigationBarTitleText": "我的红包",
-        "navigationBarTextStyle": "white"
+    },
+    {
+      "path":"pages/huafei/huafei",
+      "style":{
+        "navigationBarTitleText":"话费充值"
+      }
+    },
+    {
+      "path":"pages/shoukuanhongbao/shoukuan",
+      "style":{
+        "navigationBarBackgroundColor":"#FC4E30",
+        "navigationBarTitleText":"我的红包",
+        "navigationBarTextStyle":"white"
       }
     },
     {
