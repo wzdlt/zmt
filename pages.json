@@ -5,7 +5,8 @@
       "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
     }
   },
-  "pages": [{
+  "pages": [
+    {
       "path": "pages/index/index",
       "style": {
         "navigationBarTitleText": "首页"
@@ -41,12 +42,14 @@
       "style": {
         "navigationBarTitleText": ""
       }
-    }, {
+    },
+    {
       "path": "pages/fenlei/fenlei",
       "style": {
         "navigationBarTitleText": "分类"
       }
-    }, {
+    },
+    {
       "path": "pages/hongbao/hongbao",
       "style": {
         "navigationBarTitleText": "红包专区",
@@ -54,17 +57,17 @@
       }
     },
     {
-      "path":"pages/huafei/huafei",
-      "style":{
-        "navigationBarTitleText":"话费充值"
+      "path": "pages/huafei/huafei",
+      "style": {
+        "navigationBarTitleText": "话费充值"
       }
     },
     {
-      "path":"pages/shoukuanhongbao/shoukuan",
-      "style":{
-        "navigationBarBackgroundColor":"#FC4E30",
-        "navigationBarTitleText":"我的红包",
-        "navigationBarTextStyle":"white"
+      "path": "pages/shoukuanhongbao/shoukuan",
+      "style": {
+        "navigationBarBackgroundColor": "#FC4E30",
+        "navigationBarTitleText": "我的红包",
+        "navigationBarTextStyle": "white"
       }
     },
     {
@@ -97,7 +100,6 @@
       "style": {
         "navigationBarTitleText": "发布",
         "navigationBarBackgroundColor": "#fff"
-
       }
     },
     {
@@ -151,53 +153,52 @@
       }
     },
     {
-      "path" : "pages/kehudingdan/kehudingdan",
-      "style" : 
-      {
-        "navigationBarTitleText" : "客户订单"
+      "path": "pages/kehudingdan/kehudingdan",
+      "style": {
+        "navigationBarTitleText": "客户订单"
       }
     },
     {
-      "path" : "pages/maintenance1/maintenance1",
-      "style" : 
-      {
-        "navigationBarTitleText" : "汽车保养"
+      "path": "pages/maintenance1/maintenance1",
+      "style": {
+        "navigationBarTitleText": "汽车保养"
+      }
+    },
+    {
+      "path": "pages/history/history",
+      "style": {
+        "navigationBarTitleText": "历史",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/dailishenqing/dailishenqing",
+      "style": {
+        "navigationBarTitleText": "代理申请"
+      }
+    },
+    {
+      "path": "pages/serve/serve",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/kehu/kehu",
+      "style": {
+        "navigationBarTitleText": "客户订单1",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/hongbaoqiandao/hongbaoqiandao",
+      "style": {
+        "navigationBarTitleText": "红包签到",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#FF661A"
       }
     }
-
-      ,{
-            "path" : "pages/history/history",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "历史",
-                "enablePullDownRefresh": false
-            }
-            
-        },
-        {
-          "path" : "pages/dailishenqing/dailishenqing",
-          "style" : 
-          {
-            "navigationBarTitleText" : "代理申请"
-          }
-        },
-        {
-          "path" : "pages/serve/serve",
-          "style" : 
-          {
-            "navigationBarTitleText" : ""
-          }
-        }
-        ,{
-            "path" : "pages/kehu/kehu",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "客户订单1",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
@@ -206,7 +207,8 @@
   },
   "tabBar": {
     "selectedColor": "#fc4424",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "/static/image/首页.png",
