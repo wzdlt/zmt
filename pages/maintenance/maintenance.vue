@@ -12,17 +12,16 @@
         <view class="body-left">
           <uv-checkbox-group shape="circle" activeColor="#f7433d">
             <uv-checkbox></uv-checkbox>
-
           </uv-checkbox-group>
         </view>
         <view class="body-center">
           <image :src="item.img" mode=""></image>
         </view>
         <view class="body-right">
-          <text class="one">{{item.title1}}</text><br />
-          <text class="two">{{item.title2}}</text><br />
-          <text class="three">{{item.title3}}</text><br />
-          <text class="four">{{item.title4}} <text class="span1">送100%红包</text> </text>
+          <view class="one">{{item.title1}}</view>
+          <view class="two">{{item.title2}}</view>
+          <view class="three">{{item.title3}}</view>
+          <view class="four">{{item.title4}} <text class="span1">送100%红包</text> </view>
         </view>
       </view>
     </view>
@@ -118,6 +117,9 @@
 </script>
 
 <style lang="scss" scoped>
+  page{
+       background-color: #ffffff;
+  }
   * {
     padding: 0;
     margin: 0;
@@ -134,7 +136,6 @@
       display: flex;
       justify-content: space-between;
       padding: 3%;
-
       .left {
         width: 40%;
         display: flex;
@@ -214,9 +215,10 @@
             align-items: center;
 
             .span1 {
+              margin-left: 2%;
               font-size: 0.7rem;
               text-align: center;
-              width: 50%;
+              width: 35%;
               border-radius: 3px;
               color: #ffffff;
               background-color: #fc4424;
