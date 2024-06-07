@@ -54,17 +54,17 @@
       }
     },
     {
-      "path":"pages/huafei/huafei",
-      "style":{
-        "navigationBarTitleText":"话费充值"
+      "path": "pages/huafei/huafei",
+      "style": {
+        "navigationBarTitleText": "话费充值"
       }
     },
     {
-      "path":"pages/shoukuanhongbao/shoukuan",
-      "style":{
-        "navigationBarBackgroundColor":"#FC4E30",
-        "navigationBarTitleText":"我的红包",
-        "navigationBarTextStyle":"white"
+      "path": "pages/shoukuanhongbao/shoukuan",
+      "style": {
+        "navigationBarBackgroundColor": "#FC4E30",
+        "navigationBarTitleText": "我的红包",
+        "navigationBarTextStyle": "white"
       }
     },
     {
@@ -151,44 +151,64 @@
       }
     },
     {
-      "path" : "pages/kehudingdan/kehudingdan",
-      "style" : 
-      {
-        "navigationBarTitleText" : "客户订单"
+      "path": "pages/kehudingdan/kehudingdan",
+      "style": {
+        "navigationBarTitleText": "客户订单"
       }
     },
     {
-      "path" : "pages/maintenance1/maintenance1",
-      "style" : 
-      {
-        "navigationBarTitleText" : "汽车保养"
+      "path": "pages/maintenance1/maintenance1",
+      "style": {
+        "navigationBarTitleText": "汽车保养"
       }
     }
 
-      ,{
-            "path" : "pages/history/history",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "历史",
-                "enablePullDownRefresh": false
-            }
-            
-        },
-        {
-          "path" : "pages/dailishenqing/dailishenqing",
-          "style" : 
-          {
-            "navigationBarTitleText" : "代理申请"
-          }
-        },
-        {
-          "path" : "pages/serve/serve",
-          "style" : 
-          {
-            "navigationBarTitleText" : ""
-          }
-        }
-    ],
+    , {
+      "path": "pages/history/history",
+      "style": {
+        "navigationBarTitleText": "历史",
+        "enablePullDownRefresh": false
+      }
+
+    },
+    {
+      "path": "pages/dailishenqing/dailishenqing",
+      "style": {
+        "navigationBarTitleText": "代理申请"
+      }
+    },
+    {
+      "path": "pages/serve/serve",
+      "style": {
+        "navigationBarTitleText": "服务订单"
+      }
+    },
+    {
+      "path": "pages/pendingevaluated/pendingevaluated",
+      "style": {
+        "navigationBarTitleText": "待评价",
+        "navigationBarBackgroundColor": "#fc4424",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/pendingused/pendingused",
+      "style": {
+        "navigationBarTitleText": "待使用",
+        "navigationBarBackgroundColor": "#fc4424",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path" : "pages/done/done",
+      "style" : 
+      {
+        "navigationBarTitleText": "已完成",
+        "navigationBarBackgroundColor": "#fc4424",
+        "navigationBarTextStyle": "white"
+      }
+    }
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
