@@ -1,7 +1,7 @@
 <template>
   <view class="new">
     <view class="top">
-      <text>退款什么时候到账</text></br>
+      <text>退款什么时候到账</text>
       <text>2022年2月25日09:55:34</text>
     </view>
     <view class="bottom">

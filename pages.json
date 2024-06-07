@@ -156,6 +156,13 @@
       {
         "navigationBarTitleText" : "客户订单"
       }
+    },
+    {
+      "path" : "pages/maintenance1/maintenance1",
+      "style" : 
+      {
+        "navigationBarTitleText" : "汽车保养"
+      }
     }
 
       ,{
