@@ -180,6 +180,13 @@
           {
             "navigationBarTitleText" : "代理申请"
           }
+        },
+        {
+          "path" : "pages/serve/serve",
+          "style" : 
+          {
+            "navigationBarTitleText" : ""
+          }
         }
     ],
   "globalStyle": {
