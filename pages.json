@@ -235,6 +235,20 @@
       {
         "navigationBarTitleText" : "邀请好友"
       }
+    }, {
+      "path": "pages/carshoper/carshoper",
+      "style": {
+        "navigationBarTitleText": "我是汽车商家1",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/dingdanqueren/dingdanqueren",
+      "style": {
+        "navigationBarTitleText": "订单确认",
+        "enablePullDownRefresh": false
+      }
+
     }
   ],
   "globalStyle": {
