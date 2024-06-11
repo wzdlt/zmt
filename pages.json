@@ -291,7 +291,6 @@
         "navigationBarTitleText": "商品评价12",
         "enablePullDownRefresh": false
       }
-
     },
     {
 
@@ -322,7 +321,15 @@
         "navigationBarBackgroundColor": "#FC4424",
         "navigationBarTextStyle": "#FFFFFF"
       }
-
+    },
+    {
+      "path" : "pages/trade/trade",
+      "style" : 
+      {
+        "navigationBarTitleText" : "二手交易",
+        "navigationBarBackgroundColor": "#FC4424",
+        "navigationBarTextStyle": "#FFFFFF"
+      }
     }
   ],
   "globalStyle": {
