@@ -57,11 +57,15 @@ const items = ref([
   { text: '提现记录', iconClass: 'ico4' },
 ]);
 
-const navigateToPage = (item) =>{
+const navigateToPage = (item) => {
   if (item.text === '提现') {
     uni.navigateTo({
+      url: '/pages/withdrawal/index'
+    });
+  } else if (item.text === '提现记录') { // 添加对“提现记录”的处理
+    uni.navigateTo({
       url: '/pages/withdrawals/index'
-    })
+    });
   }
 }
 </script>
