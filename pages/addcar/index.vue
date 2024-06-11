@@ -8,6 +8,14 @@
   
       <view class="center">添加车辆</view>
   </view>
+  <div class="richscan">
+    <div class="item">
+      <div class="i-left"></div>
+      <div class="i-input">
+        <input class="uni-input" type="number" placeholder="请输入车架号" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
