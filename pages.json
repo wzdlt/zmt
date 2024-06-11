@@ -309,13 +309,6 @@
       }
 
     },
-  
-    {
-      "path": "pages/application/application",
-      "style": {
-        "navigationBarTitleText": ""
-      }
-    },
     {
       "path": "pages/shangjiazhanghu/shangjiazhanghu",
       "style": {

@@ -1,3 +1,7 @@
+import { useTokenStore } from "../stores/token"
+import { storToRefs } from "pinia"
+const store = useTokenStore()
+const {token} = storeTorefs(store)
 const baseURl = 'http://aaa.com'
 export default function request({
   url,
@@ -9,11 +13,11 @@ export default function request({
     uni.request({
       url: baseURl + url,
       data: {
-
       },
       method,
       header: isToken ? {
-        token: '1234'
+        // token: '1234'
+        token:token.value()
       } : {}
       success(res) {
         reslove(res.data)

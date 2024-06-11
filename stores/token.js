@@ -1,8 +1,14 @@
 // stores/counter.js
 import { defineStore } from 'pinia';
 import {ref} from "vue"
-export const useCounterStore = defineStore('counter',()=>{
+export const useTokenStore = defineStore('counter',()=>{
   const token = ref ("")
-  return {token}
+  function setToken(data){
+    token.value = data
+  }
+  return {
+    token,
+    setToken
+  }
 }
 });
