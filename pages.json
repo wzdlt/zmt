@@ -286,7 +286,16 @@
             "navigationStyle": "custom"
         }
     }
-  ],
+      ,{
+            "path" : "pages/commodity/commodity",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品评价11",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
