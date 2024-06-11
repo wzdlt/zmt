@@ -299,7 +299,7 @@
           "path" : "pages/application/application",
           "style" : 
           {
-            "navigationBarTitleText" : ""
+            "navigationBarTitleText" : "二手交易商申请"
           }
         }
     ],
