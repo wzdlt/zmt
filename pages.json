@@ -303,6 +303,13 @@
       }
     },
     {
+        "path": "pages/return/index",
+        "style": {
+          "navigationBarTitleText": "退货详情",
+          "navigationStyle": "custom"
+        } 
+    },
+    {
       "path": "pages/application/application",
       "style": {
         "navigationBarTitleText": "二手交易商申请"
