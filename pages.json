@@ -5,8 +5,7 @@
       "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
     }
   },
-  "pages": [
-    {
+  "pages": [{
       "path": "pages/index/index",
       "style": {
         "navigationBarTitleText": "首页"
@@ -292,7 +291,6 @@
         "navigationBarTitleText": "商品评价12",
         "enablePullDownRefresh": false
       }
-
     },
     {
 
@@ -303,11 +301,17 @@
       }
     },
     {
+      "path": "pages/return/index",
+      "style": {
+        "navigationBarTitleText": "退货详情",
+        "navigationStyle": "custom"
+      }
+    },
+    {
       "path": "pages/application/application",
       "style": {
         "navigationBarTitleText": "二手交易商申请"
       }
-
     },
     {
       "path": "pages/shangjiazhanghu/shangjiazhanghu",
@@ -317,7 +321,15 @@
         "navigationBarBackgroundColor": "#FC4424",
         "navigationBarTextStyle": "#FFFFFF"
       }
-
+    },
+    {
+      "path" : "pages/trade/trade",
+      "style" : 
+      {
+        "navigationBarTitleText" : "二手交易",
+        "navigationBarBackgroundColor": "#FC4424",
+        "navigationBarTextStyle": "#FFFFFF"
+      }
     }
       ,{
             "path" : "pages/Confirmtheorder/Confirmtheorder",
@@ -337,8 +349,7 @@
   },
   "tabBar": {
     "selectedColor": "#fc4424",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "/static/image/首页.png",
