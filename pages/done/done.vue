@@ -96,16 +96,6 @@
         </view>
       </view>
     </view>
-    <!-- <view class="payment-bottom">
-      <view class="button">
-        <view class="cancel">
-          <uv-button type="primary" color="#c7c7c7" shape="circle" text="取消订单"></uv-button>
-        </view>
-        <view class="pay">
-          <uv-button type="primary" color="#fc4424" shape="circle" text="立即使用"></uv-button>
-        </view>
-      </view>
-    </view> -->
   </view>
 </template>
 
@@ -364,24 +354,5 @@
         }
       }
     }
-
-    // .payment-bottom {
-    //   background-color: #fff;
-    //   padding: 10rpx 30rpx 20rpx 30rpx;
-
-    //   .button {
-    //     display: flex;
-    //     justify-content: end;
-
-    //     .cancel {
-    //       margin: 0 20rpx;
-    //       width: 200rpx;
-    //     }
-
-    //     .pay {
-    //       width: 200rpx;
-    //     }
-    //   }
-    // }
   }
 </style>

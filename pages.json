@@ -157,7 +157,6 @@
       "path": "pages/kehudingdan/kehudingdan",
       "style": {
         "navigationBarTitleText": "客户订单"
-
       }
     },
     {
@@ -194,7 +193,6 @@
         "navigationBarBackgroundColor": "#FF661A"
       }
     },
-
     {
       "path": "pages/maintenance1/maintenance1",
       "style": {
@@ -237,20 +235,20 @@
         "navigationBarTitleText": "个人信息",
         "navigationBarBackgroundColor": "#fff"
       }
-    }, {
+    },
+    {
       "path": "pages/carshoper/carshoper",
       "style": {
         "navigationBarTitleText": "我是汽车商家1",
         "enablePullDownRefresh": false
       }
-
-    }, {
+    },
+    {
       "path": "pages/dingdanqueren/dingdanqueren",
       "style": {
         "navigationBarTitleText": "订单确认",
         "enablePullDownRefresh": false
       }
-
     },
     {
       "path": "pages/collection/index",
@@ -286,21 +284,47 @@
         "navigationBarTitleText": "提现",
         "navigationStyle": "custom"
       }
-    }, 
+    },
     {
+
       "path": "pages/commodity/commodity",
       "style": {
-        "navigationBarTitleText": "商品评价11",
+        "navigationBarTitleText": "商品评价12",
         "enablePullDownRefresh": false
       }
 
     },
     {
-        "path": "pages/addcar/index",
-        "style": {
-            "navigationBarTitleText": "添加车辆",
-            "navigationStyle": "custom"
-        }
+
+      "path": "pages/addcar/index",
+      "style": {
+        "navigationBarTitleText": "添加车辆",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/application/application",
+      "style": {
+        "navigationBarTitleText": "二手交易商申请"
+      }
+
+    },
+  
+    {
+      "path": "pages/application/application",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/shangjiazhanghu/shangjiazhanghu",
+      "style": {
+        "navigationBarTitleText": "商家账户1",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#FC4424",
+        "navigationBarTextStyle": "#FFFFFF"
+      }
+
     }
   ],
   "globalStyle": {
@@ -311,7 +335,8 @@
   },
   "tabBar": {
     "selectedColor": "#fc4424",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "/static/image/首页.png",
