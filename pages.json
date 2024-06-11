@@ -294,6 +294,13 @@
                 "enablePullDownRefresh": false
             }
             
+        },
+        {
+          "path" : "pages/application/application",
+          "style" : 
+          {
+            "navigationBarTitleText" : ""
+          }
         }
     ],
   "globalStyle": {
