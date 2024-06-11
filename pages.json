@@ -307,7 +307,12 @@
       "style": {
         "navigationBarTitleText": "二手交易商申请"
       }
-
+    },
+    {
+      "path": "pages/invite/invite",
+      "style": {
+        "navigationBarTitleText": "好友邀请"
+      }
     },
     {
       "path": "pages/shangjiazhanghu/shangjiazhanghu",
@@ -318,6 +323,13 @@
         "navigationBarTextStyle": "#FFFFFF"
       }
 
+    },
+    {
+      "path" : "pages/details/details",
+      "style" : 
+      {
+        "navigationBarTitleText" : "余额明细"
+      }
     }
   ],
   "globalStyle": {
