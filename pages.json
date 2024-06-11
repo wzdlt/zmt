@@ -330,6 +330,13 @@
         "navigationBarBackgroundColor": "#FC4424",
         "navigationBarTextStyle": "#FFFFFF"
       }
+    },
+    {
+      "path" : "pages/dingdanlist1/dingdanlist1",
+      "style" : 
+      {
+        "navigationBarTitleText" : "待发货"
+      }
     }
       ,{
             "path" : "pages/Confirmtheorder/Confirmtheorder",
