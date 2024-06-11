@@ -5,8 +5,7 @@
       "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
     }
   },
-  "pages": [
-    {
+  "pages": [{
       "path": "pages/index/index",
       "style": {
         "navigationBarTitleText": "首页"
@@ -286,7 +285,7 @@
         "navigationBarTitleText": "提现",
         "navigationStyle": "custom"
       }
-    }, 
+    },
     {
       "path": "pages/commodity/commodity",
       "style": {
@@ -296,33 +295,19 @@
 
     },
     {
-        "path": "pages/addcar/index",
-        "style": {
-            "navigationBarTitleText": "添加车辆",
-            "navigationStyle": "custom"
-        }
+      "path": "pages/addcar/index",
+      "style": {
+        "navigationBarTitleText": "添加车辆",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/application/application",
+      "style": {
+        "navigationBarTitleText": "二手交易商申请"
+      }
     }
-<<<<<<< HEAD
-      ,{
-            "path" : "pages/commodity/commodity",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "商品评价11",
-                "enablePullDownRefresh": false
-            }
-            
-        },
-        {
-          "path" : "pages/application/application",
-          "style" : 
-          {
-            "navigationBarTitleText" : "二手交易商申请"
-          }
-        }
-    ],
-=======
   ],
->>>>>>> 728193a1e7efd4f6aae69369985afb38c83680d6
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
