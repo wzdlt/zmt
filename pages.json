@@ -319,7 +319,16 @@
       }
 
     }
-  ],
+      ,{
+            "path" : "pages/Confirmtheorder/Confirmtheorder",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "确认订单页面",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
