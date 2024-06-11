@@ -302,6 +302,17 @@
             "navigationBarTitleText" : ""
           }
         }
+        ,{
+            "path" : "pages/shangjiazhanghu/shangjiazhanghu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商家账户1",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor":"#FC4424",
+                "navigationBarTextStyle":"#FFFFFF"
+            }
+            
+        }
     ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
