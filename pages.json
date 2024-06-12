@@ -366,6 +366,18 @@
       "style": {
         "navigationBarTitleText": "待评价"
       }
+    },
+    {
+      "path": "pages/CfOrder1/CfOrder1",
+      "style": {
+        "navigationBarTitleText": "养车确认订单"
+      }
+    },
+    {
+      "path": "pages/CfOrder2/CfOrder2",
+      "style": {
+        "navigationBarTitleText": "养车确认订单扣券"
+      }
     }
   ],
   "globalStyle": {
