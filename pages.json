@@ -364,6 +364,13 @@
                 "enablePullDownRefresh": false
             }
             
+        },
+        {
+          "path" : "pages/dingdanlist3/dingdanlist3",
+          "style" : 
+          {
+            "navigationBarTitleText" : "待评价"
+          }
         }
     ],
   "globalStyle": {
