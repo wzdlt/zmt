@@ -348,6 +348,13 @@
       {
         "navigationBarTitleText" : ""
       }
+    },
+    {
+      "path" : "pages/dingdanlist2/dingdanlist2",
+      "style" : 
+      {
+        "navigationBarTitleText" : "待付款"
+      }
     }
   ],
   "globalStyle": {
