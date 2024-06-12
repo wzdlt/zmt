@@ -376,13 +376,15 @@
     {
       "path": "pages/CfOrder1/CfOrder1",
       "style": {
-        "navigationBarTitleText": "养车确认订单"
+        "navigationBarTitleText": "养车确认订单",
+        "navigationBarBackgroundColor": "#fff"
       }
     },
     {
       "path": "pages/CfOrder2/CfOrder2",
       "style": {
-        "navigationBarTitleText": "养车确认订单扣券"
+        "navigationBarTitleText": "养车确认订单扣券",
+        "navigationBarBackgroundColor": "#fff"
       }
     },
     {
