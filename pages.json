@@ -385,6 +385,13 @@
         "navigationBarTitleText": "已完成"
       }
     },
+
+    {
+      "path": "pages/dianpuye/dianpuye",
+      "style": {
+        "navigationBarTitleText": "店铺页"
+      }
+    },
     {
       "path": "pages/querendingdan2/querendingdan2",
       "style": {
@@ -393,31 +400,13 @@
       }
     },
     {
-      "path" : "pages/dianpuye/dianpuye",
-      "style" : 
-      {
-        "navigationBarTitleText" : "店铺页"
+      "path": "pages/tianjiadizhi/tianjiadizhi",
+      "style": {
+        "navigationBarTitleText": "确认订单3",
+        "enablePullDownRefresh": false
       }
     }
-      ,{
-            "path" : "pages/querendingdan2/querendingdan2",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "确认订单2",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/tianjiadizhi/tianjiadizhi",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "确认订单3",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
