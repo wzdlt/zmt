@@ -444,6 +444,13 @@
         "enablePullDownRefresh": false
       }
 
+    },
+    {
+      "path": "pages/concern/concern",
+      "style": {
+        "navigationBarTitleText": "关注店铺",
+        "navigationBarBackgroundColor": "#fff"
+      }
     }
   ],
   "globalStyle": {
