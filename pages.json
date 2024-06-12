@@ -323,31 +323,33 @@
       }
     },
     {
-      "path" : "pages/trade/trade",
-      "style" : 
-      {
-        "navigationBarTitleText" : "二手交易",
+      "path": "pages/trade/trade",
+      "style": {
+        "navigationBarTitleText": "二手交易",
         "navigationBarBackgroundColor": "#FC4424",
         "navigationBarTextStyle": "#FFFFFF"
       }
     },
     {
-      "path" : "pages/dingdanlist1/dingdanlist1",
+      "path": "pages/dingdanlist1/dingdanlist1",
+      "style": {
+        "navigationBarTitleText": "待发货"
+      }
+    }, {
+      "path": "pages/Confirmtheorder/Confirmtheorder",
+      "style": {
+        "navigationBarTitleText": "确认订单页面",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path" : "pages/twocommodity/twocommodity",
       "style" : 
       {
-        "navigationBarTitleText" : "待发货"
+        "navigationBarTitleText" : ""
       }
     }
-      ,{
-            "path" : "pages/Confirmtheorder/Confirmtheorder",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "确认订单页面",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
