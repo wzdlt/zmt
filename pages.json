@@ -406,7 +406,16 @@
         "enablePullDownRefresh": false
       }
     }
-  ],
+      ,{
+            "path" : "pages/shopxiangqing/shopxiangqing",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品详情11",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
