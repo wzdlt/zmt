@@ -343,10 +343,9 @@
       }
     },
     {
-      "path" : "pages/twocommodity/twocommodity",
-      "style" : 
-      {
-        "navigationBarTitleText" : ""
+      "path": "pages/twocommodity/twocommodity",
+      "style": {
+        "navigationBarTitleText": "二手商品详情"
       }
     }
   ],
