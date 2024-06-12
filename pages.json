@@ -96,6 +96,12 @@
       }
     },
     {
+      "path": "pages/shoplist1/shoplist1",
+      "style": {
+        "navigationBarTitleText": "养车普通商品列表"
+      }
+    },
+    {
       "path": "pages/publish/publish",
       "style": {
         "navigationBarTitleText": "发布",
@@ -314,6 +320,12 @@
       }
     },
     {
+      "path": "pages/details/details",
+      "style": {
+        "navigationBarTitleText": "余额明细"
+      }
+    },
+    {
       "path": "pages/shangjiazhanghu/shangjiazhanghu",
       "style": {
         "navigationBarTitleText": "商家账户1",
@@ -323,31 +335,27 @@
       }
     },
     {
-      "path" : "pages/trade/trade",
-      "style" : 
-      {
-        "navigationBarTitleText" : "二手交易",
+      "path": "pages/trade/trade",
+      "style": {
+        "navigationBarTitleText": "二手交易",
         "navigationBarBackgroundColor": "#FC4424",
         "navigationBarTextStyle": "#FFFFFF"
       }
     },
     {
-      "path" : "pages/dingdanlist1/dingdanlist1",
-      "style" : 
-      {
-        "navigationBarTitleText" : "待发货"
+      "path": "pages/dingdanlist1/dingdanlist1",
+      "style": {
+        "navigationBarTitleText": "待发货"
       }
+    }, {
+      "path": "pages/Confirmtheorder/Confirmtheorder",
+      "style": {
+        "navigationBarTitleText": "确认订单页面",
+        "enablePullDownRefresh": false
+      }
+
     }
-      ,{
-            "path" : "pages/Confirmtheorder/Confirmtheorder",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "确认订单页面",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
