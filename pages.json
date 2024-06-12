@@ -425,6 +425,13 @@
         "navigationBarTitleText": "确认订单3",
         "enablePullDownRefresh": false
       }
+    },
+    {
+      "path" : "pages/enroll/enroll",
+      "style" : 
+      {
+        "navigationBarTitleText" : "注册"
+      }
     }
   ],
   "globalStyle": {
