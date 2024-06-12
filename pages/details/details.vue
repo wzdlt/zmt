@@ -5,7 +5,7 @@
         <view class="one">{{item.name}}</view>
         <view class="two">{{item.data}}</view>
       </view>
-      <view class="top-right" v-if="item.price>0 ? '#08b30a':'#fc4424'">{{item.price}}</view>
+      <view class="top-right">{{item.price}}</view>
     </view>
   </view>
 </template>
@@ -18,7 +18,16 @@
     {name:'会员分佣', data:'2021/09/01 15:11:34',price:"+100"},
     {name:'代理商分佣', data:'2021/09/01 15:11:34',price:"+100"}
   ])
-  console.log(list.value);
+  // function getColor(index) {
+  //     if (index === 0) {
+  //       return 'red';
+  //     } else if (index === 1) {
+  //       return 'blue';
+  //     } else {
+  //       return 'black';
+  //     }
+  //   }
+  console.log(list.value.price);
 </script>
 
 <style lang="less" scoped>
@@ -48,6 +57,9 @@ page{
         width: 100%;
         color: #a5a5a5;
       }
+    }
+    .top-right{
+      color: #30bf31;
     }
   }
 }

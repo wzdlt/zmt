@@ -5,7 +5,8 @@
       "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
     }
   },
-  "pages": [{
+  "pages": [
+    {
       "path": "pages/index/index",
       "style": {
         "navigationBarTitleText": "首页"
@@ -93,6 +94,12 @@
       "path": "pages/shoplist/shoplist",
       "style": {
         "navigationBarTitleText": "店铺列表"
+      }
+    },
+    {
+      "path": "pages/shoplist1/shoplist1",
+      "style": {
+        "navigationBarTitleText": "养车普通商品列表"
       }
     },
     {
@@ -285,7 +292,6 @@
       }
     },
     {
-
       "path": "pages/commodity/commodity",
       "style": {
         "navigationBarTitleText": "商品评价12",
@@ -293,7 +299,6 @@
       }
     },
     {
-
       "path": "pages/addcar/index",
       "style": {
         "navigationBarTitleText": "添加车辆",
@@ -311,6 +316,12 @@
       "path": "pages/application/application",
       "style": {
         "navigationBarTitleText": "二手交易商申请"
+      }
+    },
+    {
+      "path": "pages/details/details",
+      "style": {
+        "navigationBarTitleText": "余额明细"
       }
     },
     {
@@ -335,7 +346,8 @@
       "style": {
         "navigationBarTitleText": "待发货"
       }
-    }, {
+    },
+    {
       "path": "pages/Confirmtheorder/Confirmtheorder",
       "style": {
         "navigationBarTitleText": "确认订单页面",
@@ -343,36 +355,19 @@
       }
     },
     {
-      "path" : "pages/twocommodity/twocommodity",
-      "style" : 
-      {
-        "navigationBarTitleText" : ""
+      "path": "pages/shopruzhu/shopruzhu",
+      "style": {
+        "navigationBarTitleText": "商家入驻页面",
+        "enablePullDownRefresh": false
       }
     },
     {
-      "path" : "pages/dingdanlist2/dingdanlist2",
-      "style" : 
-      {
-        "navigationBarTitleText" : "待付款"
+      "path": "pages/dingdanlist3/dingdanlist3",
+      "style": {
+        "navigationBarTitleText": "待评价"
       }
     }
-      ,{
-            "path" : "pages/shopruzhu/shopruzhu",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "商家入驻页面",
-                "enablePullDownRefresh": false
-            }
-            
-        },
-        {
-          "path" : "pages/dingdanlist3/dingdanlist3",
-          "style" : 
-          {
-            "navigationBarTitleText" : "待评价"
-          }
-        }
-    ],
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
@@ -381,7 +376,8 @@
   },
   "tabBar": {
     "selectedColor": "#fc4424",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "/static/image/首页.png",
