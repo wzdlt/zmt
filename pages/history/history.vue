@@ -25,17 +25,17 @@ export default {
   data() {
     return {
       list: [{
-        img: "../../static/鞋子111.png",
+        img: "../../static/image/shoes.png",
         text: "小米手环6 全面彩屏 30种运动模式 24h心率检测智能运动手...",
         img1: "../../static/聊天.png",
         text2: 12
       }, {
-        img: "../../static/鞋子111.png",
+        img: "../../static/image/shoes.png",
         text: "小米手环6 全面彩屏 30种运动模式 24h心率检测智能运动手...",
         img1: "../../static/聊天.png",
         text2: 12
       }, {
-        img: "../../static/鞋子111.png",
+        img: "../../static/image/shoes.png",
         text: "小米手环6 全面彩屏 30种运动模式 24h心率检测智能运动手...",
         img1: "../../static/聊天.png",
         text2: 12
