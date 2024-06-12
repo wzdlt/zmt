@@ -380,6 +380,13 @@
       {
         "navigationBarTitleText" : "已完成"
       }
+    },
+    {
+      "path" : "pages/dianpuye/dianpuye",
+      "style" : 
+      {
+        "navigationBarTitleText" : "店铺页"
+      }
     }
   ],
   "globalStyle": {
