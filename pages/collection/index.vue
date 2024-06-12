@@ -96,6 +96,9 @@
 </script>
 
 <style lang="scss">
+  page{
+    background-color: #f5f5f5;
+  }
   .text-ellipsis-2 {
     overflow: hidden;
     text-overflow: ellipsis;

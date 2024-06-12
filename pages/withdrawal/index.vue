@@ -95,6 +95,9 @@ const updateActiveClass = async () => {
 </script>
 
 <style lang="scss">
+  page{
+    background-color: #f5f5f5;
+  }
   .header {
       position: fixed;
       top: 0;
@@ -121,7 +124,6 @@ const updateActiveClass = async () => {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: #ccc;
     .withdrawal{
       width: 90%;
       margin: 20px auto;
