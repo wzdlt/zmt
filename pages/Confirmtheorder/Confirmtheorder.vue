@@ -38,7 +38,7 @@
         </view>
         <view class="four">
           <view class="span5">备注</view>
-          <view class="span4"><input type="text" placeholder="请输入金额" style="text-align: right;"></view>
+          <view class="span4"><input type="text" placeholder="请输入备注" style="text-align: right;"></view>
         </view>
       </view>
       <!-- djsij  -->
@@ -83,10 +83,14 @@
     </view>
     <!-- 底部导航 -->
     <view class="bottom">
-      <view class="p3"><text>合计：</text> <span class="span1"><!--￥--></span>60红包+￥890.00 <span class="span2">×1</span>
+      <view class="bottom-bottom">
+        <view class="p3"><text style="color: black;">合计：</text> <span class="span1"><!--￥--></span>60红包+￥890.00 <span
+            class="span2">×1</span>
+        </view>
+        <view class="jiesuan"><button>立即支付</button> </view>
       </view>
-      <view class="jiesuan"> 立即支付</view>
     </view>
+
   </view>
 </template>
 
@@ -111,15 +115,26 @@ const list = ref([
     display: flex;
     background-color: #FFFFFF;
     margin: auto;
-    margin-top: 40px;
-    .p3 {
-      margin-top: 10px;
-      color: red;
-      height: 20px;
-      align-items: center;
-    }
-    .jiesuan{
-      
+    margin-top: 50px;
+
+    .bottom-bottom {
+      width: 100%;
+      display: flex;
+      margin-top: 15px;
+
+      .p3 {
+        width: 70%;
+        margin-top: 10px;
+        color: red;
+        height: 20px;
+      }
+
+      button {
+        background-color: #FC4424;
+        color: white;
+        border-radius: 100px;
+        height: 40px;
+      }
     }
   }
 
@@ -136,6 +151,7 @@ const list = ref([
     }
 
     .top-content {
+      margin-top: 10px;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -144,6 +160,10 @@ const list = ref([
         color: #999999
       }
     }
+  }
+
+  .top-bottom {
+    margin-top: 10px;
   }
 
   .pay {
@@ -271,11 +291,12 @@ const list = ref([
         align-items: center;
 
         .span23 {
+
           color: #676767;
         }
 
         .span3 {
-          margin-left: 2%;
+          margin-left: 3%;
           color: #383838;
         }
       }
