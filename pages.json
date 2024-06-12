@@ -400,13 +400,6 @@
         "navigationBarTitleText": "已完成"
       }
     },
-
-    {
-      "path": "pages/dianpuye/dianpuye",
-      "style": {
-        "navigationBarTitleText": "店铺页"
-      }
-    },
     {
       "path": "pages/invite/invite",
       "style": {
@@ -421,6 +414,18 @@
       }
     },
     {
+      "path": "pages/dianpuye/dianpuye",
+      "style": {
+        "navigationBarTitleText": "店铺页"
+      }
+    },
+    {
+      "path": "pages/confirm/confirm",
+      "style": {
+        "navigationBarTitleText": "确认订单",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    }, {
       "path": "pages/tianjiadizhi/tianjiadizhi",
       "style": {
         "navigationBarTitleText": "确认订单3",
@@ -428,22 +433,20 @@
       }
     },
     {
-      "path" : "pages/enroll/enroll",
-      "style" : 
-      {
-        "navigationBarTitleText" : "注册"
+      "path": "pages/enroll/enroll",
+      "style": {
+        "navigationBarTitleText": "注册"
       }
+    },
+    {
+      "path": "pages/shopxiangqing/shopxiangqing",
+      "style": {
+        "navigationBarTitleText": "商品详情11",
+        "enablePullDownRefresh": false
+      }
+
     }
-      ,{
-            "path" : "pages/shopxiangqing/shopxiangqing",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "商品详情11",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
