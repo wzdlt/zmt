@@ -62,7 +62,7 @@
       </view>
     </view>
     <view class="box4">
-      <button>取消订单</button>
+      <button>申请售后</button>
     </view>
   </view>
 </template>

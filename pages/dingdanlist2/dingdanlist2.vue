@@ -55,14 +55,15 @@
           <view class="box3-bottom1-1">下单时间</view>
           <view class="box3-bottom1-2">2021-11-12 15:58:32</view>
         </view>
-        <view class="box3-bottom1">
+        <!-- <view class="box3-bottom1">
           <view class="box3-bottom1-1">支付方式</view>
           <view class="box3-bottom1-2">微信支付</view>
-        </view>
+        </view> -->
       </view>
     </view>
     <view class="box4">
-      <button>取消订单</button>
+      <button class="btn2">立即支付</button>
+      <button class="btn1">取消订单</button>
     </view>
   </view>
 </template>
@@ -242,7 +243,7 @@
       padding: 10px 0 20px;
       box-sizing: border-box;
 
-      button {
+      .btn1 {
         width: 100px;
         height: 35px;
         line-height: 35px;
@@ -252,6 +253,17 @@
         border-radius: 25px;
         border: 1px solid #ccc;
         background-color: #fff;
+        font-size: 14px;
+      }
+      .btn2 {
+        width: 100px;
+        height: 35px;
+        line-height: 35px;
+        float: right;
+        margin-right: 15px;
+        color: #fff;
+        border-radius: 25px;
+        background-color: #fc4424;
         font-size: 14px;
       }
     }

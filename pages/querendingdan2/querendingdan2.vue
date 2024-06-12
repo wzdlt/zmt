@@ -24,7 +24,7 @@
         <view class="center-right">
           <p class="p1">男运动鞋秋季男鞋青少年正品透...</p>
           <p class="p2">标准白、42</p>
-          <p class="p3"><span class="span1"><!--￥--></span>60红包+￥890.00 <span class="span2">×1</span> </p>
+          <p class="p3"><span class="span1"><!--￥--></span>890.00 <span class="span2">×1</span> </p>
         </view>
       </view>
       <!-- djiai  -->
@@ -84,8 +84,7 @@
     <!-- 底部导航 -->
     <view class="bottom">
       <view class="bottom-bottom">
-        <view class="p3"><text style="color: black;">合计：</text> <span class="span1"><!--￥--></span>60红包+￥890.00 <span
-            class="span2">×1</span>
+        <view class="p3"><text style="color: black;">合计：</text> <span class="span1"><!--￥--></span>￥890.00 
         </view>
         <view class="jiesuan"><button>立即支付</button> </view>
       </view>
@@ -98,9 +97,8 @@
 import { ref } from 'vue';
 const list = ref([
   { id: 1, text1: "优惠金额", price: "￥25" },
-  { id: 2, text1: "红包金额", price: "￥60" },
-  { id: 3, text1: "运费", price: "免运费" },
-  { id: 4, text1: "实付金额", price: "￥865" },
+  { id: 2, text1: "运费", price: "免运费" },
+  { id: 3, text1: "实付金额", price: "￥865" },
 ])
 
 </script>
@@ -111,11 +109,11 @@ const list = ref([
   background-color: #F5F5F5;
 
   .bottom {
-    width: 95%;
+    width: 100%;
     display: flex;
     background-color: #FFFFFF;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 70px;
 
     .bottom-bottom {
       width: 100%;
@@ -185,7 +183,7 @@ const list = ref([
       .pay1-left {
         width: 70%;
         height: 40px;
-  
+
         display: flex;
       }
 
