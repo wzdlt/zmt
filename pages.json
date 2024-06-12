@@ -366,6 +366,20 @@
       "style": {
         "navigationBarTitleText": "待评价"
       }
+    },
+    {
+      "path" : "pages/dingdanlist4/dingdanlist4",
+      "style" : 
+      {
+        "navigationBarTitleText" : "待收货"
+      }
+    },
+    {
+      "path" : "pages/dingdanlist5/dingdanlist5",
+      "style" : 
+      {
+        "navigationBarTitleText" : "已完成"
+      }
     }
       ,{
             "path" : "pages/querendingdan2/querendingdan2",
