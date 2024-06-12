@@ -176,6 +176,7 @@ const list = ref([
     .pay1 {
       display: flex;
       justify-content: space-between;
+      border-bottom: 1px solid #F5F5F5;
 
       .pay1-right {
         margin-top: 10px;
@@ -184,6 +185,7 @@ const list = ref([
       .pay1-left {
         width: 70%;
         height: 40px;
+  
         display: flex;
       }
 
@@ -196,7 +198,7 @@ const list = ref([
       .pay1-left img {
         width: 10%;
         height: 27px;
-
+        margin-left: 15px;
       }
     }
   }
