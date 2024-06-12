@@ -402,6 +402,12 @@
       }
     },
     {
+      "path": "pages/invite/invite",
+      "style": {
+        "navigationBarTitleText": "邀请好友"
+      }
+    },
+    {
       "path": "pages/querendingdan2/querendingdan2",
       "style": {
         "navigationBarTitleText": "确认订单2",
