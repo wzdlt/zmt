@@ -390,6 +390,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/tianjiadizhi/tianjiadizhi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "确认订单3",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
