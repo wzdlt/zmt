@@ -5,7 +5,7 @@
         <view class="one">{{item.name}}</view>
         <view class="two">{{item.data}}</view>
       </view>
-      <view class="top-right">{{item.price}}</view>
+      <view class="top-right" :style="{color:item.type ?'red':'green'}">{{item.type?'+':'-'}}{{item.price}}</view>
     </view>
   </view>
 </template>
@@ -13,21 +13,11 @@
 <script setup>
   import { ref } from 'vue';
   const list = ref([
-    {name:'消费', data:'2021/09/01 15:11:34',price:"-100"},
-    {name:'充值', data:'2021/09/01 15:11:34',price:"+100"},
-    {name:'会员分佣', data:'2021/09/01 15:11:34',price:"+100"},
-    {name:'代理商分佣', data:'2021/09/01 15:11:34',price:"+100"}
+    {name:'消费', data:'2021/09/01 15:11:34',price:"100",type:0},
+    {name:'充值', data:'2021/09/01 15:11:34',price:"100",type:1},
+    {name:'会员分佣', data:'2021/09/01 15:11:34',price:"100" ,type:1},
+    {name:'代理商分佣', data:'2021/09/01 15:11:34',price:"100" ,type:1}
   ])
-  // function getColor(index) {
-  //     if (index === 0) {
-  //       return 'red';
-  //     } else if (index === 1) {
-  //       return 'blue';
-  //     } else {
-  //       return 'black';
-  //     }
-  //   }
-  console.log(list.value.price);
 </script>
 
 <style lang="less" scoped>

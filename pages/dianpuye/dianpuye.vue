@@ -22,23 +22,26 @@
 
     <view class="box4">
       <view class="box4-text" v-for="(item, index) in list1" :key="index">
-        <img :src="item.imgage" alt="">
-        <text class="box4-text1">{{ item.text1 }}</text> {{ item.text }}
-        <!-- 红包已省开始 -->
-        <view class="box4-content">
-          <view class="box4-content1">送红包</view>
-          <view class="box4-content2">{{ item.price2 }}</view>
-        </view>
-        <!-- 红包已省结束 -->
-        <view class="box4-price"> {{ item.price }}</view>
-        <!-- 价格结束 -->
-        <view class="box4-text2">
-          <view class="box4-text2-left">128.00</view>
-          <view>月售180</view>
-        </view>
-        <view class="box4-text3">
-          <view class="box4-text3-left"><img src="../../static/image/邀请.png" alt=""></view>
-          <view class="box4-text3-right">邀请新人参与抢购再优惠15%</view>
+        <image :src="item.imgage" mode=""></image>
+        <view class="box4-text-bottom">
+          <view class="box4-title">
+            <text class="box4-text1">{{ item.text1 }}</text> {{ item.text }}
+          </view>
+          <view class="box4-content">
+            <view class="box4-content1">送红包</view>
+            <view class="box4-content2">{{ item.price2 }}</view>
+          </view>
+          <view class="box4-price"> {{ item.price }}</view>
+          <view class="box4-text2">
+            <view class="box4-text2-left">128.00</view>
+            <view class="box4-text2-right">月售180</view>
+          </view>
+          <view class="box4-text3">
+            <view class="box4-text3-left">
+              <image src="../../static/image/邀请.png" mode=""></image>
+            </view>
+            <view class="box4-text3-right">邀请新人参与抢购再优惠15%</view>
+          </view>
         </view>
       </view>
     </view>
@@ -102,7 +105,7 @@
 <style lang="scss">
   .box {
     background-color: #f5f5f5;
-    height: 100vh;
+    // height: 100vh;
 
     .box1 {
       position: relative;
@@ -164,81 +167,109 @@
       flex-wrap: wrap;
       display: flex;
       justify-content: space-around;
-    }
 
-    .box4-text img {
-      width: 100%;
-    }
+      .box4-text {
+        width: 48%;
+        margin-top: 10px;
+        box-shadow: 0px 0px 1px rgb(171, 165, 165);
+        border-radius: 10px;
+        overflow: hidden;
 
-    .box4-text {
-      width: 48%;
-      margin-top: 10px;
-      box-shadow: 0px 0px 1px rgb(171, 165, 165);
-    }
+        image {
+          width: 100%;
+          height: 150px;
+        }
 
-    .box4-text1 {
-      background-color: red;
-      border-radius: 4px;
-      color: wheat;
-    }
+        .box4-text-bottom {
+          padding: 10px;
+          box-sizing: border-box;
+          background-color: #fff;
 
-    .box4-text2 {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 10px;
-    }
+          .box4-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; //行数
+            -webkit-box-orient: vertical;
 
-    .box4-text2-left {
-      text-decoration-line: line-through;
-    }
+            .box4-text1 {
+              background-color: red;
+              border-radius: 4px;
+              color: #fff;
+              padding: 2px 5px;
+              font-size: 12px;
+            }
+          }
 
-    .box4-price {
-      font-weight: bold;
-      color: #FC4E30;
-      font-size: 20px;
-      margin-top: 10px;
-    }
+          .box4-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            border: 1px solid #FC4E30;
+            border-radius: 5px;
+            width: 64%;
 
-    /* 已省 */
-    .box4-content {
-      display: flex;
-      margin-top: 15px;
-      border: 1px solid #000;
-      border: 1px solid red;
-      border-radius: 5px;
-      width: 48%;
-    }
+            .box4-content1 {
+              color: red;
+              font-size: 14px;
+              padding: 0 5px;
+            }
 
-    .box4-content1 {
-      color: red;
+            .box4-content2 {
+              background-color: #FC4E30;
+              border-radius: 4px;
+              color: white;
+              padding: 0 5px;
+            }
+          }
 
-    }
+          .box4-price {
+            font-weight: bold;
+            color: #FC4E30;
+            font-size: 20px;
+            margin-top: 10px;
+          }
 
-    .box4-content2 {
-      background-color: #FC4E30;
-      border-radius: 4px;
-      color: white;
-      width: 44%;
-    }
+          .box4-text2 {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0 10px;
 
-    /* 商品列表结束 */
-    /* 底部 */
-    .box4-text3 {
-      width: 100%;
-      display: flex;
-      background-color: #FFF8F6;
-      border-bottom-right-radius: 10px;
-      border-bottom-left-radius: 10px
-    }
+            .box4-text2-left {
+              text-decoration-line: line-through;
+              color: #ccc;
+              font-size: 14px;
+            }
 
-    .box4-text3-left {
-      width: 10%;
-    }
+            .box4-text2-right {
+              color: #ccc;
+              font-size: 14px;
+            }
+          }
 
-    .box4-text3-right {
-      width: 80%;
-      font-size: 11px;
-      color: #FD7158;
+          .box4-text3 {
+            width: 100%;
+            display: flex;
+            background-color: #FFF8F6;
+            border-bottom-right-radius: 10px;
+
+            border-bottom-left-radius: 10px;
+
+            .box4-text3-left {
+              image {
+                width: 20px;
+                height: 20px;
+              }
+            }
+
+            .box4-text3-right {
+              width: 80%;
+              font-size: 11px;
+              color: #FD7158;
+            }
+          }
+        }
+      }
     }
 
     .box3 {}
