@@ -77,12 +77,20 @@
         </view>
         <view class="box3-content">
           <image src="https://pic.nximg.cn/file/20230909/29496126_154651198104_2.jpg"></image>
+        </view>
+        <view class="box4-content">
           <image src="../../static/image/操作步骤.png" mode=""></image>
         </view>
+
       </view>
     </view>
     <!-- 立即购买按钮 -->
     <view class="btn">
+      <view class="btn2">
+        <image src="../../static/image/客服.png" mode=""></image>
+        <view class="kefu">客服</view>
+      </view>
+
       <button class="btn1">立即购买</button>
     </view>
   </view>
@@ -397,21 +405,48 @@
             height: 800rpx;
           }
         }
+
+        .box4-content {
+          height: 200rpx;
+          margin-top: 20rpx;
+          border-radius: 20rpx;
+          overflow: hidden;
+
+          image {
+            height: 100%;
+          }
+        }
       }
     }
 
     .btn {
       // position: sticky;
       bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       .btn1 {
-        width: 92%;
+        width: 80%;
         margin: auto;
         background-color: #fc4424;
         border-radius: 50px;
         color: #fff;
         font-size: 30rpx;
       }
+
+     .btn2{
+       padding-top: 1%;
+        margin-left: 5%;
+        .kefu{
+          width: 100%;
+          font-size: 0.8rem;
+        }
+       image {
+         width: 100%;
+         height: 50rpx;
+       }
+     }
     }
   }
 </style>
