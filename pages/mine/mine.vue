@@ -19,7 +19,7 @@
       </view>
       <view class="red-box">
         <view class="red-item" v-for="(item, index) in red" :key="index" @click="click(item)">
-          <span :class="['ico', item.iconClass]" v-if="item.showIcon">{{ item.iconText }}</span>
+          <view :class="['ico', item.iconClass]" v-if="item.showIcon">{{ item.iconText }}</view>
           <view class="p">{{ item.amount }}</view>
         </view>
       </view>
@@ -161,7 +161,7 @@
     }
     else if (item.text === '退换/售后') {
       uni.navigateTo({
-        url: '/pages/return/index'
+        url: '/pages/refund/index'
       })
     }
     // 可以根据需要添加其他逻辑处理其他选项的点击
@@ -329,6 +329,7 @@
             font-size: 12px;
             line-height: 30px;
             text-indent: 1em;
+            
           }
   
           .p {
@@ -337,16 +338,18 @@
           }
   
           .ico {
+            width: 100%;
             background-image: url(../../static/image/ico-3.png);
             background-repeat: no-repeat;
-            background-position: 40% 50%;
+            background-position: 36% 50%;
             background-size: 14px;
           }
   
           .ico1 {
+            width: 100%;
             background-image: url(../../static/image/ico-4.png);
             background-repeat: no-repeat;
-            background-position: 40% 50%;
+            background-position: 36% 50%;
             background-size: 14px;
           }
         }

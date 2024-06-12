@@ -312,6 +312,20 @@
       }
     },
     {
+      "path": "pages/orders/index",
+      "style": {
+        "navigationBarTitleText": "退货详情",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/refund/index",
+      "style": {
+        "navigationBarTitleText": "退款订单",
+        "navigationStyle": "custom"
+      }
+    },
+    {
       "path": "pages/application/application",
       "style": {
         "navigationBarTitleText": "二手交易商申请"

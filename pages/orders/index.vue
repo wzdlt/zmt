@@ -10,7 +10,7 @@
   </view>
   
   <view class="body">
-    <view class="b-top">退回商品</view>
+    <view class="b-top">退款成功</view>
     <view class="b-center">
       <view class="item">
         <view class="i-ico"><img src="../../static/image/icon-19.png" alt="" /></view>
@@ -21,15 +21,10 @@
         <view class="i-text">商家审核</view>
       </view>
       <view class="item">
-        <view class="i-ico"><img src="../../static/image/icon-19.png" alt="" /></view>
-        <view class="i-text">退回商品</view>
-      </view>
-      <view class="item">
         <view class="i-ico"><img src="../../static/image/icon-20.png" alt="" /></view>
-        <view class="i-text">退款完成</view>
+        <view class="i-text">商家同意退款</view>
       </view>
       <hr class="one"/>
-      <hr class="two"/>
     </view>
   </view>
   
@@ -90,25 +85,6 @@
       </view>
     </view>
   </view>
-  
-  <view class="button">
-    <button @click="toggleAbsoluteVisibility">填写物流编号</button>
-  </view>
-  
-  <view class="absolute"  v-if="isAbsoluteVisible">
-    <view class="text">
-      <view class="a-top">
-        <view class="t-left">填写物流单号</view>
-        <view class="t-right" @click="toggleAbsoluteVisibility">×</view>
-      </view>
-      <view class="a-center">
-         <input class="uni-input" type="number" placeholder="请输入物流单号" />
-      </view>
-      <view class="a-bottom">
-        <button @click="toggleAbsoluteVisibility">确定</button>
-      </view>
-    </view>
-  </view>
 </template>
 
 <script setup>
@@ -117,18 +93,7 @@ const switchToTab = () => {
         url: '/pages/refunf/index', // 请替换为你的tabBar页面的实际路径
     });
 };
-
-import { ref } from 'vue';
-
-// 定义一个布尔型的响应式变量来控制元素的显示状态
-const isAbsoluteVisible = ref(false);
-
-// 点击击按钮时切换显示状态的方法
-const toggleAbsoluteVisibility = () => {
-  isAbsoluteVisible.value = !isAbsoluteVisible.value;
-};
 </script>
-
 
 <style lang="scss">
     .header {
@@ -171,21 +136,15 @@ const toggleAbsoluteVisibility = () => {
         margin: 0 auto;
         position: relative;
         .one{
-          width: 52%;
+          width: 70%;
           position: absolute;
           top: 26px;
-          left: 10%;
+          left: 14%;
           background-color: #fff;
         }
-        .two{
-          width: 24%;
-          position: absolute;
-          top: 26px;
-          left: 64%;
-          background-color: #fff;
-        }
+
         .item{
-          width: 20%;
+          width: 30%;
           .i-ico{
             margin: 16px auto;
             width: 10px;
@@ -347,73 +306,5 @@ const toggleAbsoluteVisibility = () => {
         }
       }
     }
-    
-    .button{
-      padding: 30px 0;
-      width: 90%;
-      margin: 0 auto;
-      button{
-        width: 30%;
-        font-size: 12px;
-        background-color: #fc4424;
-        border-radius: 50em;
-        color: #fff;
-        margin-left: 70%;
-      }
-    }
-    
-    .absolute{
-      position: absolute;
-      top: 10px;
-      width: 100%;
-      height: 100vh;
-      background-color: rgb(0, 0, 0 ,0.6);
-      .text{
-        padding-bottom: 10px;
-        width: 70%;
-        background-color: #fff;
-        margin: 30vh auto;
-        .a-top{
-          width: 100%;
-          height: 60px;
-          display: flex;
-          .t-left{
-            width: 90%;
-            height: 60px;
-            line-height: 60px;
-            font-weight: 600;
-            text-align: center;
-          }
-          .t-right{
-            width: 10%;
-            height: 60px;
-            line-height: 60px;
-            font-size: 30px;
-            color: #c4c4c4;
-          }
-        }
-        .a-center{
-          width: 90%;
-          height: 40px;
-          margin: 30px auto;
-          border: 1px solid #e5e5e5;
-          border-radius: 50em;
-          text-align: center;
-          .uni-input{
-            width: 100%;
-            height: 100%;
-            line-height: 40px;
-          }
-        }
-        .a-bottom{
-          width: 90%;
-          margin: 30px auto;
-          button{
-            background-color: #f7433d;
-            color: #fff;
-            border-radius: 50em;
-          }
-        }
-      }
-    }
+  
 </style>
