@@ -35,17 +35,11 @@
         </view>
       </view>
     </view>
-
-   <!-- <canyu></canyu> -->
   </view>
 </template>
 
 <script>
-  import canyu from "../../compoents/canyuqianggou.vue";
   export default {
-    components: {
-      canyu,
-    },
     data() {
       return {
         phone: '', //手机号码
