@@ -383,6 +383,9 @@
       "path": "pages/CfOrder2/CfOrder2",
       "style": {
         "navigationBarTitleText": "养车确认订单扣券"
+      }
+    },
+    {
       "path": "pages/dingdanlist4/dingdanlist4",
       "style": {
         "navigationBarTitleText": "待收货"
