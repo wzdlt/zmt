@@ -367,7 +367,16 @@
         "navigationBarTitleText": "待评价"
       }
     }
-  ],
+      ,{
+            "path" : "pages/querendingdan2/querendingdan2",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "确认订单2",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
