@@ -5,8 +5,7 @@
       "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
     }
   },
-  "pages": [
-    {
+  "pages": [{
       "path": "pages/index/index",
       "style": {
         "navigationBarTitleText": "首页"
@@ -355,6 +354,13 @@
       }
     },
     {
+      "path": "pages/twocommodity/twocommodity",
+      "style": {
+        "navigationBarTitleText": "二手商品详情",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    },
+    {
       "path": "pages/shopruzhu/shopruzhu",
       "style": {
         "navigationBarTitleText": "商家入驻页面",
@@ -368,17 +374,29 @@
       }
     },
     {
-      "path" : "pages/dingdanlist4/dingdanlist4",
-      "style" : 
-      {
-        "navigationBarTitleText" : "待收货"
+      "path": "pages/dingdanlist4/dingdanlist4",
+      "style": {
+        "navigationBarTitleText": "待收货"
       }
     },
     {
-      "path" : "pages/dingdanlist5/dingdanlist5",
+      "path": "pages/dingdanlist5/dingdanlist5",
+      "style": {
+        "navigationBarTitleText": "已完成"
+      }
+    },
+    {
+      "path": "pages/querendingdan2/querendingdan2",
+      "style": {
+        "navigationBarTitleText": "确认订单2",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path" : "pages/dianpuye/dianpuye",
       "style" : 
       {
-        "navigationBarTitleText" : "已完成"
+        "navigationBarTitleText" : "店铺页"
       }
     }
       ,{
@@ -408,8 +426,7 @@
   },
   "tabBar": {
     "selectedColor": "#fc4424",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "/static/image/首页.png",
