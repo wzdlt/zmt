@@ -374,6 +374,20 @@
       }
     },
     {
+      "path": "pages/CfOrder1/CfOrder1",
+      "style": {
+        "navigationBarTitleText": "养车确认订单",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    },
+    {
+      "path": "pages/CfOrder2/CfOrder2",
+      "style": {
+        "navigationBarTitleText": "养车确认订单扣券",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    },
+    {
       "path": "pages/dingdanlist4/dingdanlist4",
       "style": {
         "navigationBarTitleText": "待收货"
@@ -390,6 +404,12 @@
       "path": "pages/dianpuye/dianpuye",
       "style": {
         "navigationBarTitleText": "店铺页"
+      }
+    },
+    {
+      "path": "pages/invite/invite",
+      "style": {
+        "navigationBarTitleText": "邀请好友"
       }
     },
     {
