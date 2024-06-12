@@ -341,6 +341,13 @@
         "navigationBarTitleText": "确认订单页面",
         "enablePullDownRefresh": false
       }
+    },
+    {
+      "path" : "pages/twocommodity/twocommodity",
+      "style" : 
+      {
+        "navigationBarTitleText" : ""
+      }
     }
   ],
   "globalStyle": {
