@@ -14,7 +14,8 @@
     {
       "path": "pages/car/car",
       "style": {
-        "navigationBarTitleText": "养车"
+        // "navigationBarTitleText": "正茂通养车",
+         "navigationStyle": "custom"
       }
     },
     {
@@ -458,6 +459,13 @@
         "enablePullDownRefresh": false
       }
 
+    },
+    {
+      "path": "pages/concern/concern",
+      "style": {
+        "navigationBarTitleText": "关注店铺",
+        "navigationBarBackgroundColor": "#fff"
+      }
     }
   ],
   "globalStyle": {
