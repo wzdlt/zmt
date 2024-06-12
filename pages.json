@@ -393,10 +393,16 @@
       }
     },
     {
-      "path" : "pages/dianpuye/dianpuye",
-      "style" : 
-      {
-        "navigationBarTitleText" : "店铺页"
+      "path": "pages/dianpuye/dianpuye",
+      "style": {
+        "navigationBarTitleText": "店铺页"
+      }
+    },
+    {
+      "path": "pages/confirm/confirm",
+      "style": {
+        "navigationBarTitleText": "确认订单",
+        "navigationBarBackgroundColor": "#fff"
       }
     }
   ],
