@@ -14,13 +14,21 @@
           @confirm="confirm">
         </uv-picker>
       </view>
-    <!-- 奥迪 -->
-    <view class="audi">
-      <view>奥迪A6 2020款 豪华动感型</view>
-      <uv-icon name="arrow-right" color="#2979ff" size="28"></uv-icon>
+      <!-- 奥迪 -->
+      <view class="audi">
+        <view class="a6">奥迪A6 2020款 豪华动感型</view>
+        <uv-icon name="arrow-right" color="#9d9c9c" size="20"></uv-icon>
+      </view>
+      <!-- 四宫格 -->
+      <view>
+        <uv-grid :border="false">
+          <uv-grid-item v-for="(item,index) in baseList" :key="index">
+            <uv-icon :customStyle="{paddingTop:20+'rpx'}" :name="item.name" :size="22"></uv-icon>
+            <text class="grid-text">{{item.title}}</text>
+          </uv-grid-item>
+        </uv-grid>
+      </view>
     </view>
-    </view>
-   
   </view>
 </template>
 
@@ -28,6 +36,22 @@
   export default {
     data() {
       return {
+        // 宫格
+        baseList: [{
+            name: 'photo',
+            title: '李白'
+          }, {
+            name: 'lock',
+            title: '韩信'
+          }, {
+            name: 'star',
+            title: '刘备'
+          },
+          {
+            name: 'star',
+            title: '刘备'
+          }
+        ],
         loading: true,
         provinces: [], //省
         citys: [], //市
@@ -142,6 +166,7 @@
         background-color: #f5f5f5;
         border-radius: 30rpx;
         overflow: hidden;
+
         .btn {
           background-color: #f5f5f5;
           display: flex;
@@ -149,6 +174,25 @@
           font-size: 0.8rem;
           padding: 16rpx;
           border-right: 1px solid #ebebeb;
+        }
+      }
+
+      // 奥迪
+      .audi {
+        width: 90%;
+        margin: auto;
+        background-color: #ffeae7;
+        display: flex;
+        margin-top: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        justify-content: space-between;
+        color: #fc7760;
+
+        .a6 {
+          margin-left: 2%;
         }
       }
     }
