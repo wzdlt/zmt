@@ -28,7 +28,8 @@
     {
       "path": "pages/entity/entity",
       "style": {
-        "navigationBarTitleText": "线下实体"
+        "navigationBarTitleText": "线下实体",
+        "navigationStyle": "custom"
       }
     },
     {
