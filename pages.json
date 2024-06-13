@@ -293,6 +293,13 @@
       }
     },
     {
+      "path": "pages/merchant/index",
+      "style": {
+        "navigationBarTitleText": "商家详情",
+        "navigationStyle": "custom"
+      }
+    },
+    {
       "path": "pages/commodity/commodity",
       "style": {
         "navigationBarTitleText": "商品评价12",

@@ -47,7 +47,7 @@
         <!-- 推荐 -->
         <view v-if="activeTab === 'tab1'">
           <view class="recommend">
-            <view class="recommend-con" v-for="(item, index) in list" :key="index">
+            <view class="recommend-con" v-for="(item, index) in list" :key="index" @click="navigateToDetail(item)">
               <view class="recom-img">
                 <img :src="item.img" alt="">
               </view>
@@ -185,6 +185,11 @@ export default {
     },
     changeTab(tab) {
       this.activeTab = tab;
+    },
+    navigateToDetail(item) {
+      uni.navigateTo({
+        url:'/pages/merchant/index'
+      })
     }
   }
 }
