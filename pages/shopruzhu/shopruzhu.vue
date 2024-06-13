@@ -46,7 +46,17 @@
       </view>
       <!-- 商家市级区 -->
 
+      <view class="box1-1">
+        <view><text style="color: #fc492a;margin-right: 5px;">*</text>商家地址</view>
+        <view class=".search">
+          <view class="btn">{{ this.address }}<uv-icon name="arrow-down" @click="open"></uv-icon></view>
+          <uv-picker ref="picker" :columns="addressList" :loading="loading" keyName="name" @change="change"
+            @confirm="confirm">
+          </uv-picker>
+        </view>
 
+
+      </view>
 
       <!-- 商家市级区结束 -->
       <view class="box1-1">
@@ -102,7 +112,7 @@
 
       <view class="box1-3">
         <view><text style="color: #fc492a;margin-right: 5px;">*</text>商家介绍</view>
-        <view><textarea @blur="bindTextAreaBlur" placeholder="请填写商家介绍" auto-height style="height: 100px;"  /></view>
+        <view><textarea @blur="bindTextAreaBlur" placeholder="请填写商家介绍" auto-height style="height: 100px;" /></view>
       </view>
       <view class="box1-4">
         <view class="box1-4-1">
@@ -128,10 +138,89 @@ export default {
       logoimage: [],// 存储选择的图片路径
       logoimage1: [],// 存储选择的图片路径
       logoimage2: [],// 存储选择的图片路径
-      logoimage3: [] // 存储选择的图片路径
+      logoimage3: [], // 存储选择的图片路径
+      // 三级联动
+      loading: true,
+      provinces: [], //省
+      citys: [], //市
+      areas: [], //区
+      pickerValue: [0, 0, 0],
+      defaultValue: [3442, 1, 2],
+      address: '请选择实际区' //地址
     };
   },
+  created() {
+    this.getData();
+  },
+  computed: {
+    addressList() {
+      return [this.provinces, this.citys, this.areas];
+    }
+  },
+  // 三级联动
   methods: {
+    getData() {
+      uni.request({
+        method: 'GET',
+        url: '/static/regions.json',
+        success: res => {
+          const {
+            statusCode,
+            data
+          } = res
+          if (statusCode === 200) {
+            // console.log('获取的数据：', res);
+            this.provinces = data.sort((left, right) => (Number(left.code) > Number(right.code) ? 1 : -1));
+            // console.log(this.provinces)
+            this.handlePickValueDefault()
+            setTimeout(() => {
+              this.loading = false
+            }, 200)
+          }
+        }
+      })
+    },
+    handlePickValueDefault() {
+      // 设置省
+      this.pickerValue[0] = this.provinces.findIndex(item => Number(item.id) === this.defaultValue[0]);
+      // 设置市
+      this.citys = this.provinces[this.pickerValue[0]]?.children || [];
+      this.pickerValue[1] = this.citys.findIndex(item => Number(item.id) === this.defaultValue[1]);
+      // 设置区
+      this.areas = this.citys[this.pickerValue[1]]?.children || [];
+      this.pickerValue[2] = this.areas.findIndex(item => Number(item.id) === this.defaultValue[2]);
+      // 重置下位置
+      this.$refs.picker.setIndexs([this.pickerValue[0], this.pickerValue[1], this.pickerValue[2]], true);
+    },
+    change(e) {
+      if (this.loading) return;
+      const {
+        columnIndex,
+        index,
+        indexs
+      } = e
+      // 改变了省
+      if (columnIndex === 0) {
+        this.citys = this.provinces[index]?.children || []
+        this.areas = this.citys[0]?.children || []
+        this.$refs.picker.setIndexs([index, 0, 0], true)
+      } else if (columnIndex === 1) {
+        this.areas = this.citys[index]?.children || []
+        this.$refs.picker.setIndexs(indexs, true)
+      }
+    },
+    open() {
+      this.$refs.picker.open();
+      this.handlePickValueDefault()
+    },
+    confirm(e) {
+      this.address = e.value[1].name
+      uni.showToast({
+        icon: 'none',
+        title: `${e.value[0].name}/${e.value[1].name}/${e.value[2].name}`
+      })
+    },
+    // 三级联动结束
     huoqu() {
       let that = this
       uni.chooseImage({
@@ -235,6 +324,10 @@ export default {
 
   .box1 {
     background-color: #fff;
+
+    .btn{
+      display: flex;
+    }
 
     .box1-1 {
       display: flex;
@@ -384,5 +477,6 @@ export default {
       border-radius: 25px;
     }
   }
+
 }
 </style>
