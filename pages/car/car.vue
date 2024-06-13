@@ -8,14 +8,19 @@
       </view>
       <!-- 搜索 -->
       <view class="search">
-
         <view class="btn">{{this.address}}<uv-icon name="arrow-down" @click="open"></uv-icon></view>
         <uv-search placeholder="请输入搜索内容" :showAction="false"></uv-search>
         <uv-picker ref="picker" :columns="addressList" :loading="loading" keyName="name" @change="change"
           @confirm="confirm">
         </uv-picker>
       </view>
+    <!-- 奥迪 -->
+    <view class="audi">
+      <view>奥迪A6 2020款 豪华动感型</view>
+      <uv-icon name="arrow-right" color="#2979ff" size="28"></uv-icon>
     </view>
+    </view>
+   
   </view>
 </template>
 
@@ -105,7 +110,7 @@
     }
   }
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
   .car {
     width: 100%;
 
