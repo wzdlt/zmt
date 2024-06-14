@@ -484,13 +484,6 @@
       }
     },
     {
-      "path": "pages/shopguanli/shopguanli",
-      "style": {
-        "navigationBarTitleText": "商品管理",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
       "path": "pages/envelope/envelope",
       "style": {
         "navigationBarTitleText": ""
