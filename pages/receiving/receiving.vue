@@ -80,7 +80,6 @@
 
           view:nth-child(1) {
             width: 50%;
-            border: 1px solid red;
             display: flex;
             align-items: center;
             font-size: 0.8rem;
@@ -96,14 +95,18 @@
           }
 
           view:nth-child(2) {
+            width: 50%;
             display: flex;
             align-items: center;
             font-size: 0.8rem;
 
             image {
-              margin-right: 5%;
               width: 30rpx;
               height: 30rpx;
+            }
+
+            text {
+              margin-left: 5%;
             }
           }
         }
