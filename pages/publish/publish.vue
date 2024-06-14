@@ -10,10 +10,10 @@
         </view>
       </view>
       <view class="address">
+        <view class="btn">{{this.address}}<uv-icon name="arrow-down" @click="open"></uv-icon></view>
         <uv-picker ref="picker" :columns="addressList" :loading="loading" keyName="name" @change="change"
           @confirm="confirm">
         </uv-picker>
-        <button @click="open">选择位置</button>
       </view>
       <view class="bottom" v-for="(item,index) in list" :key="index">
         <view class="bottom-box">
@@ -68,6 +68,7 @@
         areas: [], //区
         pickerValue: [0, 0, 0],
         defaultValue: [3442, 1, 2],
+        address: '请选择城市', //地址
         list: [{
           left: '分类',
           right1: '手机',
@@ -155,7 +156,7 @@
       getData() {
         uni.request({
           method: 'GET',
-          url: '/static/uvui/example/regions.json',
+          url: '/static/regions.json',
           success: res => {
             const {
               statusCode,
@@ -207,7 +208,7 @@
         this.handlePickValueDefault()
       },
       confirm(e) {
-        console.log('确认选择的地区：', e);
+        this.address = e.value[1].name
         uni.showToast({
           icon: 'none',
           title: `${e.value[0].name}/${e.value[1].name}/${e.value[2].name}`
@@ -225,10 +226,11 @@
 
     .publish-box {
       margin-top: 40rpx;
-      
+
 
       .top {
         padding: 0 30rpx;
+
         .input {
           .uv-textarea {
             border: none;
@@ -244,6 +246,15 @@
       .address {
         padding: 30rpx 30rpx;
         border-bottom: 1px solid #b1b1b1;
+
+        .btn {
+          background-color: #f5f5f5;
+          display: flex;
+          justify-content: space-between;
+          font-size: 0.8rem;
+          padding: 16rpx;
+          border-right: 1px solid #ebebeb;
+        }
       }
 
       .bottom {
@@ -323,14 +334,16 @@
           }
         }
       }
-      .line{
+
+      .line {
         height: 20rpx;
         background-color: #f5f5f5;
       }
+
       .button {
         margin-top: 10rpx;
-        padding:0  30rpx 40rpx;
-      
+        padding: 0 30rpx 40rpx;
+
         ::v-deep .uv-button--square {
           border-radius: 20px;
         }

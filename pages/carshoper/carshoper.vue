@@ -22,7 +22,7 @@
       <view class="bottom1">我的订单</view>
       <view class="bottom2">
         <view class="bottom21">
-          <img src="../../static/个人8.png">
+          <img src="../../static/个人8.png"></img>
           <view>会员商城</view>
         </view>
         <view class="bottom22">
