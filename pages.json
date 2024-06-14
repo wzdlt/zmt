@@ -499,7 +499,7 @@
       "path": "pages/setup/setup",
       "style": {
         "navigationBarTitleText": "设置",
-        "navigationBarTextStyle": "#FFFFFF"
+        "navigationBarBackgroundColor": "#fff"
       }
     }
   ],
