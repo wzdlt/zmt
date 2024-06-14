@@ -335,6 +335,13 @@
       }
     },
     {
+      "path": "pages/mobil/index",
+      "style": {
+        "navigationBarTitleText": "美孚Mobil",
+        "navigationStyle": "custom"
+      }
+    },
+    {
       "path": "pages/application/application",
       "style": {
         "navigationBarTitleText": "二手交易商申请"

@@ -9,44 +9,44 @@
         <view class="center">商家详情</view>
     </view>
     
-    <div class="banner">
+    <view class="banner">
       <img src="../../static/image/banner.png" alt="" />
-    </div>
+    </view>
     
-    <div class="text-box">
-      <div class="b-top">
-        <div class="t-left">青柠养车（香港街店）</div>
-        <div class="t-right">1.2km</div>
-      </div>
-      <div class="b-stary">
+    <view class="text-box">
+      <view class="b-top">
+        <view class="t-left">青柠养车（香港街店）</view>
+        <view class="t-right">1.2km</view>
+      </view>
+      <view class="b-stary">
         <uv-rate :count="5" allow-half v-model="selectedValue" active-color="#FFB800"></uv-rate>
-        <div class="num">{{ selectedValue }}</div>
-      </div>
-      <div class="b-text">
-        <div class="t-item">洗车</div>
-        <div class="t-item">美容</div>
-        <div class="t-item">维修</div>
-        <div class="t-item">轮胎</div>
-        <div class="t-item">保修</div>
-        <div class="t-item">改装</div>
-      </div>
-      <div class="b-title">
+        <view class="num">{{ selectedValue }}</view>
+      </view>
+      <view class="b-text">
+        <view class="t-item">洗车</view>
+        <view class="t-item">美容</view>
+        <view class="t-item">维修</view>
+        <view class="t-item">轮胎</view>
+        <view class="t-item">保修</view>
+        <view class="t-item">改装</view>
+      </view>
+      <view class="b-title">
         山东省临沂市河东区芝麻墩街道香港路与长安路交汇触路北50米青柠养车
-      </div>
-      <div class="phone">
+      </view>
+      <view class="phone">
         18305398753
-      </div>
-    </div>
+      </view>
+    </view>
     
-<!--    <div class="body">
-      <div class="ul">
-        <div class="li">推荐</div>
-        <div class="li">小保养</div>
-        <div class="li"></div>
-        <div class="li"></div>
-        <div class="li"></div>
-      </div>
-    </div> -->
+<!--    <view class="body">
+      <view class="ul">
+        <view class="li">推荐</view>
+        <view class="li">小保养</view>
+        <view class="li"></view>
+        <view class="li"></view>
+        <view class="li"></view>
+      </view>
+    </view> -->
     
     <view id="offline">
       <view id="offline-content">
@@ -76,9 +76,25 @@
           </view>
           <!-- 推荐 -->
           <view v-if="activeTab === 'tab1'">
-            <view class="recommend">
-                111
-            </view>
+              <view class="recommend">
+                <view class="r-box" v-for="(product, index) in products" :key="index">
+                  <view class="img-box">
+                    <img :src="product.imageUrl" alt="" />
+                  </view>
+                  <view class="title text-ellipsis-2">{{ product.title }}</view>
+                  <view class="text">
+                    <view class="txt">{{ product.specs }}</view>
+                    <view class="txt">{{ product.description }}</view>
+                  </view>
+                  <view class="num">
+                    <view class="n-top">
+                      <view class="t-left">￥{{ product.price.toFixed(2) }}</view>
+                      <view class="t-right">￥{{ product.originalPrice.toFixed(2) }}</view>
+                    </view>
+                    <view class="n-bottom">直降￥{{ product.discount.toFixed(2) }}</view>
+                  </view>
+                </view>
+              </view>
           </view>
           <view v-if="activeTab === 'tab2'">小保养</view>
           <view v-if="activeTab === 'tab3'">空调养护</view>
@@ -129,6 +145,63 @@ export default {
       }, {
         name: '冷却系统'
       }],
+      products: [
+              {
+                imageUrl: '../../static/image/commodity.png',
+                title: '美孚(Mobil)金装美孚1号0W-30 全合成机美孚(Mobil)金装美孚1号0W-30 全合成机',
+                specs: '规格:全合成|0W-30|4L',
+                description: '众多原厂认证 高效节油 强劲动力',
+                price: 120.00,
+                originalPrice: 180.00,
+                discount: 38.00,
+              },
+              {
+                imageUrl: '../../static/image/commodity.png',
+                title: '美孚(Mobil)金装美孚1号0W-30 全合成机美孚(Mobil)金装美孚1号0W-30 全合成机',
+                specs: '规格:全合成|0W-30|4L',
+                description: '众多原厂认证 高效节油 强劲动力',
+                price: 120.00,
+                originalPrice: 180.00,
+                discount: 38.00,
+              },
+              {
+                imageUrl: '../../static/image/commodity.png',
+                title: '美孚(Mobil)金装美孚1号0W-30 全合成机美孚(Mobil)金装美孚1号0W-30 全合成机',
+                specs: '规格:全合成|0W-30|4L',
+                description: '众多原厂认证 高效节油 强劲动力',
+                price: 120.00,
+                originalPrice: 180.00,
+                discount: 38.00,
+              },
+              {
+                imageUrl: '../../static/image/commodity.png',
+                title: '美孚(Mobil)金装美孚1号0W-30 全合成机美孚(Mobil)金装美孚1号0W-30 全合成机',
+                specs: '规格:全合成|0W-30|4L',
+                description: '众多原厂认证 高效节油 强劲动力',
+                price: 120.00,
+                originalPrice: 180.00,
+                discount: 38.00,
+              },
+              {
+                imageUrl: '../../static/image/commodity.png',
+                title: '美孚(Mobil)金装美孚1号0W-30 全合成机美孚(Mobil)金装美孚1号0W-30 全合成机',
+                specs: '规格:全合成|0W-30|4L',
+                description: '众多原厂认证 高效节油 强劲动力',
+                price: 120.00,
+                originalPrice: 180.00,
+                discount: 38.00,
+              },
+              {
+                imageUrl: '../../static/image/commodity.png',
+                title: '美孚(Mobil)金装美孚1号0W-30 全合成机美孚(Mobil)金装美孚1号0W-30 全合成机',
+                specs: '规格:全合成|0W-30|4L',
+                description: '众多原厂认证 高效节油 强劲动力',
+                price: 120.00,
+                originalPrice: 180.00,
+                discount: 38.00,
+              },
+              // 第二个商品信息，结构同上，根据需要可增加更多
+            ],
       // 评分
       count: 5,
       value: 4,
@@ -157,6 +230,14 @@ export default {
 </script>
 
 <style lang="scss">
+  .text-ellipsis-2 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      word-break: break-all;
+  }
   page{
     background-color: #f5f5f5;
   }
@@ -166,6 +247,7 @@ export default {
         width: 100%;
         height: 40px;
         display: flex;
+        z-index: 10;
         background-color: #fff;
         border-bottom: 1px solid #ccc;
         .left{
@@ -252,39 +334,6 @@ export default {
       width: 100%;
       box-sizing: border-box;
       height: 600rpx;
-      background: linear-gradient(#FC4424, #F99482, #F5E7E5);
-    
-      .offline {
-        width: 90%;
-        margin: auto;
-    
-        /*搜索*/
-        .select {
-          display: flex;
-          width: 100%;
-          background-color: #F5F5F5;
-          border-radius: 30rpx;
-    
-          select {
-            border: none;
-            border-radius: 30rpx;
-            background-color: #F5F5F5;
-            padding-left: 20rpx;
-    
-          }
-    
-          select:focus-visible {
-            outline: none;
-          }
-        }
-    
-        // 轮播
-        .swiper {
-          width: 100%;
-          margin-top: 30rpx;
-        }
-      }
-    
       #offline-content {
         width: 100%;
         background-color: #F5F5F5;
@@ -332,46 +381,57 @@ export default {
           .recommend {
             padding: 30rpx 0px;
             width: 100%;
-    
-            .recommend-con {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .r-box{
+              margin: 6px 0;
+              border-radius: 6px;
+              width: 49%;
               background-color: #fff;
-              margin: 20rpx 0px;
-              padding: 20rpx 0px;
-              border-radius: 10px;
-              display: flex;
-              justify-content: space-between;
-    
-              .recom-img {
-                width: 30%;
-    
-                img {
+              .img-box{
+                width: 100%;
+                img{
                   width: 100%;
-                  height: 6.2rem;
+                  border-radius: 6px 6px 0 0;
                 }
               }
-    
-              .recom-right {
-                width: 65%;
-                margin: auto;
-    
-                .recom-title {
+              .title{
+                width: 90%;
+                margin: 10px  auto;
+                font-size: 14px;
+              }
+              .text{
+                width: 90%;
+                margin: 10px auto;
+                color: #9a9a9a;
+                font-size: 10px;
+              }
+              .num{
+                width: 90%;
+                margin: 10px auto;
+                .n-top{
+                  width: 100%;
                   display: flex;
-                  justify-content: space-between;
-                  margin-bottom: 20rpx;
+                  .t-left{
+                    color: #fc4627;
+                    font-size: 14px;
+                  }
+                  .t-right{
+                    color: #a6a6a6;
+                    font-size: 12px;
+                  }
                 }
-              }
-    
-              .recom-bottom {
-                display: flex;
-    
-                view {
-                  margin-right: 14rpx;
+                .n-bottom{
+                  margin: 10px 0;
+                  width: 50%;
+                  height: 20px;
+                  background-color: #fc4627;
+                  color: #fff;
+                  font-size: 12px;
+                  line-height: 20px;
                   text-align: center;
-                  font-size: 13px;
-                  color: #6E6E6E;
-                  background-color: #FFECE9;
-                  padding: 4rpx;
-                  color: #FD5A3E;
+                  border-radius: 6px;
                 }
               }
             }
