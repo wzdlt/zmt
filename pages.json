@@ -522,6 +522,24 @@
       "style" : 
       {
         "navigationBarTitleText" : "收获地址"
+      "path" : "pages/pingjia/pingjia",
+      "style" : 
+      {
+        "navigationBarTitleText" : "评价"
+      }
+    },
+    {
+      "path" : "pages/shangpinxiangqing/shangpinxiangqing",
+      "style" : 
+      {
+        "navigationBarTitleText" : ""
+      }
+    },
+    {
+      "path" : "pages/shangpinguanli/shangpinguanli",
+      "style" : 
+      {
+        "navigationBarTitleText" : "商品管理"
       }
     }
   ],
