@@ -196,6 +196,9 @@ export default {
 </script>
 
 <style lang="scss">
+  page{
+    background-color: #f5f5f5;
+  }
   .navbar{
     padding-top: 40px;
     width: 100%;
