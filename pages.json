@@ -508,6 +508,20 @@
         "navigationBarTitleText": "商品订单",
         "navigationBarBackgroundColor": "#fff"
       }
+    },
+    {
+      "path" : "pages/pingjia/pingjia",
+      "style" : 
+      {
+        "navigationBarTitleText" : "评价"
+      }
+    },
+    {
+      "path" : "pages/shangpinxiangqing/shangpinxiangqing",
+      "style" : 
+      {
+        "navigationBarTitleText" : ""
+      }
     }
   ],
   "globalStyle": {
