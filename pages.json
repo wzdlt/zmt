@@ -5,8 +5,7 @@
       "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
     }
   },
-  "pages": [
-    {
+  "pages": [{
       "path": "pages/index/index",
       "style": {
         "navigationBarTitleText": "首页"
@@ -516,6 +515,30 @@
         "navigationBarTitleText": "商品管理2",
         "enablePullDownRefresh": false
       }
+    },
+    {
+      "path": "pages/receiving/receiving",
+      "style": {
+        "navigationBarTitleText": "收获地址"
+      }
+    },
+    {
+      "path": "pages/pingjia/pingjia",
+      "style": {
+        "navigationBarTitleText": "评价"
+      }
+    },
+    {
+      "path": "pages/shangpinxiangqing/shangpinxiangqing",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/shangpinguanli/shangpinguanli",
+      "style": {
+        "navigationBarTitleText": "商品管理"
+      }
     }
       ,{
             "path" : "pages/uv-uizujain/uv-uizujain",
@@ -535,8 +558,7 @@
   },
   "tabBar": {
     "selectedColor": "#fc4424",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "/static/image/首页.png",
