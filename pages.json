@@ -491,6 +491,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/shopguanli2/shopguanli2",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品管理2",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
