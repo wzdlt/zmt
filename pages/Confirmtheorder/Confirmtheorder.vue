@@ -24,7 +24,7 @@
         <view class="center-right">
           <p class="p1">男运动鞋秋季男鞋青少年正品透...</p>
           <p class="p2">标准白、42</p>
-          <p class="p3"><span class="span1"><!--￥--></span>60红包+￥890.00 <span class="span2">×1</span> </p>
+          <p class="p3"><text class="span1"><!--￥--></text>60红包+￥890.00 <text class="span2">×1</text> </p>
         </view>
       </view>
       <!-- djiai  -->
@@ -84,7 +84,7 @@
     <!-- 底部导航 -->
     <view class="bottom">
       <view class="bottom-bottom">
-        <view class="p3"><text style="color: black;">合计：</text> <span class="span1"><!--￥--></span>60红包+￥890.00 <span
+        <view class="p3"><text style="color: black;">合计：</text> <text class="span1"><!--￥--></text>60红包+￥890.00 <span
             class="span2">×1</span>
         </view>
         <view class="jiesuan"><button>立即支付</button> </view>
@@ -185,7 +185,7 @@ const list = ref([
       .pay1-left {
         width: 70%;
         height: 40px;
-  
+
         display: flex;
       }
 

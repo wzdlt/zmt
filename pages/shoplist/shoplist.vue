@@ -31,7 +31,7 @@
           <image src="../../static/image/鑫日汽修厂.png" mode=""></image>
         </view>
         <view class="bottom-right">
-          <view class="p1">鑫日汽修厂 <span class="span1">1.2km</span> </view>
+          <view class="p1">鑫日汽修厂 <text class="span1">1.2km</text> </view>
           <view class="bottom-right-top">
             <uv-rate :count="count" v-model="value" activeColor="#ffb800"></uv-rate>
             <text class="p2">服务次数：235</text>
@@ -243,13 +243,6 @@ export default {
 page {
   background-color: #f5f5f5;
 }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .box {
   width: 100%;
 
