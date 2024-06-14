@@ -490,6 +490,13 @@
                 "enablePullDownRefresh": false
             }
             
+        },
+        {
+          "path" : "pages/envelope/envelope",
+          "style" : 
+          {
+            "navigationBarTitleText" : ""
+          }
         }
     ],
   "globalStyle": {
