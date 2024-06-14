@@ -15,7 +15,7 @@
       "path": "pages/car/car",
       "style": {
         "navigationBarTitleText": "正茂通养车",
-         "navigationStyle": "custom"
+        "navigationStyle": "custom"
       }
     },
     {
@@ -481,24 +481,21 @@
         "navigationBarTitleText": "关注店铺",
         "navigationBarBackgroundColor": "#fff"
       }
+    }, {
+      "path": "pages/shopguanli/shopguanli",
+      "style": {
+        "navigationBarTitleText": "商品管理",
+        "enablePullDownRefresh": false
+      }
+
+    },
+    {
+      "path": "pages/envelope/envelope",
+      "style": {
+        "navigationBarTitleText": ""
+      }
     }
-      ,{
-            "path" : "pages/shopguanli/shopguanli",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "商品管理",
-                "enablePullDownRefresh": false
-            }
-            
-        },
-        {
-          "path" : "pages/envelope/envelope",
-          "style" : 
-          {
-            "navigationBarTitleText" : ""
-          }
-        }
-    ],
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
