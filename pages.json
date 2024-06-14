@@ -5,7 +5,8 @@
       "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
     }
   },
-  "pages": [{
+  "pages": [
+    {
       "path": "pages/index/index",
       "style": {
         "navigationBarTitleText": "首页"
@@ -454,7 +455,8 @@
         "navigationBarTitleText": "确认订单",
         "navigationBarBackgroundColor": "#fff"
       }
-    }, {
+    },
+    {
       "path": "pages/tianjiadizhi/tianjiadizhi",
       "style": {
         "navigationBarTitleText": "确认订单3",
@@ -473,7 +475,6 @@
         "navigationBarTitleText": "商品详情11",
         "enablePullDownRefresh": false
       }
-
     },
     {
       "path": "pages/concern/concern",
@@ -481,13 +482,6 @@
         "navigationBarTitleText": "关注店铺",
         "navigationBarBackgroundColor": "#fff"
       }
-    }, {
-      "path": "pages/shopguanli/shopguanli",
-      "style": {
-        "navigationBarTitleText": "商品管理",
-        "enablePullDownRefresh": false
-      }
-
     },
     {
       "path": "pages/envelope/envelope",
@@ -507,6 +501,20 @@
       "style": {
         "navigationBarTitleText": "商品订单",
         "navigationBarBackgroundColor": "#fff"
+      }
+    },
+    {
+      "path": "pages/shopguanli/shopguanli",
+      "style": {
+        "navigationBarTitleText": "商品管理",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/shopguanli2/shopguanli2",
+      "style": {
+        "navigationBarTitleText": "商品管理2",
+        "enablePullDownRefresh": false
       }
     },
     {
@@ -532,7 +540,8 @@
   },
   "tabBar": {
     "selectedColor": "#fc4424",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "/static/image/首页.png",
