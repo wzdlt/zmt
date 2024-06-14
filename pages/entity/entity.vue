@@ -5,13 +5,12 @@
     </view>
     <view class="offline">
       <!-- 搜索 -->
-      <view class="select">
-        <select v-model="selected">
-          <option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
-            {{ item.label }}
-          </option>
-        </select>
-        <uv-search placeholder="请输入您的搜索的内容" shape="round" :showAction="false"></uv-search>
+      <view class="search">
+        <view class="btn">{{this.address}}<uv-icon name="arrow-down" @click="open"></uv-icon></view>
+        <uv-search placeholder="请输入搜索内容" :showAction="false"></uv-search>
+        <uv-picker ref="picker" :columns="addressList" :loading="loading" keyName="name" @change="change"
+          @confirm="confirm">
+        </uv-picker>
       </view>
       <!-- 轮播图 -->
       <view class="swiper">
@@ -84,19 +83,6 @@ export default {
   data() {
     return {
       // 地址
-      options: [{
-        value: '选项一',
-        label: '临沂',
-      },
-      {
-        value: '选项二',
-        label: '泰安'
-      },
-      {
-        value: '选项三',
-        label: '济南'
-      }
-      ],
       selected: '',
       // 轮播图
       swiper: [
@@ -119,6 +105,13 @@ export default {
       // 评分
       count: 5,
       value: 4,
+      loading: true,
+      provinces: [], //省
+      citys: [], //市
+      areas: [], //区
+      pickerValue: [0, 0, 0],
+      defaultValue: [3442, 1, 2],
+      address: '请选择城市', //地址
       // 推荐
       list: [
         {
@@ -176,22 +169,82 @@ export default {
     }
   },
 
-  methods: {
-    openPicker() {
-      this.$refs.picker.open();
+    created() {
+      this.getData();
     },
-    confirm(e) {
-      console.log('confirm', e);
+    computed: {
+      addressList() {
+        return [this.provinces, this.citys, this.areas];
+      }
     },
-    changeTab(tab) {
-      this.activeTab = tab;
-    },
-    navigateToDetail(item) {
-      uni.navigateTo({
-        url:'/pages/merchant/index'
-      })
+    methods: {
+      getData() {
+        uni.request({
+          method: 'GET',
+          url: '/static/regions.json',
+          success: res => {
+            const {
+              statusCode,
+              data
+            } = res
+            if (statusCode === 200) {
+              // console.log('获取的数据：', res);
+              this.provinces = data.sort((left, right) => (Number(left.code) > Number(right.code) ? 1 : -1));
+              // console.log(this.provinces)
+              this.handlePickValueDefault()
+              setTimeout(() => {
+                this.loading = false
+              }, 200)
+            }
+          }
+        })
+      },
+      handlePickValueDefault() {
+        // 设置省
+        this.pickerValue[0] = this.provinces.findIndex(item => Number(item.id) === this.defaultValue[0]);
+        // 设置市
+        this.citys = this.provinces[this.pickerValue[0]]?.children || [];
+        this.pickerValue[1] = this.citys.findIndex(item => Number(item.id) === this.defaultValue[1]);
+        // 设置区
+        this.areas = this.citys[this.pickerValue[1]]?.children || [];
+        this.pickerValue[2] = this.areas.findIndex(item => Number(item.id) === this.defaultValue[2]);
+        // 重置下位置
+        this.$refs.picker.setIndexs([this.pickerValue[0], this.pickerValue[1], this.pickerValue[2]], true);
+      },
+      change(e) {
+        if (this.loading) return;
+        const {
+          columnIndex,
+          index,
+          indexs
+        } = e
+        // 改变了省
+        if (columnIndex === 0) {
+          this.citys = this.provinces[index]?.children || []
+          this.areas = this.citys[0]?.children || []
+          this.$refs.picker.setIndexs([index, 0, 0], true)
+        } else if (columnIndex === 1) {
+          this.areas = this.citys[index]?.children || []
+          this.$refs.picker.setIndexs(indexs, true)
+        }
+      },
+      open() {
+        this.$refs.picker.open();
+        this.handlePickValueDefault()
+      },
+      confirm(e) {
+        this.address = e.value[1].name
+        uni.showToast({
+          icon: 'none',
+          title: `${e.value[0].name}/${e.value[1].name}/${e.value[2].name}`
+        })
+      },
+      navigateToDetail(item) {
+        uni.navigateTo({
+          url:'/pages/merchant/index'
+        })
+      }
     }
-  }
 }
 </script>
 
@@ -219,24 +272,25 @@ export default {
          margin: auto;
      
          /*搜索*/
-         .select {
-           display: flex;
-           width: 100%;
-           background-color: #F5F5F5;
-           border-radius: 30rpx;
-     
-           select {
-             border: none;
-             border-radius: 30rpx;
-             background-color: #F5F5F5;
-             padding-left: 20rpx;
-     
-           }
-     
-           select:focus-visible {
-             outline: none;
-           }
-         }
+      .search {
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+        display: flex;
+        background-color: #f5f5f5;
+        border-radius: 30rpx;
+        overflow: hidden;
+
+        .btn {
+          background-color: #f5f5f5;
+          display: flex;
+          justify-content: space-between;
+          font-size: 0.8rem;
+          padding: 16rpx;
+          border-right: 1px solid #ebebeb;
+          color: #000 ;
+        }
+      }
      
          // 轮播
          .swiper {

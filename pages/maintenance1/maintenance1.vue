@@ -102,11 +102,6 @@
     background-color: #f6f6f6;
   }
 
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
 
   .maintenance {
     width: 100%;
