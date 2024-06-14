@@ -530,6 +530,13 @@
       {
         "navigationBarTitleText" : ""
       }
+    },
+    {
+      "path" : "pages/shangpinguanli/shangpinguanli",
+      "style" : 
+      {
+        "navigationBarTitleText" : "商品管理"
+      }
     }
   ],
   "globalStyle": {
