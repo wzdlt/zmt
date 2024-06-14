@@ -501,6 +501,13 @@
         "navigationBarTitleText": "设置",
         "navigationBarBackgroundColor": "#fff"
       }
+    },
+    {
+      "path": "pages/orders1/orders1",
+      "style": {
+        "navigationBarTitleText": "商品订单",
+        "navigationBarBackgroundColor": "#fff"
+      }
     }
   ],
   "globalStyle": {
