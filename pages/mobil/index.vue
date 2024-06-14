@@ -8,7 +8,7 @@
   </view>
   
   <div class="banner">
-    <img src="../../static/image/commodity" alt="" />
+    <img src="../../static/image/commodity.png" alt="" />
   </div>
 </template>
 
@@ -23,7 +23,6 @@
       height: 40px;
       display: flex;
       z-index: 10;
-      border-bottom: 1px solid #ccc;
       .left{
           width: 40px;
           height: 40px;

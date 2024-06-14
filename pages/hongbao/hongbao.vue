@@ -22,7 +22,7 @@
 
     <!-- 点击查看 -->
     <view class="box3">
-      <img class="box3-img" src="../../static/image/查看.png" alt="">
+      <image class="box3-img" src="../../static/image/查看.png" alt=""></image>
     </view>
     <!-- 点击查看结束 -->
     <!-- list选项卡 -->
@@ -31,7 +31,7 @@
     <!--商品列表  -->
     <view class="box4">
       <view class="box4-text" v-for="(item, index) in list1" :key="index">
-        <img :src="item.imgage" alt="">
+        <image :src="item.imgage" alt=""></image>
         <text class="box4-text1">{{ item.text1 }}</text> {{ item.text }}
         <!-- 红包已省开始 -->
         <view class="box4-content">
@@ -215,8 +215,9 @@ export default {
   justify-content: space-around;
 }
 
-.box4-text img {
+.box4-text image {
   width: 100%;
+  height: 180px;
 }
 
 .box4-text {

@@ -337,7 +337,7 @@
     {
       "path": "pages/mobil/index",
       "style": {
-        "navigationBarTitleText": "美孚Mobil",
+        "navigationBarTitleText": "美孚Mobil111",
         "navigationStyle": "custom"
       }
     },
@@ -358,8 +358,8 @@
       "style": {
         "navigationBarTitleText": "商家账户1",
         "enablePullDownRefresh": false,
-        "navigationBarBackgroundColor": "#FC4424"
-        
+        "navigationBarBackgroundColor": "#FC4424",
+        "navigationBarTextStyle": "#FFFFFF"
       }
     },
     {

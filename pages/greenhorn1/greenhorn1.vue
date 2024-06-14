@@ -15,43 +15,42 @@
 </script>
 
 <style lang="scss">
-  *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .new {
-    width: 100%;
+.new {
+  width: 100%;
 
-    .top {
-      padding-top: 5%;
-      padding-left: 5%;
-      padding-right: 5%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      text:nth-child(1){
-        width: 100%;
-        font-size: 1.2rem;
-        font-weight: bold;
-      }
-      text:nth-child(2){
-        width: 100%;
-        margin-top: 10px;
-        font-size: 0.8rem;
-        color: #b5b5b5;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #cfcfcf;
-       
-      } 
+  .top {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    text:nth-child(1) {
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: bold;
     }
-    .bottom{
-      padding: 5%;
-      font-size: 0.9rem;
-      text{
-         letter-spacing: 1px;
-      } 
-     
+
+    text:nth-child(2) {
+      width: 100%;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #b5b5b5;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #cfcfcf;
+
     }
   }
+
+  .bottom {
+    padding: 5%;
+    font-size: 0.9rem;
+
+    text {
+      letter-spacing: 1px;
+    }
+
+  }
+}
 </style>
