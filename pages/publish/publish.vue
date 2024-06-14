@@ -155,7 +155,7 @@
       getData() {
         uni.request({
           method: 'GET',
-          url: '/static/uvui/example/regions.json',
+          url: '/static/regions.json',
           success: res => {
             const {
               statusCode,
