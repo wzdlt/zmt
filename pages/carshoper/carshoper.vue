@@ -2,19 +2,19 @@
   <view class="surpervip1">
     <view class="top">
       <view>
-        <img src="../../static/个人11.png" />
+        <image src="../../static/个人11.png"></image>
       </view>
       <view>钱清养车服务门店</view>
-      
+
     </view>
     <view class="content">
       <view class="content1">
-        <img src="../../static/个人10.png">余额
+        <image src="../../static/个人10.png">余额</image>
         <view>1358.00</view>
       </view>
       <view class="content2"></view>
       <view class="content3">
-        <img src="../../static/个人9.png">待入账
+        <image src="../../static/个人9.png">待入账</image>
         <view>283.00</view>
       </view>
     </view>
@@ -22,15 +22,15 @@
       <view class="bottom1">我的订单</view>
       <view class="bottom2">
         <view class="bottom21">
-          <img src="../../static/个人8.png"></img>
+          <image src="../../static/个人8.png"></image>
           <view>会员商城</view>
         </view>
         <view class="bottom22">
-          <img src="../../static/个人7.png">
+          <image src="../../static/个人7.png"></image>
           <view>客户订单</view>
         </view>
         <view class="bottom22">
-          <img src="../../static/个人6.png">
+          <image src="../../static/个人6.png"></image>
           <view>售后服务</view>
         </view>
       </view>
@@ -50,21 +50,26 @@ export default {
 <style lang="scss">
 .surpervip1 {
   background-color: #F5F5F5;
-  height:93vh;
+  height: 93vh;
+
   .top {
     padding: 0 15px 0 15px;
     background-color: #faebec;
     display: flex;
     height: 135px;
+
     view:nth-child(1) {
       margin-top: 25px;
-      img {
-        background-color: #fff;
+
+      image {
+        
         border-radius: 50%;
         padding: 8px;
         width: 40px;
+        height: 40px;
       }
     }
+
     view:nth-child(2) {
       line-height: 110px;
       font-size: 18px;
@@ -72,53 +77,69 @@ export default {
       margin-left: 15px;
     }
   }
+
   .content {
-    margin-top:-30px;
-    margin-bottom:15px;
-    padding:15px 0 15px 0;
+    margin-top: -30px;
+    margin-bottom: 15px;
+    padding: 15px 0 15px 0;
     display: flex;
     justify-content: space-between;
-    width:90%;
+    width: 90%;
     background-color: #fff;
-    margin-left:18px;
-    border-radius:10px;
-    img{
-      width:20px;
+    margin-left: 18px;
+    border-radius: 10px;
+
+    image {
+      width: 30px;
+      height: 30px;
     }
-    .content1 view,.content3 view{
-        font-weight: bold;
-        margin-top:6px;
-        font-size: 16px;
-      }
-    .content1,.content3{
-      width:45%;
+
+    .content1 view,
+    .content3 view {
+      font-weight: bold;
+      margin-top: 6px;
+      font-size: 16px;
+    }
+
+    .content1,
+    .content3 {
+      width: 45%;
       text-align: center;
       font-size: 14px;
     }
-    .content2{
-      border:1px solid #F5F5F5;
+
+    .content2 {
+      border: 1px solid #F5F5F5;
     }
   }
-  .bottom{
+
+  .bottom {
     border-radius: 10px;
-    width:90%;
-    margin:auto;
+    width: 90%;
+    margin: auto;
     background-color: #fff;
-    padding:10px 0 10px 0;
-    .bottom1{
+    padding: 10px 0 10px 0;
+
+    .bottom1 {
       font-weight: bold;
-      border-bottom:1px solid #F5F5F5;
-      padding:10px;
+      border-bottom: 1px solid #F5F5F5;
+      padding: 10px;
     }
-    .bottom2{
-      margin-top:10px;
+
+    .bottom2 {
+      margin-top: 10px;
       display: flex;
       justify-content: space-around;
       text-align: center;
-      .bottom21 img,.bottom22 img{
-        width:30px;
+
+      .bottom21 image,
+      .bottom22 image {
+        width: 30px;
+        height: 30px;
       }
-      .bottom21 view,.bottom22 view{
+
+      .bottom21 view,
+      .bottom22 view {
         font-size: 14px;
       }
     }

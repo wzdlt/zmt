@@ -21,7 +21,7 @@
       <!--商品列表  -->
     <view class="box4">
       <view class="box4-text" v-for="(item, index) in list1" :key="index">
-        <img :src="item.imgage" alt="">
+        <image :src="item.imgage" alt=""></image>
         <text class="box4-text1">{{ item.text1 }}</text> {{ item.text }}
         <!-- 红包已省开始 -->
         <view class="box4-content">
@@ -36,7 +36,7 @@
           <view>月售180</view>
         </view>
         <view class="box4-text3">
-          <view class="box4-text3-left"><img src="../../static/image/邀请.png" alt=""></view>
+          <view class="box4-text3-left"><image src="../../static/image/邀请.png" alt=""></image></view>
           <view class="box4-text3-right">邀请新人参与抢购再优惠15%</view>
         </view>
       </view>
@@ -183,7 +183,8 @@ export default {
   justify-content: space-around;
 }
 
-.box4-text img {
+.box4-text image {
+  height: 180px;
   width: 100%;
 }
 
@@ -248,7 +249,11 @@ export default {
   border-bottom-left-radius:10px
 }
 .box4-text3-left{
-  width: 10%;
+  width: 15%;
+  image{
+    width: 100%;
+    height: 25px;
+  }
 }
 .box4-text3-right{
   width: 80%;

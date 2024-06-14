@@ -46,7 +46,7 @@
     <view class="pay">
       <view class="pay1">
         <view class="pay1-left">
-          <img src="../../static/image/wechat.png" alt="">
+          <image src="../../static/image/wechat.png" alt=""></image>
           <view class="pay1-left-rihgt">微信支付</view>
         </view>
         <view class="pay1-right">
@@ -58,7 +58,7 @@
       <!-- 支付宝 -->
       <view class="pay1">
         <view class="pay1-left">
-          <img src="../../static/image/支付宝.png" alt="">
+          <image src="../../static/image/支付宝.png" alt=""></image>
           <view class="pay1-left-rihgt">支付宝</view>
         </view>
         <view class="pay1-right">
@@ -70,7 +70,7 @@
       <!-- 余额 -->
       <view class="pay1">
         <view class="pay1-left">
-          <img src="../../static/image/ico-12.png" alt="">
+          <image src="../../static/image/ico-12.png" alt=""></image>
           <view class="pay1-left-rihgt">余额</view>
         </view>
         <view class="pay1-right">
@@ -195,7 +195,7 @@ const list = ref([
 
       }
 
-      .pay1-left img {
+      .pay1-left image {
         width: 10%;
         height: 27px;
         margin-left: 15px;

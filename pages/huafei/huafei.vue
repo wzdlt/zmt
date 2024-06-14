@@ -1,7 +1,7 @@
 <template>
   <view class="box">
     <view class="box1-img">
-      <img src="../../static/image/话费.png" alt="">
+      <image src="../../static/image/话费.png" alt=""></image>
     </view>
     <!-- 话费图片 -->
     <!-- 输入手机号 -->
@@ -52,8 +52,9 @@ export default {
   margin: auto;
 }
 
-.box1-img img {
+.box1-img image {
   width: 100%;
+  height: 150px;
   border-radius: 10px;
 }
 
