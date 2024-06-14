@@ -46,7 +46,7 @@
     <view class="pay">
       <view class="pay1">
         <view class="pay1-left">
-          <img src="../../static/image/wechat.png" alt="">
+          <image src="../../static/image/wechat.png" alt=""></image>
           <view class="pay1-left-rihgt">微信支付</view>
         </view>
         <view class="pay1-right">
@@ -58,7 +58,7 @@
       <!-- 支付宝 -->
       <view class="pay1">
         <view class="pay1-left">
-          <img src="../../static/image/支付宝.png" alt="">
+          <image src="../../static/image/支付宝.png" alt=""></image>
           <view class="pay1-left-rihgt">支付宝</view>
         </view>
         <view class="pay1-right">
@@ -70,7 +70,7 @@
       <!-- 余额 -->
       <view class="pay1">
         <view class="pay1-left">
-          <img src="../../static/image/ico-12.png" alt="">
+          <image src="../../static/image/ico-12.png" alt=""></image>
           <view class="pay1-left-rihgt">余额</view>
         </view>
         <view class="pay1-right">
@@ -84,8 +84,8 @@
     <!-- 底部导航 -->
     <view class="bottom">
       <view class="bottom-bottom">
-        <view class="p3"><text style="color: black;">合计：</text> <span class="span1"><!--￥--></span>60红包+￥890.00 <span
-            class="span2">×1</span>
+        <view class="p3"><text style="color: black;">合计：</text> <text class="span1"><!--￥--></text>60红包+￥890.00 <text
+            class="span2">×1</text>
         </view>
         <view class="jiesuan"><button>立即支付</button> </view>
       </view>
@@ -195,7 +195,7 @@ const list = ref([
 
       }
 
-      .pay1-left img {
+      .pay1-left image {
         width: 10%;
         height: 27px;
         margin-left: 15px;

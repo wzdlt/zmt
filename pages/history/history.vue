@@ -2,11 +2,13 @@
   <view class="box">
     <view class="box1" v-for="(item, index) in list" :key="index">
       <view class="box1-prc">
-        <img :src="item.img" alt="">
+        <image :src="item.img" alt=""></image>
       </view>
       <view class="box2">
         <view class="box2-top">{{ item.text }}</view>
-        <view class="box2-bottom"><img :src="item.img1" alt="">{{ item.text2 }}</view>
+        <view class="box2-bottom">
+          <image :src="item.img1" alt=""></image>{{ item.text2 }}
+        </view>
         <view class="box3" v-for="(item, index) in list2" :key="index">
           <view class="box3-left"> {{ item.text3 }}</view>
           <view class="box3-right">{{ item.text4 }}</view>
@@ -69,8 +71,9 @@ export default {
     .box1-prc {
       width: 35%;
 
-      img {
+      image {
         width: 100%;
+        height: 100px;
       }
     }
 
@@ -84,13 +87,16 @@ export default {
       }
 
       .box2-bottom {
-        align-items: center;
+        height: 60px;
 
+        image {
+          height: 20px;
+          width: 10px;
+        }
       }
 
-      .box2-bottom img {
+      .box2-bottom image {
         width: 10%;
-        margin-top: 20px;
 
       }
     }
