@@ -517,7 +517,16 @@
         "enablePullDownRefresh": false
       }
     }
-  ],
+      ,{
+            "path" : "pages/uv-uizujain/uv-uizujain",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "弹出组件",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页",
