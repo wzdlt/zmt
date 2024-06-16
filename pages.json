@@ -337,7 +337,7 @@
     {
       "path": "pages/mobil/index",
       "style": {
-        "navigationBarTitleText": "美孚Mobil111",
+        "navigationBarTitleText": "美孚Mobil",
         "navigationStyle": "custom"
       }
     },
