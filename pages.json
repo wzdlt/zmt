@@ -1,608 +1,630 @@
 {
-  "easycom": {
-    "autoscan": true,
-    "custom": {
-      "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
-    }
-  },
-  "pages": [{
-      "path": "pages/index/index",
-      "style": {
-        "navigationBarTitleText": "首页"
-      }
-    },
-    {
-      "path": "pages/car/car",
-      "style": {
-        "navigationBarTitleText": "正茂通养车",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/snapped/snapped",
-      "style": {
-        "navigationBarTitleText": "抢购专区",
-        "navigationBarBackgroundColor": "#FC4E30"
-      }
-    },
-    {
-      "path": "pages/entity/entity",
-      "style": {
-        "navigationBarTitleText": "线下实体",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/mine/mine",
-      "style": {
-        "navigationBarTitleText": "我的",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/login/login",
-      "style": {
-        "navigationBarTitleText": ""
-      }
-    },
-    {
-      "path": "pages/fenlei/fenlei",
-      "style": {
-        "navigationBarTitleText": "分类"
-      }
-    },
-    {
-      "path": "pages/hongbao/hongbao",
-      "style": {
-        "navigationBarTitleText": "红包专区",
-        "navigationBarBackgroundColor": "#FC4E30"
-      }
-    },
-    {
-      "path": "pages/huafei/huafei",
-      "style": {
-        "navigationBarTitleText": "话费充值"
-      }
-    },
-    {
-      "path": "pages/shoukuanhongbao/shoukuan",
-      "style": {
-        "navigationBarBackgroundColor": "#FC4E30",
-        "navigationBarTitleText": "我的红包",
-        "navigationBarTextStyle": "white"
-      }
-    },
-    {
-      "path": "pages/appraise/appraise",
-      "style": {
-        "navigationBarTitleText": "评价",
-        "navigationBarBackgroundColor": "#fff"
-      }
-    },
-    {
-      "path": "pages/greenhorn/greenhorn",
-      "style": {
-        "navigationBarTitleText": "新手指南"
-      }
-    },
-    {
-      "path": "pages/greenhorn1/greenhorn1",
-      "style": {
-        "navigationBarTitleText": "新手指南"
-      }
-    },
-    {
-      "path": "pages/shoplist/shoplist",
-      "style": {
-        "navigationBarTitleText": "店铺列表"
-      }
-    },
-    {
-      "path": "pages/shoplist1/shoplist1",
-      "style": {
-        "navigationBarTitleText": "养车普通商品列表"
-      }
-    },
-    {
-      "path": "pages/publish/publish",
-      "style": {
-        "navigationBarTitleText": "发布",
-        "navigationBarBackgroundColor": "#fff"
-      }
-    },
-    {
-      "path": "pages/chaojihuiyuan/chaojihuiyuan",
-      "style": {
-        "navigationBarTitleText": "超级会员"
-      }
-    },
-    {
-      "path": "pages/aftermarket/aftermarket",
-      "style": {
-        "navigationBarTitleText": "选择售后类型"
-      }
-    },
-    {
-      "path": "pages/maintenance/maintenance",
-      "style": {
-        "navigationBarTitleText": "汽车保养"
-      }
-    },
-    {
-      "path": "pages/carlist/carlist",
-      "style": {
-        "navigationBarTitleText": "车辆列表"
-      }
-    },
-    {
-      "path": "pages/cardetails/cardetails",
-      "style": {
-        "navigationBarTitleText": "车辆详情"
-      }
-    },
-    {
-      "path": "pages/dailishang/dailishang",
-      "style": {
-        "navigationBarTitleText": "代理商"
-      }
-    },
-    {
-      "path": "pages/chongzhi/chongzhi",
-      "style": {
-        "navigationBarTitleText": "充值"
-      }
-    },
-    {
-      "path": "pages/pendingpayment/pendingpayment",
-      "style": {
-        "navigationBarTitleText": "待付款",
-        "navigationBarBackgroundColor": "#fc4424",
-        "navigationBarTextStyle": "white"
-      }
-    },
-    {
-      "path": "pages/kehudingdan/kehudingdan",
-      "style": {
-        "navigationBarTitleText": "客户订单"
-      }
-    },
-    {
-      "path": "pages/history/history",
-      "style": {
-        "navigationBarTitleText": "历史",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "pages/dailishenqing/dailishenqing",
-      "style": {
-        "navigationBarTitleText": "代理申请"
-      }
-    },
-    {
-      "path": "pages/serve/serve",
-      "style": {
-        "navigationBarTitleText": "服务订单"
-      }
-    },
-    {
-      "path": "pages/kehu/kehu",
-      "style": {
-        "navigationBarTitleText": "客户订单1",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "pages/hongbaoqiandao/hongbaoqiandao",
-      "style": {
-        "navigationBarTitleText": "红包签到",
-        "enablePullDownRefresh": false,
-        "navigationBarBackgroundColor": "#FF661A"
-      }
-    },
-    {
-      "path": "pages/maintenance1/maintenance1",
-      "style": {
-        "navigationBarTitleText": "汽车保养"
-      }
-    },
-    {
-      "path": "pages/pendingevaluated/pendingevaluated",
-      "style": {
-        "navigationBarTitleText": "待评价",
-        "navigationBarBackgroundColor": "#fc4424",
-        "navigationBarTextStyle": "white"
-      }
-    },
-    {
-      "path": "pages/pendingused/pendingused",
-      "style": {
-        "navigationBarTitleText": "待使用",
-        "navigationBarBackgroundColor": "#fc4424",
-        "navigationBarTextStyle": "white"
-      }
-    },
-    {
-      "path": "pages/done/done",
-      "style": {
-        "navigationBarTitleText": "已完成",
-        "navigationBarBackgroundColor": "#fc4424",
-        "navigationBarTextStyle": "white"
-      }
-    },
-    {
-      "path": "pages/client/client",
-      "style": {
-        "navigationBarTitleText": "客户订单"
-      }
-    },
-    {
-      "path": "pages/individual/individual",
-      "style": {
-        "navigationBarTitleText": "个人信息",
-        "navigationBarBackgroundColor": "#fff"
-      }
-    },
-    {
-      "path": "pages/carshoper/carshoper",
-      "style": {
-        "navigationBarTitleText": "我是汽车商家1",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "pages/dingdanqueren/dingdanqueren",
-      "style": {
-        "navigationBarTitleText": "订单确认",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "pages/collection/index",
-      "style": {
-        "navigationBarTitleText": "收藏",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/commodityorders/index",
-      "style": {
-        "navigationBarTitleText": "商品订单",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/goods/index",
-      "style": {
-        "navigationBarTitleText": "确认订单",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/balance/index",
-      "style": {
-        "navigationBarTitleText": "余额",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/withdrawals/index",
-      "style": {
-        "navigationBarTitleText": "提现记录",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/withdrawal/index",
-      "style": {
-        "navigationBarTitleText": "提现",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/merchant/index",
-      "style": {
-        "navigationBarTitleText": "商家详情",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/commodity/commodity",
-      "style": {
-        "navigationBarTitleText": "商品评价12",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "pages/addcar/index",
-      "style": {
-        "navigationBarTitleText": "添加车辆",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/return/index",
-      "style": {
-        "navigationBarTitleText": "退货详情",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/orders/index",
-      "style": {
-        "navigationBarTitleText": "退货详情",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/refund/index",
-      "style": {
-        "navigationBarTitleText": "退款订单",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/mobil/index",
-      "style": {
-        "navigationBarTitleText": "美孚Mobil",
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/application/application",
-      "style": {
-        "navigationBarTitleText": "二手交易商申请"
-      }
-    },
-    {
-      "path": "pages/details/details",
-      "style": {
-        "navigationBarTitleText": "余额明细"
-      }
-    },
-    {
-      "path": "pages/shangjiazhanghu/shangjiazhanghu",
-      "style": {
-        "navigationBarTitleText": "商家账户1",
-        "enablePullDownRefresh": false,
-        "navigationBarBackgroundColor": "#FC4424",
-        "navigationBarTextStyle": "#FFFFFF"
-      }
-    },
-    {
-      "path": "pages/trade/trade",
-      "style": {
-        "navigationBarTitleText": "二手交易",
-        "navigationBarBackgroundColor": "#FC4424",
-        "navigationBarTextStyle": "#FFFFFF"
-      }
-    },
-    {
-      "path": "pages/dingdanlist1/dingdanlist1",
-      "style": {
-        "navigationBarTitleText": "待发货"
-      }
-    },
-    {
-      "path": "pages/Confirmtheorder/Confirmtheorder",
-      "style": {
-        "navigationBarTitleText": "确认订单页面",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "pages/twocommodity/twocommodity",
-      "style": {
-        "navigationBarTitleText": "二手商品详情",
-        "navigationBarBackgroundColor": "#fff"
-      }
-    },
-    {
-      "path": "pages/shopruzhu/shopruzhu",
-      "style": {
-        "navigationBarTitleText": "商家入驻页面",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "pages/dingdanlist3/dingdanlist3",
-      "style": {
-        "navigationBarTitleText": "待评价"
-      }
-    },
-    {
-      "path": "pages/CfOrder1/CfOrder1",
-      "style": {
-        "navigationBarTitleText": "养车确认订单",
-        "navigationBarBackgroundColor": "#fff"
-      }
-    },
-    {
-      "path": "pages/CfOrder2/CfOrder2",
-      "style": {
-        "navigationBarTitleText": "养车确认订单扣券",
-        "navigationBarBackgroundColor": "#fff"
-      }
-    },
-    {
-      "path": "pages/dingdanlist4/dingdanlist4",
-      "style": {
-        "navigationBarTitleText": "待收货"
-      }
-    },
-    {
-      "path": "pages/dingdanlist5/dingdanlist5",
-      "style": {
-        "navigationBarTitleText": "已完成"
-      }
-    },
-    {
-      "path": "pages/invite/invite",
-      "style": {
-        "navigationBarTitleText": "邀请好友"
-      }
-    },
-    {
-      "path": "pages/querendingdan2/querendingdan2",
-      "style": {
-        "navigationBarTitleText": "确认订单2",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "pages/dianpuye/dianpuye",
-      "style": {
-        "navigationBarTitleText": "店铺页"
-      }
-    },
-    {
-      "path": "pages/confirm/confirm",
-      "style": {
-        "navigationBarTitleText": "确认订单",
-        "navigationBarBackgroundColor": "#fff"
-      }
-    },
-    {
-      "path": "pages/tianjiadizhi/tianjiadizhi",
-      "style": {
-        "navigationBarTitleText": "确认订单3",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "pages/enroll/enroll",
-      "style": {
-        "navigationBarTitleText": "注册"
-      }
-    },
-    {
-      "path": "pages/shopxiangqing/shopxiangqing",
-      "style": {
-        "navigationBarTitleText": "商品详情11",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "pages/concern/concern",
-      "style": {
-        "navigationBarTitleText": "关注店铺",
-        "navigationBarBackgroundColor": "#fff"
-      }
-    },
-    {
-      "path": "pages/envelope/envelope",
-      "style": {
-        "navigationBarTitleText": ""
-      }
-    },
-    {
-      "path": "pages/setup/setup",
-      "style": {
-        "navigationBarTitleText": "设置",
-        "navigationBarBackgroundColor": "#fff"
-      }
-    },
-    {
-      "path": "pages/orders1/orders1",
-      "style": {
-        "navigationBarTitleText": "商品订单",
-        "navigationBarBackgroundColor": "#fff"
-      }
-    },
-    {
-      "path": "pages/shopguanli/shopguanli",
-      "style": {
-        "navigationBarTitleText": "商品管理",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "pages/shopguanli2/shopguanli2",
-      "style": {
-        "navigationBarTitleText": "商品管理2",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "pages/receiving/receiving",
-      "style": {
-        "navigationBarTitleText": "收获地址"
-      }
-    },
-    {
-      "path": "pages/pingjia/pingjia",
-      "style": {
-        "navigationBarTitleText": "评价"
-      }
-    },
-    {
-      "path": "pages/shangpinxiangqing/shangpinxiangqing",
-      "style": {
-        "navigationBarTitleText": ""
-      }
-    },
-    {
-      "path": "pages/shangpinguanli/shangpinguanli",
-      "style": {
-        "navigationBarTitleText": "商品管理"
-      }
-    }
-      ,{
-            "path" : "pages/uv-uizujain/uv-uizujain",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "弹出组件",
-                "enablePullDownRefresh": false
-            }
-            
-        },
-        {
-          "path" : "pages/newusers/newusers",
-          "style" : 
-          {
-            "navigationBarTitleText" : "养车新用户",
-            "navigationStyle": "custom"
-          }
-        }
-    ],
-  "globalStyle": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "首页",
-    "navigationBarBackgroundColor": "#f8f8f8",
-    "backgroundColor": "#F8F8F8"
-  },
-  "tabBar": {
-    "selectedColor": "#fc4424",
-    "list": [{
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "/static/image/首页.png",
-        "selectedIconPath": "/static/image/首页1.png"
-      },
-      {
-        "pagePath": "pages/car/car",
-        "text": "养车",
-        "iconPath": "/static/image/养车记录.png",
-        "selectedIconPath": "/static/image/养车记录1.png"
-      },
-      {
-        "pagePath": "pages/snapped/snapped",
-        "text": "抢购",
-        "iconPath": "/static/image/抢购.png",
-        "selectedIconPath": "/static/image/抢购1.png"
-      },
-      {
-        "pagePath": "pages/entity/entity",
-        "text": "线下实体",
-        "iconPath": "/static/image/实体.png",
-        "selectedIconPath": "/static/image/实体1.png"
-      },
-      {
-        "pagePath": "pages/mine/mine",
-        "text": "我的",
-        "iconPath": "/static/image/我的.png",
-        "selectedIconPath": "/static/image/我的1.png"
-      }
-    ]
-  }
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
+		}
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/car/car",
+			"style": {
+				"navigationBarTitleText": "正茂通养车",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/snapped/snapped",
+			"style": {
+				"navigationBarTitleText": "抢购专区",
+				"navigationBarBackgroundColor": "#FC4E30"
+			}
+		},
+		{
+			"path": "pages/entity/entity",
+			"style": {
+				"navigationBarTitleText": "线下实体",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/fenlei/fenlei",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		},
+		{
+			"path": "pages/hongbao/hongbao",
+			"style": {
+				"navigationBarTitleText": "红包专区",
+				"navigationBarBackgroundColor": "#FC4E30"
+			}
+		},
+		{
+			"path": "pages/huafei/huafei",
+			"style": {
+				"navigationBarTitleText": "话费充值"
+			}
+		},
+		{
+			"path": "pages/shoukuanhongbao/shoukuan",
+			"style": {
+				"navigationBarBackgroundColor": "#FC4E30",
+				"navigationBarTitleText": "我的红包",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/appraise/appraise",
+			"style": {
+				"navigationBarTitleText": "评价",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/greenhorn/greenhorn",
+			"style": {
+				"navigationBarTitleText": "新手指南"
+			}
+		},
+		{
+			"path": "pages/greenhorn1/greenhorn1",
+			"style": {
+				"navigationBarTitleText": "新手指南"
+			}
+		},
+		{
+			"path": "pages/shoplist/shoplist",
+			"style": {
+				"navigationBarTitleText": "店铺列表"
+			}
+		},
+		{
+			"path": "pages/shoplist1/shoplist1",
+			"style": {
+				"navigationBarTitleText": "养车普通商品列表"
+			}
+		},
+		{
+			"path": "pages/publish/publish",
+			"style": {
+				"navigationBarTitleText": "发布",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/chaojihuiyuan/chaojihuiyuan",
+			"style": {
+				"navigationBarTitleText": "超级会员"
+			}
+		},
+		{
+			"path": "pages/aftermarket/aftermarket",
+			"style": {
+				"navigationBarTitleText": "选择售后类型"
+			}
+		},
+		{
+			"path": "pages/maintenance/maintenance",
+			"style": {
+				"navigationBarTitleText": "汽车保养"
+			}
+		},
+		{
+			"path": "pages/carlist/carlist",
+			"style": {
+				"navigationBarTitleText": "车辆列表"
+			}
+		},
+		{
+			"path": "pages/cardetails/cardetails",
+			"style": {
+				"navigationBarTitleText": "车辆详情"
+			}
+		},
+		{
+			"path": "pages/dailishang/dailishang",
+			"style": {
+				"navigationBarTitleText": "代理商"
+			}
+		},
+		{
+			"path": "pages/chongzhi/chongzhi",
+			"style": {
+				"navigationBarTitleText": "充值"
+			}
+		},
+		{
+			"path": "pages/pendingpayment/pendingpayment",
+			"style": {
+				"navigationBarTitleText": "待付款",
+				"navigationBarBackgroundColor": "#fc4424",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/kehudingdan/kehudingdan",
+			"style": {
+				"navigationBarTitleText": "客户订单"
+			}
+		},
+		{
+			"path": "pages/history/history",
+			"style": {
+				"navigationBarTitleText": "历史",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/dailishenqing/dailishenqing",
+			"style": {
+				"navigationBarTitleText": "代理申请"
+			}
+		},
+		{
+			"path": "pages/serve/serve",
+			"style": {
+				"navigationBarTitleText": "服务订单"
+			}
+		},
+		{
+			"path": "pages/kehu/kehu",
+			"style": {
+				"navigationBarTitleText": "客户订单1",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/hongbaoqiandao/hongbaoqiandao",
+			"style": {
+				"navigationBarTitleText": "红包签到",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FF661A"
+			}
+		},
+		{
+			"path": "pages/maintenance1/maintenance1",
+			"style": {
+				"navigationBarTitleText": "汽车保养"
+			}
+		},
+		{
+			"path": "pages/pendingevaluated/pendingevaluated",
+			"style": {
+				"navigationBarTitleText": "待评价",
+				"navigationBarBackgroundColor": "#fc4424",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/pendingused/pendingused",
+			"style": {
+				"navigationBarTitleText": "待使用",
+				"navigationBarBackgroundColor": "#fc4424",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/done/done",
+			"style": {
+				"navigationBarTitleText": "已完成",
+				"navigationBarBackgroundColor": "#fc4424",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/client/client",
+			"style": {
+				"navigationBarTitleText": "客户订单"
+			}
+		},
+		{
+			"path": "pages/individual/individual",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/carshoper/carshoper",
+			"style": {
+				"navigationBarTitleText": "我是汽车商家1",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/dingdanqueren/dingdanqueren",
+			"style": {
+				"navigationBarTitleText": "订单确认",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/collection/index",
+			"style": {
+				"navigationBarTitleText": "收藏",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/commodityorders/index",
+			"style": {
+				"navigationBarTitleText": "商品订单",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/goods/index",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/balance/index",
+			"style": {
+				"navigationBarTitleText": "余额",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/withdrawals/index",
+			"style": {
+				"navigationBarTitleText": "提现记录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/withdrawal/index",
+			"style": {
+				"navigationBarTitleText": "提现",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/merchant/index",
+			"style": {
+				"navigationBarTitleText": "商家详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/commodity/commodity",
+			"style": {
+				"navigationBarTitleText": "商品评价12",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/addcar/index",
+			"style": {
+				"navigationBarTitleText": "添加车辆",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/return/index",
+			"style": {
+				"navigationBarTitleText": "退货详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/orders/index",
+			"style": {
+				"navigationBarTitleText": "退货详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/refund/index",
+			"style": {
+				"navigationBarTitleText": "退款订单",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/mobil/index",
+			"style": {
+				"navigationBarTitleText": "美孚Mobil",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/application/application",
+			"style": {
+				"navigationBarTitleText": "二手交易商申请"
+			}
+		},
+		{
+			"path": "pages/details/details",
+			"style": {
+				"navigationBarTitleText": "余额明细"
+			}
+		},
+		{
+			"path": "pages/shangjiazhanghu/shangjiazhanghu",
+			"style": {
+				"navigationBarTitleText": "商家账户1",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FC4424",
+				"navigationBarTextStyle": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/trade/trade",
+			"style": {
+				"navigationBarTitleText": "二手交易",
+				"navigationBarBackgroundColor": "#FC4424",
+				"navigationBarTextStyle": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/dingdanlist1/dingdanlist1",
+			"style": {
+				"navigationBarTitleText": "待发货"
+			}
+		},
+		{
+			"path": "pages/Confirmtheorder/Confirmtheorder",
+			"style": {
+				"navigationBarTitleText": "确认订单页面",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/twocommodity/twocommodity",
+			"style": {
+				"navigationBarTitleText": "二手商品详情",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/shopruzhu/shopruzhu",
+			"style": {
+				"navigationBarTitleText": "商家入驻页面",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/dingdanlist3/dingdanlist3",
+			"style": {
+				"navigationBarTitleText": "待评价"
+			}
+		},
+		{
+			"path": "pages/CfOrder1/CfOrder1",
+			"style": {
+				"navigationBarTitleText": "养车确认订单",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/CfOrder2/CfOrder2",
+			"style": {
+				"navigationBarTitleText": "养车确认订单扣券",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/dingdanlist4/dingdanlist4",
+			"style": {
+				"navigationBarTitleText": "待收货"
+			}
+		},
+		{
+			"path": "pages/dingdanlist5/dingdanlist5",
+			"style": {
+				"navigationBarTitleText": "已完成"
+			}
+		},
+		{
+			"path": "pages/invite/invite",
+			"style": {
+				"navigationBarTitleText": "邀请好友"
+			}
+		},
+		{
+			"path": "pages/querendingdan2/querendingdan2",
+			"style": {
+				"navigationBarTitleText": "确认订单2",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/dianpuye/dianpuye",
+			"style": {
+				"navigationBarTitleText": "店铺页"
+			}
+		},
+		{
+			"path": "pages/confirm/confirm",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/tianjiadizhi/tianjiadizhi",
+			"style": {
+				"navigationBarTitleText": "确认订单3",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/enroll/enroll",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/shopxiangqing/shopxiangqing",
+			"style": {
+				"navigationBarTitleText": "商品详情11",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/concern/concern",
+			"style": {
+				"navigationBarTitleText": "关注店铺",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/envelope/envelope",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/setup/setup",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/orders1/orders1",
+			"style": {
+				"navigationBarTitleText": "商品订单",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/shopguanli/shopguanli",
+			"style": {
+				"navigationBarTitleText": "商品管理",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/shopguanli2/shopguanli2",
+			"style": {
+				"navigationBarTitleText": "商品管理2",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/receiving/receiving",
+			"style": {
+				"navigationBarTitleText": "收获地址"
+			}
+		},
+		{
+			"path": "pages/pingjia/pingjia",
+			"style": {
+				"navigationBarTitleText": "评价"
+			}
+		},
+		{
+			"path": "pages/shangpinxiangqing/shangpinxiangqing",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/shangpinguanli/shangpinguanli",
+			"style": {
+				"navigationBarTitleText": "商品管理"
+			}
+		}, {
+			"path": "pages/uv-uizujain/uv-uizujain",
+			"style": {
+				"navigationBarTitleText": "弹出组件",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/newusers/newusers",
+			"style": {
+				"navigationBarTitleText": "养车新用户",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/pay/pay",
+			"style": {
+				"navigationBarTitleText": "支付成功"
+			}
+		},
+		{
+			"path": "pages/join/join",
+			"style": {
+				"navigationBarTitleText": "支付成功-拼团"
+			}
+		},
+		{
+			"path": "pages/address/address",
+			"style": {
+				"navigationBarTitleText": "添加收获地址"
+			}
+		},
+		{
+			"path" : "pages/application1/application1",
+			"style" : 
+			{
+				"navigationBarTitleText" : "申请退款"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "首页",
+		"navigationBarBackgroundColor": "#f8f8f8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"selectedColor": "#fc4424",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "/static/image/首页.png",
+				"selectedIconPath": "/static/image/首页1.png"
+			},
+			{
+				"pagePath": "pages/car/car",
+				"text": "养车",
+				"iconPath": "/static/image/养车记录.png",
+				"selectedIconPath": "/static/image/养车记录1.png"
+			},
+			{
+				"pagePath": "pages/snapped/snapped",
+				"text": "抢购",
+				"iconPath": "/static/image/抢购.png",
+				"selectedIconPath": "/static/image/抢购1.png"
+			},
+			{
+				"pagePath": "pages/entity/entity",
+				"text": "线下实体",
+				"iconPath": "/static/image/实体.png",
+				"selectedIconPath": "/static/image/实体1.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "/static/image/我的.png",
+				"selectedIconPath": "/static/image/我的1.png"
+			}
+		]
+	}
 }
