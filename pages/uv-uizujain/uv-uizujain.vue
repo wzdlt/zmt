@@ -59,14 +59,13 @@
           <view style="margin-top: 20px;" class="number">
             <view> 数量</view>
             <view class="number1">
-              <button>-</button>1
-              <button>+</button>
+              <uv-number-box v-model="value" @change="valChange"></uv-number-box>
             </view>
           </view>
           <!-- 数量结束 -->
         </view>
         <!-- djsid  -->
-         <view class="queding">确定</view>
+        <view class="queding">确定</view>
       </view>
     </uv-popup>
 
@@ -76,9 +75,17 @@
 </template>
 <script>
 export default {
-  methods: {
+  data() {
+    return {
+      value: 0
+    }
+  },
+    methods: {
     open() {
       this.$refs.popup.open();
+    },
+      valChange(e) {
+      console.log('当前值为: ' + e.value)
     }
   }
 }
@@ -87,7 +94,8 @@ export default {
 .box {
 
   width: 100%;
-  .queding{
+
+  .queding {
     text-align: center;
     line-height: 40px;
     height: 40px;
@@ -95,11 +103,12 @@ export default {
     border-radius: 500px;
     background-color: #C1A766;
   }
+
   // 开始、
   .number {
     display: flex;
     justify-content: space-between;
-   
+
     .number1 {
       width: 30%;
       height: 30px;
