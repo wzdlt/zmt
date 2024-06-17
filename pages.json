@@ -548,6 +548,14 @@
                 "enablePullDownRefresh": false
             }
             
+        },
+        {
+          "path" : "pages/newusers/newusers",
+          "style" : 
+          {
+            "navigationBarTitleText" : "养车新用户",
+            "navigationStyle": "custom"
+          }
         }
     ],
   "globalStyle": {
