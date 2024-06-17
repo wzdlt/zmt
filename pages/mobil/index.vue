@@ -54,6 +54,9 @@
           <view class="t-color">￥{{ price }}</view>
           <view class="model">{{ selectedSpec }}</view>
         </view>
+        <div class="x">
+          ×
+        </div>
       </view>
 
       <!-- 选择商品规格 -->
@@ -89,7 +92,7 @@
     </view>
 
     <!-- 底部购买按钮 -->
-    <view class="footer">
+    <view class="footer" @click="purchase">
       <button>购买</button>
     </view>
   </view>
@@ -106,6 +109,12 @@ const syy = () => {
      url: '/pages/merchant/index', 
    });
 };
+
+const purchase = () => {
+  uni.navigateTo({
+    url: '/pages/goods/index'
+  })
+}
 
   // 定义控制弹出层显示的布尔值
   const isPopVisible = ref(false);
@@ -308,10 +317,15 @@ const syy = () => {
           height: 100%;
         }
       }
-
+      
+      .x{
+        width: 10px;
+        height: 10px;
+      }
+      
       .t-txt {
-        width: 30%;
-        background-color: pink;
+        width: 90%;
+        // background-color: pink;
         display: flex;
         flex-wrap: wrap;
         align-items: center;

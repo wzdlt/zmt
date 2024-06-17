@@ -52,17 +52,65 @@
         </view>
       </view>
     </view>
-    
-
+  </view>
+  
+  <view class="pay-box">
+    <view
+      class="pay"
+      :class="payClassNameMap[item.name]"
+      v-for="(item, index) in payMethods"
+      :key="index"
+      @click="() => togglePayMethod(index)"
+    >
+      <view class="p-left">{{ item.name }}</view>
+      <view class="p-right">
+        <img :src="item.icon" alt="" :class="{ active: item.isSelected }" />
+      </view>
+    </view>
+  </view>
+      
+  <view class="footer">
+    <view class="f-left">
+      <view class="text">合计：</view>
+      <view class="small">￥</view>
+      <view class="big">890</view>
+      <view class="small">.00</view>
+    </view>
+    <view class="f-right">
+      <button>立即支付</button>
+    </view>
   </view>
 </template>
 
 <script setup>
+  import { ref, reactive } from 'vue';
+  
   const syy = () => {
     uni.navigateTo({
        url: '/pages/mobil/index', 
      });
   };
+// 初始化支付方式数组，假设微信支付默认选中
+const payMethods = reactive([
+  { name: '微信支付', icon: '../../static/image/ico-23.png', isSelected: true },
+  { name: '支付宝', icon: '../../static/image/ico-22.png', isSelected: false },
+  { name: '余额', icon: '../../static/image/ico-22.png', isSelected: false },
+]);
+const payClassNameMap = {
+  '微信支付': 'wechat',
+  '支付宝': 'alipay',
+  '余额': 'balance',
+};
+// 定义方法来切换支付方式的选中状态
+const togglePayMethod = (index) => {
+  payMethods.forEach((item, i) => {
+    if (i === index) {
+      item.isSelected = true;
+    } else {
+      item.isSelected = false;
+    }
+  });
+};
 </script>
 
 <style lang="scss">
@@ -101,7 +149,8 @@
   }
   
   .body-box{
-    padding: 20px 0;
+    margin: 40px 0 10px;
+    padding: 10px 0;
     width: 100%;
     background-color: #f5f5f5;
     .b-top{
@@ -109,7 +158,7 @@
       width: 90%;
       margin: 0 auto;
       background-color: #fff;
-      border-radius: 16px;
+      border-radius: 10px;
 
       .t-center{
         display: flex;
@@ -215,4 +264,82 @@
     
   }
   
+  .pay-box{
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: #fff;
+    .wechat{
+      background-image: url(../../static/image/wechat.png);
+    }
+    .alipay{
+      background-image: url(../../static/image/alipay.png);
+    }
+    .balance{
+      background-image: url(../../static/image/ico-21.png);
+    }
+    .pay{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #d5d5d5;
+      background-repeat: no-repeat;
+      background-size: 16px;
+      background-position: 2.6% 50%;
+      .p-left{
+        width: 90%;
+        height: 50px;
+        line-height: 50px;
+        text-indent: 2em;
+      }
+
+      .p-right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50px;
+        height: 50px;
+        img{
+          width: 30%;
+          height: 30%;
+        }
+      }
+    }
+  }
+
+  .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    .f-left{
+      width: 60%;
+      height: 60px;
+      line-height: 60px;
+      display: flex;
+      .small,.big{
+        color: #fc4424;
+      }
+      .big{
+        font-size: 20px;
+        line-height: 56px;
+      }
+    }
+    .f-right{
+      width: 30%;
+      height: 60px;
+      button{
+        margin: 10px 0;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50em;
+        color: #fff;
+        background-color: #fc4424;
+        font-size: 12px;
+      }
+    }
+  }
 </style>
