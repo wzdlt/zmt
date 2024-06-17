@@ -58,9 +58,18 @@ const items = ref([
 ]);
 
 const navigateToPage = (item) => {
-  if (item.text === '提现') {
+  if (item.text === '充值') {
+    uni.navigateTo({
+      url: '/pages/chongzhi/chongzhi'
+    });
+  }
+  else if (item.text === '提现') {
     uni.navigateTo({
       url: '/pages/withdrawal/index'
+    });
+  } else if (item.text === '余额明细') { // 添加对“提现记录”的处理
+    uni.navigateTo({
+      url: '/pages/details/details'
     });
   } else if (item.text === '提现记录') { // 添加对“提现记录”的处理
     uni.navigateTo({

@@ -75,8 +75,10 @@
       </view>
       <view class="ico-item">
         <view class="i-box">
-          <view class="b-item" v-for="(item, index) in items" :key="index">
-            <img :src="item.icon" alt="" />
+          <view class="b-item" v-for="(item, index) in items" :key="index" @click="icoicobox(item)">
+            <view class="img-box">
+              <img :src="item.icon" alt="" />
+            </view>
             <view class="p">{{ item.text }}</view>
           </view>
         </view>
@@ -99,6 +101,10 @@
       uni.navigateTo({
         url: '/pages/collection/index'
       })
+    } else if (item.text === '关注店铺') {
+      uni.navigateTo({
+        url: '/pages/concern/concern'
+      })
     }
   }
   // 定义签到成功提示的显示状态，默认隐藏
@@ -120,6 +126,10 @@
       if (item.iconText === '余额') {
         uni.navigateTo({
           url: '/pages/balance/index',
+        })
+      } else if (item.iconText === '红包') {
+        uni.navigateTo({
+          url: '/pages/shoukuanhongbao/shoukuan'
         })
       }
     }
@@ -158,6 +168,11 @@
       uni.navigateTo({
         url: '/pages/commodityorders/index'
       });
+    }
+    else if (item.text === '服务订单') {
+      uni.navigateTo({
+        url: '/pages/serve/serve'
+      })
     }
     else if (item.text === '退换/售后') {
       uni.navigateTo({
@@ -228,6 +243,50 @@
         text: '新手指南'
       },
     ]);
+    
+    const icoicobox = (item) => {
+      if (item.text === '收货地址') {
+        uni.navigateTo({
+          url: '/pages/receiving/receiving'
+        })
+      } else if (item.text === '商家入驻') {
+        uni.navigateTo({
+          url: '/pages/shopruzhu/shopruzhu'
+        })
+      } else if (item.text === '超级会员') {
+        uni.navigateTo({
+          url: '/pages/chaojihuiyuan/chaojihuiyuan'
+        })
+      } else if (item.text === '二手交易商') {
+        uni.navigateTo({
+          url: '/pages/application/application'
+        })
+      } else if (item.text === '官方客服') {
+        uni.navigateTo({
+          url: '/pages'
+        })
+      } else if (item.text === '城市合伙人') {
+        uni.navigateTo({
+          url: '/pages'
+        })
+      } else if (item.text === '成为代理') {
+        uni.navigateTo({
+          url: '/pages/dailishang/dailishang'
+        })
+      } else if (item.text === '邀请好友') {
+        uni.navigateTo({
+          url: '/pages/invite/invite'
+        })
+      } else if (item.text === '设置') {
+        uni.navigateTo({
+          url: '/pages/setup/setup'
+        })
+      } else if (item.text === '新手指南') {
+        uni.navigateTo({
+          url: '/pages/greenhorn/greenhorn'
+        })
+      } 
+    }
   </script>
   
   <style scoped lang="scss">
@@ -594,17 +653,21 @@
         flex-wrap: wrap;
   
         .b-item {
-          margin: 10px 0;
+          margin-bottom: 10px;
           text-align: center;
           width: 25%;
+          height: 70px;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-  
-          img {
-            width: 24px;
-            height: 24px;
+          .img-box{
+            width: 100%;
+            img {
+              width: 24px;
+              height: 24px;
+            }
           }
+
   
           .p {
             margin: 10px 0;

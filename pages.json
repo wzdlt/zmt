@@ -279,6 +279,13 @@
       }
     },
     {
+      "path": "pages/address/index",
+      "style": {
+        "navigationBarTitleText": "收货地址",
+        "navigationStyle": "custom"
+      }
+    },
+    {
       "path": "pages/balance/index",
       "style": {
         "navigationBarTitleText": "余额",

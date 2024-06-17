@@ -9,13 +9,13 @@
       <view class="box2-2">
         <view class="box2-2-left">
           <view class="box2-2-left1">
-            <image src="../../static/image/微信.png" mode=""></image>
+            <image src="../../static/image/wechat.png" mode=""></image>
           </view>
           <view class="box2-2-left2">微信钱包</view>
         </view>
         <view class="box2-2-left">
           <view class="box2-2-left1">
-            <image src="../../static/image/支付宝支付.png" mode=""></image>
+            <image src="../../static/image/alipay.png" mode=""></image>
           </view>
           <view class="box2-2-left2">支付宝</view>
         </view>

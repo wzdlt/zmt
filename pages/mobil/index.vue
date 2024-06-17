@@ -233,6 +233,10 @@ const purchase = () => {
         line-height: 32px;
         color: #a0a0a0;
         text-align: right;
+        background-image: url(../../static/image/ico-26.png);
+        background-size: 12px;
+        background-repeat: no-repeat;
+        background-position: 50% 80%;
       }
     }
 
