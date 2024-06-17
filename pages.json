@@ -272,6 +272,13 @@
       }
     },
     {
+      "path": "pages/goods/index",
+      "style": {
+        "navigationBarTitleText": "确认订单",
+        "navigationStyle": "custom"
+      }
+    },
+    {
       "path": "pages/balance/index",
       "style": {
         "navigationBarTitleText": "余额",

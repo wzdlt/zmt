@@ -4,95 +4,95 @@
       &lt;
     </view>
   </view>
-  <div id="app">
-    <div class="banner">
+  <view id="app">
+    <view class="banner">
       <img src="../../static/image/commodity.png" alt="" />
-    </div>
+    </view>
 
-    <div class="text-box">
-      <div class="t-top">
-        <div class="t-left">
-          <div>￥439.00</div>
-          <div class="color">￥599.00</div>
-        </div>
-        <div class="t-right">分享</div>
-      </div>
+    <view class="text-box">
+      <view class="t-top">
+        <view class="t-left">
+          <view>￥439.00</view>
+          <view class="color">￥599.00</view>
+        </view>
+        <view class="t-right">分享</view>
+      </view>
 
-      <div class="t-title">
-        <div>送100元红包</div>
-      </div>
+      <view class="t-title">
+        <view>送100元红包</view>
+      </view>
 
-      <div class="t-center">
+      <view class="t-center">
         美孚(hab0)金装美孚1号FSOW-30 全合成机油润滑油 SL级 4L 汽车保养
-      </div>
+      </view>
 
-      <div class="t-bottom">
-        <div class="b-left">库存999</div>
-        <div class="b-right">销量2314</div>
-      </div>
-    </div>
+      <view class="t-bottom">
+        <view class="b-left">库存999</view>
+        <view class="b-right">销量2314</view>
+      </view>
+    </view>
 
 
     <!-- 选择产品规格 -->
-    <div class="specification">
-      <div class="s-left">规格</div>
-      <div class="s-right" @click="togglePop">
-        <div class="r-left">请选择规格</div>
-        <div class="r-right">&gt;</div>
-      </div>
-    </div>
+    <view class="specification">
+      <view class="s-left">规格</view>
+      <view class="s-right" @click="togglePop">
+        <view class="r-left">请选择规格</view>
+        <view class="r-right">&gt;</view>
+      </view>
+    </view>
 
     <!-- 选择产品规格弹出层 -->
-    <div class="pop" v-show="isPopVisible">
+    <view class="pop" v-show="isPopVisible">
 
       <!-- 弹出层顶部 -->
-      <div class="p-top">
-        <div class="t-img">
+      <view class="p-top">
+        <view class="t-img">
           <img src="../../static/image/commodity.png" alt="" />
-        </div>
-        <div class="t-txt">
-          <div class="t-color">￥{{ price }}</div>
-          <div class="model">{{ selectedSpec }}</div>
-        </div>
-      </div>
+        </view>
+        <view class="t-txt">
+          <view class="t-color">￥{{ price }}</view>
+          <view class="model">{{ selectedSpec }}</view>
+        </view>
+      </view>
 
       <!-- 选择商品规格 -->
-      <div class="pop-specification">
-        <div class="s-p-top">商品规格</div>
-        <div class="s-p-box">
-          <div class="one" v-for="(spec, index) in specifications" :key="index" @click="toggleSelected(spec.volume)"
-            :class="{ 'selected-spec': selectedSpec === spec.volume }">{{ spec.volume }}</div>
-        </div>
-      </div>
+      <view class="pop-specification">
+        <view class="s-p-top">商品规格</view>
+        <view class="s-p-box">
+          <view class="one" v-for="(spec, index) in specifications" :key="index" @click="toggleSelected(spec.volume)"
+            :class="{ 'selected-spec': selectedSpec === spec.volume }">{{ spec.volume }}</view>
+        </view>
+      </view>
 
       <!-- 选择购买商品数量 -->
-      <div class="quantity">
-        <div class="q-left">购买数量：</div>
-        <div class="q-right">
+      <view class="quantity">
+        <view class="q-left">购买数量：</view>
+        <view class="q-right">
           <button class="down" @click="decrementQuantity">-</button>
           <input type="text" :value="selectedQuantity" min="1" />
           <button class="up" @click="incrementQuantity">+</button>
-        </div>
-      </div>
+        </view>
+      </view>
 
-      <div class="btn">
+      <view class="btn">
         <button>购买</button>
-      </div>
-    </div>
+      </view>
+    </view>
 
     <!-- 商品介绍 -->
-    <div class="present">
-      <div class="p-top">商品介绍</div>
-      <div class="p-img">
+    <view class="present">
+      <view class="p-top">商品介绍</view>
+      <view class="p-img">
         <img src="../../static/image/present.jpg" alt="" />
-      </div>
-    </div>
+      </view>
+    </view>
 
     <!-- 底部购买按钮 -->
-    <div class="footer">
+    <view class="footer">
       <button>购买</button>
-    </div>
-  </div>
+    </view>
+  </view>
 </template>
 
 <script setup>
@@ -102,7 +102,9 @@
   } from 'vue';
 
 const syy = () => {
-  uni.navigateBack();
+  uni.navigateTo({
+     url: '/pages/merchant/index', 
+   });
 };
 
   // 定义控制弹出层显示的布尔值
@@ -229,7 +231,7 @@ const syy = () => {
       width: 90%;
       margin: 10px auto;
 
-      div {
+      view {
         font-size: 12px;
         width: 24%;
         height: 22px;
@@ -314,7 +316,7 @@ const syy = () => {
         flex-wrap: wrap;
         align-items: center;
 
-        div {
+        view {
           width: 100%;
         }
       }
