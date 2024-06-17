@@ -77,7 +77,7 @@
           <!-- 推荐 -->
           <view v-if="activeTab === 'tab1'">
               <view class="recommend">
-                <view class="r-box" v-for="(product, index) in products" :key="index">
+                <view class="r-box" v-for="(product, index) in products" :key="index"  @tap="navigateToProductDetail(product)">
                   <view class="img-box">
                     <img :src="product.imageUrl" alt="" />
                   </view>
@@ -220,11 +220,16 @@ export default {
     changeTab(tab) {
       this.activeTab = tab;
     },
-    navigateToDetail(item) {
-      uni.navigateTo({
-        url:'/pages/merchant/index'
-      })
-    }
+    switchToTab() {
+          uni.switchTab({
+            url: '/pages/entity/entity',
+          });
+        },
+        navigateToProductDetail(product) {
+          uni.navigateTo({
+            url: `/pages/mobil/index?id=${product.id}`,
+          });
+        },
   }
 }
 </script>

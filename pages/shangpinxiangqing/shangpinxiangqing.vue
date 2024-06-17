@@ -56,7 +56,7 @@
         <view class="content-box2-1">
           <view class="box2-left">这些人正在抢购，可直接参与抢购 </view>
           <view class="box2-right">
-            <image src="../../static/image/向右箭头.png" mode=""></image>
+            <image @click="kai()" src="../../static/image/向右箭头.png" mode=""></image>
           </view>
         </view>
         <view style="font-size: 13px;color: #ccc;">24小时内未成团，自动取消抢购团队，付款原路退回</view>
@@ -171,6 +171,60 @@
       <button class="btn2">单独购买</button>
       <button class="btn1">我要抢购</button>
     </view>
+
+    <view class="box4" v-show="isshow">
+      <view class="box4-list">
+        <view class="box4-list1">
+          可参与的抢购
+          <image @click="guan()" src="../../static/image/delete.png" mode=""></image>
+        </view>
+        <view class="box4-list2">
+          <view class="box4-list2-1">
+            <image src="../../static/image/头像.jpg" mode=""></image>
+          </view>
+          <view class="box4-list2-2">橘子果酱</view>
+          <view class="box4-list2-3">
+            <text>去抢购</text>
+          </view>
+        </view>
+        <view class="box4-list2">
+          <view class="box4-list2-1">
+            <image src="../../static/image/头像.jpg" mode=""></image>
+          </view>
+          <view class="box4-list2-2">橘子果酱</view>
+          <view class="box4-list2-3">
+            <text>去抢购</text>
+          </view>
+        </view>
+        <view class="box4-list2">
+          <view class="box4-list2-1">
+            <image src="../../static/image/头像.jpg" mode=""></image>
+          </view>
+          <view class="box4-list2-2">橘子果酱</view>
+          <view class="box4-list2-3">
+            <text>去抢购</text>
+          </view>
+        </view>
+        <view class="box4-list2">
+          <view class="box4-list2-1">
+            <image src="../../static/image/头像.jpg" mode=""></image>
+          </view>
+          <view class="box4-list2-2">橘子果酱</view>
+          <view class="box4-list2-3">
+            <text>去抢购</text>
+          </view>
+        </view>
+        <view class="box4-list2">
+          <view class="box4-list2-1">
+            <image src="../../static/image/头像.jpg" mode=""></image>
+          </view>
+          <view class="box4-list2-2">橘子果酱</view>
+          <view class="box4-list2-3">
+            <text>去抢购</text>
+          </view>
+        </view>
+      </view>
+    </view>
   </view>
 </template>
 
@@ -178,6 +232,7 @@
   export default {
     data() {
       return {
+        isshow: false,
         current2: 0,
         count: 5,
         value: 4,
@@ -249,6 +304,15 @@
         ]
       };
     },
+    methods: {
+      kai() {
+        this.isshow = true
+        console.log(this.isshow)
+      },
+      guan() {
+        this.isshow = false
+      }
+    }
   };
 </script>
 
@@ -731,6 +795,10 @@
       align-items: center;
       padding: 20rpx;
       background-color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-sizing: border-box;
 
       .img {
         font-size: 26rpx;
@@ -752,6 +820,7 @@
         color: #fff;
         font-size: 30rpx;
       }
+
       .btn2 {
         width: 50%;
         margin: auto;
@@ -760,6 +829,71 @@
         color: #fff;
         font-size: 30rpx;
         margin-right: 10px;
+      }
+    }
+
+    .box4 {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      .box4-list {
+        width: 80%;
+        margin: 150px auto;
+        background-color: #fff;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        .box4-list1 {
+          text-align: center;
+          font-weight: bold;
+          border-bottom: 1px solid #e6e6e6;
+          padding-bottom: 15px;
+          position: relative;
+
+          image {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            right: 10px;
+            top: 0;
+          }
+        }
+
+        .box4-list2 {
+          border-bottom: 1px solid #e6e6e6;
+          padding: 10px 0;
+          display: flex;
+
+          .box4-list2-1 {
+            margin-right: 10px;
+
+            image {
+              width: 30px;
+              height: 30px;
+            }
+          }
+
+          .box4-list2-2 {
+            line-height: 30px;
+            width: 68%;
+          }
+
+          .box4-list2-3 {
+            line-height: 30px;
+
+            text {
+              background-color: #fc4424;
+              color: #fff;
+              font-size: 12px;
+              padding: 2px 5px;
+              border-radius: 10px;
+            }
+          }
+        }
       }
     }
   }

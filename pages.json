@@ -272,6 +272,13 @@
       }
     },
     {
+      "path": "pages/goods/index",
+      "style": {
+        "navigationBarTitleText": "确认订单",
+        "navigationStyle": "custom"
+      }
+    },
+    {
       "path": "pages/balance/index",
       "style": {
         "navigationBarTitleText": "余额",
@@ -337,7 +344,7 @@
     {
       "path": "pages/mobil/index",
       "style": {
-        "navigationBarTitleText": "美孚Mobil111",
+        "navigationBarTitleText": "美孚Mobil",
         "navigationStyle": "custom"
       }
     },
