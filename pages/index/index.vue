@@ -219,7 +219,8 @@
           title: '二手交易'
         }, {
           name: '/static/分类.png',
-          title: '全部分类'
+          title: '全部分类',
+          url:'pages/fenlei/fenlei'
         }]
       }
     },
