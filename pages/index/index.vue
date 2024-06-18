@@ -219,7 +219,8 @@
 					url:'pages/newusers/newusers'
         }, {
           name: '/static/银行.png',
-          title: '银行特惠'
+          title: '银行特惠',
+					url:'pages/index/index'
         }, {
           name: '/static/二手.png',
           title: '二手交易',
