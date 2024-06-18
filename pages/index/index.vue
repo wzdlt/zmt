@@ -227,7 +227,11 @@
         }, {
           name: '/static/分类.png',
           title: '全部分类',
+<<<<<<< HEAD
 					url:'pages/fenlei/fenlei'
+=======
+          url:'pages/fenlei/fenlei'
+>>>>>>> 208965bb9e91f43ca97d572c5ff5725e9f753d01
         }]
       }
     },
