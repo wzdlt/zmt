@@ -585,6 +585,13 @@
 			{
 				"navigationBarTitleText" : "申请退款"
 			}
+		},
+		{
+			"path" : "pages/turntable/turntable",
+			"style" : 
+			{
+				"navigationBarTitleText" : "转盘抽奖"
+			}
 		}
 	],
 	"globalStyle": {

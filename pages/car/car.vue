@@ -164,7 +164,7 @@
         areas: [], //区
         pickerValue: [0, 0, 0],
         defaultValue: [3442, 1, 2],
-        address: '请选择城市' //地址
+        address: '泰安市' //地址
       }
     },
     created() {
