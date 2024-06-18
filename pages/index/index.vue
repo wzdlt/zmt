@@ -62,8 +62,8 @@
           </view>
         </view>
 
-        <view class="flsh-top2">
-          查看更多>
+        <view class="flsh-top2" @click="goto()">
+          查看更多>(转盘)
         </view>
       </view>
       <view class="flsh-two">
@@ -195,35 +195,47 @@
           url:'pages/shangpinguanli/shangpinguanli'
         }, {
           name: '/static/加油.png',
-          title: '加油'
+          title: '加油',
+					url:'pages/index/index'
         }, {
           name: '/static/酒店.png',
-          title: '酒店'
+          title: '酒店',
+					url:'pages/index/index'
         }, {
           name: '/static/打车出行.png',
-          title: '打车出行'
+          title: '打车出行',
+					url:'pages/index/index'
         }, {
           name: '/static/车票.png',
-          title: '车票'
+          title: '车票',
+					url:'pages/index/index'
         }, {
           name: '/static/充值.png',
-          title: '充值中心'
+          title: '充值中心',
+					url:'pages/index/index'
         }, {
           name: '/static/养车.png',
-          title: '养车'
+          title: '养车',
+					url:'pages/newusers/newusers'
         }, {
           name: '/static/银行.png',
           title: '银行特惠'
         }, {
           name: '/static/二手.png',
-          title: '二手交易'
+          title: '二手交易',
+					 url:'pages/trade/trade'
         }, {
           name: '/static/分类.png',
-          title: '全部分类'
+          title: '全部分类',
+					url:'pages/fenlei/fenlei'
         }]
       }
     },
     methods: {
+			// 去转盘
+			goto(){
+				uni.navigateTo({ url: '/pages/turntable/turntable' })
+			},
       // 搜索框
       change(e) {
         console.log('change', e);

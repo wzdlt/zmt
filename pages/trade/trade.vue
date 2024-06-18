@@ -23,7 +23,7 @@
           </uv-sticky>
         </view>
         <view class="box">
-          <view class="shopping">
+          <view class="shopping" @click="goTo()">
             <view class="loop" v-for="(item,index) in shopping" :key="index">
               <view class="img">
                 <image :src="item.image1" mode=""></image>
@@ -137,7 +137,9 @@
       }
     },
     methods: {
-
+				goTo(){
+					uni.navigateTo({ url: '/pages/twocommodity/twocommodity' })
+				}
     }
   }
 </script>
