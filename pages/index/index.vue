@@ -12,7 +12,7 @@
     <!-- 十宫格 -->
     <view>
       <uv-grid :col="5">
-        <uv-grid-item v-for="(item,index) in baseList" :key="index">
+        <uv-grid-item v-for="(item,index) in baseList" :key="index" @click="$router.push(item.url)">
           <uv-icon :customStyle="{paddingTop:20+'rpx'}" :name="item.name" :size="50"></uv-icon>
           <text class="grid-text">{{item.title}}</text>
         </uv-grid-item>
@@ -191,7 +191,8 @@
         // 十宫格
         baseList: [{
           name: '/static/自营.png',
-          title: '商城自营'
+          title: '商城自营',
+          url:'pages/shangpinguanli/shangpinguanli'
         }, {
           name: '/static/加油.png',
           title: '加油'
