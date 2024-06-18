@@ -80,11 +80,11 @@ export default {
       value: 0
     }
   },
-    methods: {
+  methods: {
     open() {
       this.$refs.popup.open();
     },
-      valChange(e) {
+    valChange(e) {
       console.log('当前值为: ' + e.value)
     }
   }
