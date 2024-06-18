@@ -50,7 +50,7 @@
             <view class="p">获得2红包</view>
           </view>
           <view class="b-button">
-            <button class="btn-left">立即使用</button>
+            <button class="btn-left" @click="gotored" >立即使用</button>
             <button class="btn-right" @tap="hideCheckInSuccess">关闭</button>
           </view>
         </view>
@@ -140,6 +140,12 @@
       })
     }
   }
+
+const gotored = () => {
+  uni.navigateTo({
+    url: '/pages/hongbao/hongbao'
+  })
+}
 
   const red = ref([{
       iconText: '余额',
@@ -506,7 +512,7 @@
         padding: 10px 0 30px;
         margin: 30vh auto;
         width: 60%;
-        height: 40vh;
+        height: 30vh;
         background-color: #fff;
 
         .x {
