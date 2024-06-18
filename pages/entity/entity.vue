@@ -16,7 +16,6 @@
       <view class="swiper">
         <uv-swiper :list="swiper" indicator indicatorMode="line" circular></uv-swiper>
       </view>
-
     </view>
     <view id="offline-content">
       <view class="offline-content">

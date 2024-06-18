@@ -294,7 +294,13 @@ export default {
           font-weight: 600;
         }
         .t-right{
+          width: 36%;
+          text-align: right;
           color: #fc4424;
+          background-image: url(../../static/image/ico-25.png);
+          background-repeat: no-repeat;
+          background-size: 12px;
+          background-position: 50%;
         }
       }
       .b-stary{
@@ -331,6 +337,10 @@ export default {
         margin: 10px auto;
         color: #fc4424;
         text-indent: 2em;
+        background-image: url(../../static/image/ico-24.png);
+        background-repeat: no-repeat;
+        background-size: 12px;
+        background-position: 4% 50%;
       }
     }
     
