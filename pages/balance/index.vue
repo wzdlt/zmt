@@ -80,7 +80,7 @@
     } else if (item.text === '余额明细') { // 添加对“提现记录”的处理
       uni.navigateTo({
         url: '/pages/details/details'
-      });
+      });   
     } else if (item.text === '提现记录') { // 添加对“提现记录”的处理
       uni.navigateTo({
         url: '/pages/withdrawals/index'
