@@ -65,7 +65,7 @@
           <!-- 数量结束 -->
         </view>
         <!-- djsid  -->
-        <view class="queding">确定</view>
+        <view class="queding" @click="tz()">确定</view>
       </view>
     </uv-popup>
 
@@ -86,6 +86,11 @@ export default {
     },
     valChange(e) {
       console.log('当前值为: ' + e.value)
+    },
+    tz() {
+      uni.navigateTo({
+        url: '/pages/addcar/index'
+      })
     }
   }
 }
