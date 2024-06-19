@@ -16,42 +16,42 @@
       prizeName: '商品1 ',
       prizeStock: 1,
       prizeWeight: 1,
-      prizeImage: '/static/yang.jpg'
+      prizeImage: '/static/image/logo.png'
     },
     {
       prizeId: 2,
       prizeName: '商品2 ',
       prizeStock: 1,
       prizeWeight: 1,
-      prizeImage: '/static/jiangwei.jpg'
+      prizeImage: '/static/image/logo.png'
     },
     {
       prizeId: 3,
       prizeName: '商品3 ',
       prizeStock: 1,
       prizeWeight: 1,
-      prizeImage: '/static/yang.jpg'
+      prizeImage: '/static/image/logo.png'
     },
     {
       prizeId: 4,
       prizeName: '商品4 ',
       prizeStock: 1,
       prizeWeight: 1,
-      prizeImage: '/static/jiangwei.jpg'
+      prizeImage: '/static/image/logo.png'
     },
     {
       prizeId: 5,
       prizeName: '商品5 ',
       prizeStock: 1,
       prizeWeight: 1,
-      prizeImage: '/static/yang.jpg'
+      prizeImage: '/static/image/logo.png'
     },
     {
       prizeId: 6,
       prizeName: '商品6 ',
       prizeStock: 1,
       prizeWeight: 1,
-      prizeImage: '/static/jiangwei.jpg'
+      prizeImage: '/static/image/logo.png'
     }
   ])
   // 中奖下标默认-1
