@@ -8,8 +8,7 @@
             @change="change"></uv-input>
         </view>
         <view class="box1-right">
-          <img class="image1" src="../../static/image/签到.png" alt="">
-
+          <image class="image1" src="../../static/image/签到.png" alt=""></image>
         </view>
 
       </view>

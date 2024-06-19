@@ -11,7 +11,7 @@
             <button @tap="hideCheckInSuccess">x</button>
           </view>
           <view class="b-img">
-            <img src="../../static/image/success.png" alt="" />
+            <image src="../../static/image/success.png" alt="" ></image>
           </view>
           <view class="b-text">
             <view class="p">恭喜您签到成功</view>
@@ -28,7 +28,7 @@
         <view class="c-item" v-for="(day, index) in days" :key="index">
           <view class="p">{{ `第${index + 1}天` }}</view>
           <view class="i-box" :class="{ 'bg-color': index === 0 }">
-            <img :src="imageSrc" alt="" />
+            <image :src="imageSrc" alt="" ></image>
           </view>
         </view>
       </view>
@@ -191,12 +191,12 @@ const tasks = ref([{
 
         .b-img {
           width: 50%;
-          height: 112px;
+          height: 12px;
           margin: 0 auto;
 
-          img {
+          image {
             width: 100%;
-            height: 112px;
+            height: 10px;
           }
         }
 
@@ -262,7 +262,7 @@ const tasks = ref([{
           align-items: center;
           background-color: #f3f3f3;
 
-          img {
+          image {
             width: 100%;
             height: 100%;
           }
