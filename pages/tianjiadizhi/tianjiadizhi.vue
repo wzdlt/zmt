@@ -18,19 +18,19 @@
         </view>
         <!-- 第二部分 -->
         <view class="center-right">
-          <p class="p1">男运动鞋秋季男鞋青少年正品透...</p>
-          <p class="p2">标准白、42</p>
-          <p class="p3"><span class="span1"><!--￥--></span>890.00 <span class="span2">×1</span> </p>
+          <view class="p1">男运动鞋秋季男鞋青少年正品透...</view>
+          <view class="p2">标准白、42</view>
+          <view class="p3"><span class="span1"><!--￥--></span>890.00 <span class="span2">×1</span> </view>
         </view>
       </view>
       <!-- djiai  -->
       <view class="foot">
 
         <view class="two" v-for="item in list" :key="item.id">
-          <p class="three">
+          <view class="three">
             <span class="span23">{{ item.text1 }}</span>
             <span class="span3">{{ item.price }}</span>
-          </p>
+          </view>
         </view>
         <view class="four">
           <view class="span5">备注</view>
