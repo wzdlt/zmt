@@ -1,29 +1,29 @@
 <template>
   <view class="box">
     <view class="top">
-      <p class="tk">退款商品</p>
+      <view class="tk">退款商品</view>
       <view class="center">
         <view class="center-left">
           <image src="../../static/image/青少年男鞋.png" mode=""></image>
         </view>
         <view class="center-right">
-          <p class="p1">男运动鞋秋季男鞋青少年正品透...</p>
-          <p class="p2">标准白、42</p>
-          <p class="p3"><text class="span1">￥</text>890.00 <text class="span2">×1</text> </p>
+          <view class="p1">男运动鞋秋季男鞋青少年正品透...</view>
+          <view class="p2">标准白、42</view>
+          <viewclass="p3"><text class="span1">￥</text>890.00 <text class="span2">×1</text> </viewclass=>
         </view>
       </view>
     </view>
     <view class="foot">
-      <p class="one">选择服务类型</p>
-      <view class="two" v-for="item in list" :key="item.id">
-        <p class="three">
-          <image class="image1" :src="item.img" mode=""></image>
-          <text class="span3">{{ item.title }}</text>
-        </p>
-        <text class="arrowhead">></text>
+      <view class="one">选择服务类型</p>
+        <view class="two" v-for="item in list" :key="item.id">
+          <view class="three">
+            <image class="image1" :src="item.img" mode=""></image>
+            <text class="span3">{{ item.title }}</text>
+          </view>
+          <text class="arrowhead">></text>
+        </view>
       </view>
     </view>
-  </view>
 </template>
 
 <script setup>
