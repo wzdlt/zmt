@@ -69,7 +69,7 @@
   function handleDrawStart() {
     setTimeout(() => {
       // 设置中奖位置
-      prizeIndex.value = 5
+      prizeIndex.value = 1
     }, 500)
   }
   // 本次抽奖结束
