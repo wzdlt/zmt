@@ -32,8 +32,8 @@
 
         <view class="two" v-for="item in list" :key="item.id">
           <view class="three">
-            <span class="span23">{{ item.text1 }}</span>
-            <span class="span3">{{ item.price }}</span>
+            <view class="span23">{{ item.text1 }}</view>
+            <view class="span3">{{ item.price }}</view>
           </view>
         </view>
         <view class="four">
@@ -84,8 +84,8 @@
     <!-- 底部导航 -->
     <view class="bottom">
       <view class="bottom-bottom">
-        <view class="p3"><text style="color: black;">合计：</text> <text class="span1"><!--￥--></text>60红包+￥890.00 <span
-            class="span2">×1</span>
+        <view class="p3"><text style="color: black;">合计：</text> <text class="span1"><!--￥--></text>60红包+￥890.00 <view
+            class="span2">×1</view>
         </view>
         <view class="jiesuan"><button>立即支付</button> </view>
       </view>

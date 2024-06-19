@@ -34,7 +34,7 @@
     <view class="rob">
       <view class="rob-left">
         <view class="role-all">
-          <span>抢购区</span>
+          <view>抢购区</view>
           <view class="rob-size">
             抢单更优惠
           </view>
@@ -43,7 +43,7 @@
       </view>
       <view class="rob-right">
         <view class="role-all">
-          <span>红包区</span>
+          <view>红包区</view>
           <view class="rob-size">
             更多商品免费领
           </view>
@@ -55,7 +55,7 @@
     <view class="flsh">
       <view class="flsh-top">
         <view class="flsh-left">
-          <span>限时秒杀</span>
+          <view>限时秒杀</view>
           <view class="flsh-top1">
             <image src="../../static/直播中.png" mode=""></image>
             <view class="flsh-top1-1">直播中</view>
@@ -81,12 +81,12 @@
           <image :src="item.img" mode=""></image>
           <view class="sell-size">
             <view class="sell-size1">
-              <span>{{item.battalion}}</span>
+              <view>{{item.battalion}}</view>
               {{item.title}}
             </view>
             <view class="sell-size2">
               {{item.pack}}
-              <span>{{item.price}}</span>
+              <view>{{item.price}}</view>
             </view>
             <view class="sell-size3">
               {{item.price1}}

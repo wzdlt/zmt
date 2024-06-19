@@ -24,7 +24,7 @@
         <view class="center-right">
           <view class="p1">男运动鞋秋季男鞋青少年正品透...</view>
           <view class="p2">标准白、42</view>
-          <view class="p3"><span class="span1"><!--￥--></span>890.00 <text class="span2">×1</text> </view>
+          <view class="p3"><view class="span1"><!--￥--></view>890.00 <text class="span2">×1</text> </view>
         </view>
       </view>
       <!-- djiai  -->
@@ -32,8 +32,8 @@
 
         <view class="two" v-for="item in list" :key="item.id">
           <view class="three">
-            <span class="span23">{{ item.text1 }}</span>
-            <span class="span3">{{ item.price }}</span>
+            <view class="span23">{{ item.text1 }}</view>
+            <view class="span3">{{ item.price }}</view>
           </view>
         </view>
         <view class="four">
@@ -84,7 +84,7 @@
     <!-- 底部导航 -->
     <view class="bottom">
       <view class="bottom-bottom">
-        <view class="p3"><text style="color: black;">合计：</text> <span class="span1"><!--￥--></span>￥890.00
+        <view class="p3"><text style="color: black;">合计：</text> <view class="span1"><!--￥--></view>￥890.00
         </view>
         <view class="jiesuan"><button>立即支付</button> </view>
       </view>

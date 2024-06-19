@@ -13,8 +13,8 @@
             全合成：4L
           </view>
           <view class="right-bottom">
-            <span class="price">￥439.00</span>
-            <span class="num">x1</span>
+            <view class="price">￥439.00</view>
+            <view class="num">x1</view>
           </view>
         </view>
       </view>
@@ -62,7 +62,7 @@
     </view>
     <view class="cforder-bottom">
       <view class="bottom-left">
-        <span class="fontcolor">合计：</span>￥<span class="price">530</span>.00
+        <view class="fontcolor">合计：</view>￥<view class="price">530</view>.00
       </view>
       <view class="bottom-right">
         <button class="btn">立即支付</button>

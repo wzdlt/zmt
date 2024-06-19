@@ -40,7 +40,7 @@
         <view class="t-item">
           <view class="i-left">
             <view class="p">{{ task.description }} ({{ index + 1 }}/{{ tasks.length }})</view>
-            <span>+{{ task.reward }}红包</span>
+            <view>+{{ task.reward }}红包</view>
           </view>
           <view class="i-right">{{ task.action }}</view>
         </view>
