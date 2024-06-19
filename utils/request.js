@@ -2,7 +2,7 @@ import { useTokenStore } from "../stores/token"
 import { storToRefs } from "pinia"
 const store = useTokenStore()
 const {token} = storeTorefs(store)
-const baseURl = 'http://aaa.com'
+const baseURl = 'http://test.wql888.cn/api/'
 export default function request({
   url,
   data,

@@ -10,7 +10,7 @@ export function getNumber(data) {
 }
 export function Login(data) {
   return request({
-    url: "api/login",
+    url: "login/login",
     data,
     method: 'POST',
     isToken: false
