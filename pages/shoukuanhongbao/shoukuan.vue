@@ -18,7 +18,7 @@
           {{ item.time }}
         </view>
       </view>
-        <view class="box2-left" >{{ item.price }}</view>
+        <view class="box2-left" :style="{color:item.type ?'red':'green'}">{{item.type?'+':'-'}}{{ item.price }}</view>
     </view>
     <!-- 收款红包结束 -->
   </view>
@@ -30,19 +30,23 @@ export default {
       list: [{
         text: "消费",
         time: "2021/09/01 15:11:34",
-        price: -100
+        price: '100',
+				type:0
       }, {
         text: "签到奖励",
         time: "2021/09/01 15:11:34",
-        price: +100
+        price: '100',
+				type:1
       }, {
         text: "浏览商品赠送",
         time: "2021/09/01 15:11:34",
-        price: +100
+        price: '100',
+				type:1
       }, {
         text: "充值余额赠送",
         time: "2021/09/01 15:11:34",
-        price: +100
+        price: '100',
+				type:1
       }
       ],
     }

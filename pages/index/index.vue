@@ -55,7 +55,7 @@
 		<view class="flsh">
 			<view class="flsh-top">
 				<view class="flsh-left">
-					<view>限时秒杀</view>
+					<view class="miaosha">限时秒杀</view>
 					<view class="flsh-top1">
 						<image src="../../static/直播中.png" mode=""></image>
 						<view class="flsh-top1-1">直播中</view>
@@ -88,7 +88,7 @@
 						</view>
 						<view class="sell-size2">
 							{{item.pack}}
-							<text class="price1">{{item.price}}</text>
+							<view class="price1">{{item.price}}</view>
 						</view>
 						<view class="sell-size3">
 							{{item.price1}}
@@ -384,10 +384,11 @@
 		background-color: #fb0d48;
 		border-radius: 10rpx;
 		padding-bottom: 3%;
-
+		padding-top: 2%;
 		.flsh-top {
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
 			padding-left: 5%;
 			padding-right: 5%;
 			padding-bottom: 3%;
@@ -395,9 +396,12 @@
 			.flsh-left {
 				width: 50%;
 				display: flex;
-				justify-content: space-between;
 				align-items: center;
-
+				justify-content: space-between;
+				
+				.miaosha{
+					color: #ffffff;
+				}
 				.flsh-top1 {
 					width: 50%;
 					display: flex;
@@ -405,9 +409,8 @@
 					border-radius: 30rpx;
 					color: #fb0844;
 					background-color: #fff;
-					margin-top: 20rpx;
 					align-items: center;
-
+					
 					image {
 						border-radius: 30rpx;
 						margin-left: 5%;
@@ -423,16 +426,8 @@
 
 			}
 
-			span {
-				font-size: 1rem;
-				margin-top: 10rpx;
-				color: #fff;
-			}
-
-
 			.flsh-top2 {
 				color: #fff;
-				margin-top: 20rpx;
 			}
 		}
 
@@ -482,11 +477,10 @@
 
 					.sell-size1 {
 						font-size: 30rpx;
-
 						.span1 {
 							height: 20px;
 							line-height: 20px;
-							width: 30%;
+							width: 40%;
 							text-align: center;
 							background-color: #fc4424;
 							color: #fff;
@@ -500,12 +494,15 @@
 					border: 1px solid red;
 					margin-top: 10rpx;
 					text-align: center;		
-					width: 42%;
+					width: 45%;
 					font-size: 24rpx;
 					border-radius: 10rpx;
 					background-color: #fff;
 					color: #fd5d57;
-					.price1 {
+					display: flex;
+					justify-content: space-between;
+					.price1 {	
+						width: 50%;
 						border: 1px solid red;
 						border-radius: 10rpx;
 						background-color: #fc4424;
