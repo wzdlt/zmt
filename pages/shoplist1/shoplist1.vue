@@ -39,7 +39,7 @@
       </view>
       <view class="content-box2">
         <view class="box2-left">
-          规格<span>请选择规格</span>
+          规格<view class="span1">请选择规格</view>
         </view>
         <view class="box2-right"><uv-icon size="15" name="arrow-right"></uv-icon></view>
       </view>
@@ -285,7 +285,7 @@ image {
       .box2-left {
         font-weight: bold;
 
-        span {
+        .span1 {
           color: #636363;
           margin-left: 20rpx;
           font-size: 28rpx;
