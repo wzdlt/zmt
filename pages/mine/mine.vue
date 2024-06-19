@@ -50,7 +50,7 @@
             <view class="p">获得2红包</view>
           </view>
           <view class="b-button">
-            <button class="btn-left" @click="gotored" >立即使用</button>
+            <button class="btn-left" @click="gotored">立即使用</button>
             <button class="btn-right" @tap="hideCheckInSuccess">关闭</button>
           </view>
         </view>
@@ -67,7 +67,7 @@
         <view class="t-item">
           <view class="i-left">
             <view class="p">{{ task.description }} ({{ index + 1 }}/{{ tasks.length }})</view>
-            <span>+{{ task.reward }}红包</span>
+            <view>+{{ task.reward }}红包</view>
           </view>
           <view class="i-right">{{ task.action }}</view>
         </view>
@@ -88,58 +88,58 @@
 </template>
 
 <script setup>
-  import {
-    ref
-  } from 'vue';
+import {
+  ref
+} from 'vue';
 
 
-  const icobox = ref([{
-      icon: '../../static/image/ico-1.png',
-      text: '收藏'
-    },
-    {
-      icon: '../../static/image/ico-2.png',
-      text: '关注店铺'
-    },
-  ]);
+const icobox = ref([{
+  icon: '../../static/image/ico-1.png',
+  text: '收藏'
+},
+{
+  icon: '../../static/image/ico-2.png',
+  text: '关注店铺'
+},
+]);
 
-  const handleItemClick = (item) => {
-    if (item.text === '收藏') {
-      uni.navigateTo({
-        url: '/pages/collection/index'
-      })
-    } else if (item.text === '关注店铺') {
-      uni.navigateTo({
-        url: '/pages/concern/concern'
-      })
-    }
+const handleItemClick = (item) => {
+  if (item.text === '收藏') {
+    uni.navigateTo({
+      url: '/pages/collection/index'
+    })
+  } else if (item.text === '关注店铺') {
+    uni.navigateTo({
+      url: '/pages/concern/concern'
+    })
   }
-  // 定义签到成功提示的显示状态，默认隐藏
-  const isCheckInSuccess = ref(false);
+}
+// 定义签到成功提示的显示状态，默认隐藏
+const isCheckInSuccess = ref(false);
 
-  // 点击击签到按钮的处理方法
-  const checkIn = () => {
-    // 这里可以添加签到逻辑，例如API调用
-    // 假设签到成功后设置isCheckInSuccess为true
-    isCheckInSuccess.value = true;
-  };
+// 点击击签到按钮的处理方法
+const checkIn = () => {
+  // 这里可以添加签到逻辑，例如API调用
+  // 假设签到成功后设置isCheckInSuccess为true
+  isCheckInSuccess.value = true;
+};
 
-  // 关闭签到成功提示的方法
-  const hideCheckInSuccess = () => {
-    isCheckInSuccess.value = false;
-  };
+// 关闭签到成功提示的方法
+const hideCheckInSuccess = () => {
+  isCheckInSuccess.value = false;
+};
 
-  const click = (item) => {
-    if (item.iconText === '余额') {
-      uni.navigateTo({
-        url: '/pages/balance/index',
-      })
-    } else if (item.iconText === '红包') {
-      uni.navigateTo({
-        url: '/pages/shoukuanhongbao/shoukuan'
-      })
-    }
+const click = (item) => {
+  if (item.iconText === '余额') {
+    uni.navigateTo({
+      url: '/pages/balance/index',
+    })
+  } else if (item.iconText === '红包') {
+    uni.navigateTo({
+      url: '/pages/shoukuanhongbao/shoukuan'
+    })
   }
+}
 
 const gotored = () => {
   uni.navigateTo({
@@ -147,559 +147,559 @@ const gotored = () => {
   })
 }
 
-  const red = ref([{
-      iconText: '余额',
-      amount: '1358.00',
-      iconClass: 'ico',
-      showIcon: true
-    },
-    {
-      iconText: '红包',
-      amount: '283.00',
-      iconClass: 'ico1',
-      showIcon: true
-    },
-    // 可以继续添加更多项目...
-  ]);
+const red = ref([{
+  iconText: '余额',
+  amount: '1358.00',
+  iconClass: 'ico',
+  showIcon: true
+},
+{
+  iconText: '红包',
+  amount: '283.00',
+  iconClass: 'ico1',
+  showIcon: true
+},
+  // 可以继续添加更多项目...
+]);
 
-  const box = ref([{
-      icon: '../../static/image/ico-5.png',
-      text: '商品订单'
-    },
-    {
-      icon: '../../static/image/ico-6.png',
-      text: '服务订单'
-    },
-    {
-      icon: '../../static/image/ico-7.png',
-      text: '退换/售后'
-    },
-  ]);
+const box = ref([{
+  icon: '../../static/image/ico-5.png',
+  text: '商品订单'
+},
+{
+  icon: '../../static/image/ico-6.png',
+  text: '服务订单'
+},
+{
+  icon: '../../static/image/ico-7.png',
+  text: '退换/售后'
+},
+]);
 
-  const navigateToPage = (item) => {
-    if (item.text === '商品订单') {
-      uni.navigateTo({
-        url: '/pages/commodityorders/index'
-      });
-    } else if (item.text === '服务订单') {
-      uni.navigateTo({
-        url: '/pages/serve/serve'
-      })
-    } else if (item.text === '退换/售后') {
-      uni.navigateTo({
-        url: '/pages/refund/index'
-      })
-    }
-    // 可以根据需要添加其他逻辑处理其他选项的点击
-  };
-
-  const days = ref(7); // 这里表示有7天
-  const imageSrc = ref("../../static/image/ico-8.png"); // 图片路径
-
-  const tasks = ref([{
-      description: '浏览商品列表15秒',
-      reward: 5,
-      action: '去浏览'
-    },
-    {
-      description: '充值领取红包',
-      reward: 100,
-      action: '去充值'
-    },
-    {
-      description: '购物领取红包',
-      reward: 15,
-      action: '去购买'
-    },
-  ]);
-  // 定义一个数组，包含所有图标和文字的配置信息
-  const items = ref([{
-      icon: '../../static/image/ico-9.png',
-      text: '收货地址'
-    },
-    {
-      icon: '../../static/image/ico-10.png',
-      text: '商家入驻'
-    },
-    {
-      icon: '../../static/image/ico-11.png',
-      text: '超级会员'
-    },
-    {
-      icon: '../../static/image/ico-12.png',
-      text: '二手交易商'
-    },
-    {
-      icon: '../../static/image/ico-13.png',
-      text: '官方客服'
-    },
-    {
-      icon: '../../static/image/ico-14.png',
-      text: '城市合伙人'
-    },
-    {
-      icon: '../../static/image/ico-15.png',
-      text: '成为代理'
-    },
-    {
-      icon: '../../static/image/ico-16.png',
-      text: '邀请好友'
-    },
-    {
-      icon: '../../static/image/ico-17.png',
-      text: '设置'
-    },
-    {
-      icon: '../../static/image/ico-18.png',
-      text: '新手指南'
-    },
-  ]);
-
-  const icoicobox = (item) => {
-    if (item.text === '收货地址') {
-      uni.navigateTo({
-        url: '/pages/receiving/receiving'
-      })
-    } else if (item.text === '商家入驻') {
-      uni.navigateTo({
-        url: '/pages/shopruzhu/shopruzhu'
-      })
-    } else if (item.text === '超级会员') {
-      uni.navigateTo({
-        url: '/pages/chaojihuiyuan/chaojihuiyuan'
-      })
-    } else if (item.text === '二手交易商') {
-      uni.navigateTo({
-        url: '/pages/application/application'
-      })
-    } else if (item.text === '官方客服') {
-      uni.navigateTo({
-        url: '/pages'
-      })
-    } else if (item.text === '城市合伙人') {
-      uni.navigateTo({
-        url: '/pages'
-      })
-    } else if (item.text === '成为代理') {
-      uni.navigateTo({
-        url: '/pages/dailishang/dailishang'
-      })
-    } else if (item.text === '邀请好友') {
-      uni.navigateTo({
-        url: '/pages/invite/invite'
-      })
-    } else if (item.text === '设置') {
-      uni.navigateTo({
-        url: '/pages/setup/setup'
-      })
-    } else if (item.text === '新手指南') {
-      uni.navigateTo({
-        url: '/pages/greenhorn/greenhorn'
-      })
-    }
+const navigateToPage = (item) => {
+  if (item.text === '商品订单') {
+    uni.navigateTo({
+      url: '/pages/commodityorders/index'
+    });
+  } else if (item.text === '服务订单') {
+    uni.navigateTo({
+      url: '/pages/serve/serve'
+    })
+  } else if (item.text === '退换/售后') {
+    uni.navigateTo({
+      url: '/pages/refund/index'
+    })
   }
+  // 可以根据需要添加其他逻辑处理其他选项的点击
+};
+
+const days = ref(7); // 这里表示有7天
+const imageSrc = ref("../../static/image/ico-8.png"); // 图片路径
+
+const tasks = ref([{
+  description: '浏览商品列表15秒',
+  reward: 5,
+  action: '去浏览'
+},
+{
+  description: '充值领取红包',
+  reward: 100,
+  action: '去充值'
+},
+{
+  description: '购物领取红包',
+  reward: 15,
+  action: '去购买'
+},
+]);
+// 定义一个数组，包含所有图标和文字的配置信息
+const items = ref([{
+  icon: '../../static/image/ico-9.png',
+  text: '收货地址'
+},
+{
+  icon: '../../static/image/ico-10.png',
+  text: '商家入驻'
+},
+{
+  icon: '../../static/image/ico-11.png',
+  text: '超级会员'
+},
+{
+  icon: '../../static/image/ico-12.png',
+  text: '二手交易商'
+},
+{
+  icon: '../../static/image/ico-13.png',
+  text: '官方客服'
+},
+{
+  icon: '../../static/image/ico-14.png',
+  text: '城市合伙人'
+},
+{
+  icon: '../../static/image/ico-15.png',
+  text: '成为代理'
+},
+{
+  icon: '../../static/image/ico-16.png',
+  text: '邀请好友'
+},
+{
+  icon: '../../static/image/ico-17.png',
+  text: '设置'
+},
+{
+  icon: '../../static/image/ico-18.png',
+  text: '新手指南'
+},
+]);
+
+const icoicobox = (item) => {
+  if (item.text === '收货地址') {
+    uni.navigateTo({
+      url: '/pages/receiving/receiving'
+    })
+  } else if (item.text === '商家入驻') {
+    uni.navigateTo({
+      url: '/pages/shopruzhu/shopruzhu'
+    })
+  } else if (item.text === '超级会员') {
+    uni.navigateTo({
+      url: '/pages/chaojihuiyuan/chaojihuiyuan'
+    })
+  } else if (item.text === '二手交易商') {
+    uni.navigateTo({
+      url: '/pages/application/application'
+    })
+  } else if (item.text === '官方客服') {
+    uni.navigateTo({
+      url: '/pages'
+    })
+  } else if (item.text === '城市合伙人') {
+    uni.navigateTo({
+      url: '/pages'
+    })
+  } else if (item.text === '成为代理') {
+    uni.navigateTo({
+      url: '/pages/dailishang/dailishang'
+    })
+  } else if (item.text === '邀请好友') {
+    uni.navigateTo({
+      url: '/pages/invite/invite'
+    })
+  } else if (item.text === '设置') {
+    uni.navigateTo({
+      url: '/pages/setup/setup'
+    })
+  } else if (item.text === '新手指南') {
+    uni.navigateTo({
+      url: '/pages/greenhorn/greenhorn'
+    })
+  }
+}
 </script>
 
 <style scoped lang="scss">
-  #app {
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #f5f5f5;
+
+  .header {
+    width: 100%;
+    background-color: #fcefee;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    background-color: #f5f5f5;
 
-    .header {
-      width: 100%;
-      background-color: #fcefee;
+    .avatar {
+      width: 94%;
+      height: 60px;
+      margin: 40px auto 0;
       display: flex;
-      flex-wrap: wrap;
 
-      .avatar {
-        width: 94%;
+      .left {
+        width: 60px;
         height: 60px;
-        margin: 40px auto 0;
-        display: flex;
+        margin-right: 20px;
 
-        .left {
+        img {
           width: 60px;
           height: 60px;
-          margin-right: 20px;
-
-          img {
-            width: 60px;
-            height: 60px;
-            border-radius: 999em;
-          }
-        }
-
-        .right {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          width: 90%;
-          height: 60px;
-
-          .p {
-            width: 100%;
-            height: 30px;
-            font-size: 20px;
-          }
-
-          .span {
-            width: 100%;
-            height: 30px;
-            font-size: 12px;
-            color: #999;
-          }
+          border-radius: 999em;
         }
       }
 
-      .h-box {
-        width: 94%;
-        margin: 30px auto;
+      .right {
         display: flex;
-
-        .ico-box {
-          width: 50%;
-          display: flex;
-          flex-wrap: wrap;
-
-          img {
-            margin: 0 auto;
-            width: 20px;
-            height: 20px;
-          }
-
-          .p {
-            font-size: 14px;
-            width: 100%;
-            text-align: center;
-          }
-        }
-      }
-    }
-
-    .red-box {
-      width: 94%;
-      height: 90px;
-      margin: -20px auto 0;
-      display: flex;
-      background-color: #fff;
-      border-radius: 10px;
-
-      .red-item {
-        margin: 15px 0;
-        width: 50%;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 90%;
         height: 60px;
-        border-right: 1px solid #999;
-        text-align: center;
+
+        .p {
+          width: 100%;
+          height: 30px;
+          font-size: 20px;
+        }
 
         .span {
           width: 100%;
           height: 30px;
           font-size: 12px;
-          line-height: 30px;
-          text-indent: 1em;
+          color: #999;
+        }
+      }
+    }
 
+    .h-box {
+      width: 94%;
+      margin: 30px auto;
+      display: flex;
+
+      .ico-box {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+          margin: 0 auto;
+          width: 20px;
+          height: 20px;
         }
 
         .p {
+          font-size: 14px;
           width: 100%;
-          height: 30px;
-        }
-
-        .ico {
-          width: 100%;
-          background-image: url(../../static/image/ico-3.png);
-          background-repeat: no-repeat;
-          background-position: 36% 50%;
-          background-size: 14px;
-        }
-
-        .ico1 {
-          width: 100%;
-          background-image: url(../../static/image/ico-4.png);
-          background-repeat: no-repeat;
-          background-position: 36% 50%;
-          background-size: 14px;
+          text-align: center;
         }
       }
     }
   }
 
-  .orders {
+  .red-box {
     width: 94%;
-    margin: 10px auto;
+    height: 90px;
+    margin: -20px auto 0;
+    display: flex;
     background-color: #fff;
     border-radius: 10px;
 
-    .o-top {
-      width: 90%;
-      margin: 10px auto;
-      font-size: 14px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #f5f6f7;
+    .red-item {
+      margin: 15px 0;
+      width: 50%;
+      height: 60px;
+      border-right: 1px solid #999;
+      text-align: center;
+
+      .span {
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        line-height: 30px;
+        text-indent: 1em;
+
+      }
+
+      .p {
+        width: 100%;
+        height: 30px;
+      }
+
+      .ico {
+        width: 100%;
+        background-image: url(../../static/image/ico-3.png);
+        background-repeat: no-repeat;
+        background-position: 36% 50%;
+        background-size: 14px;
+      }
+
+      .ico1 {
+        width: 100%;
+        background-image: url(../../static/image/ico-4.png);
+        background-repeat: no-repeat;
+        background-position: 36% 50%;
+        background-size: 14px;
+      }
+    }
+  }
+}
+
+.orders {
+  width: 94%;
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 10px;
+
+  .o-top {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f5f6f7;
+  }
+
+  .o-box {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+
+    .box-item {
+      text-align: center;
+      width: 20%;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .p {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.sign {
+  padding: 10px 0;
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+
+  .s-top {
+    padding: 10px 0;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f5f6f7;
+    font-size: 14px;
+    height: 30px;
+
+    .t-left {
+      width: 25%;
+      height: 100%;
     }
 
-    .o-box {
-      width: 80%;
-      margin: 20px auto;
-      display: flex;
-      justify-content: space-between;
+    .t-right {
+      width: 25%;
+      height: 100%;
+      text-align: center;
+      border-radius: 16px;
+      line-height: 30px;
+      color: #fff;
+      font-size: 12px;
+      background-color: #fc4424;
+    }
+  }
 
-      .box-item {
-        text-align: center;
-        width: 20%;
+  .checkin-success {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(225, 225, 225, 0.3);
+
+    .box {
+      padding: 10px 0 30px;
+      margin: 30vh auto;
+      width: 60%;
+      height: 30vh;
+      background-color: #fff;
+
+      .x {
+        margin: 10px 0;
+        width: 100%;
+        background-color: #fff;
+
+        button {
+          margin-left: 190px;
+          width: 24px;
+          height: 24px;
+          background-color: #fff;
+          border: none !important;
+          text-indent: -4px;
+          line-height: 20px;
+        }
+      }
+
+      .b-img {
+        width: 50%;
+        height: 112px;
+        margin: 0 auto;
 
         img {
-          width: 30px;
-          height: 30px;
+          width: 100%;
+          height: 112px;
         }
+      }
+
+      .b-text {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
 
         .p {
-          width: 100%;
+          margin: 10px 0;
           text-align: center;
+          width: 100%;
+        }
+      }
+
+      .b-button {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+
+        button {
           font-size: 12px;
+          line-height: 40px;
+          width: 46%;
+          height: 40px;
+          border-radius: 50px;
+        }
+
+        .btn-left {
+          background-color: #fc4424;
+          color: #fff;
+        }
+
+        .btn-right {
+          border: 1px solid #fc4424;
+          color: #fc4424;
+          background-color: #fff;
         }
       }
     }
   }
 
-  .sign {
+  .s-center {
     padding: 10px 0;
-    width: 94%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f5f6f7;
+
+    .c-item {
+      width: 11.5%;
+      font-size: 12px;
+      text-align: center;
+
+      .i-box {
+        border-radius: 10px;
+        margin: 10px 0;
+        width: 100%;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f3f3f3;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .bg-color {
+        background-color: #ffdbbb;
+      }
+    }
+  }
+
+  .s-text {
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: #fff;
-    border-radius: 10px;
 
-    .s-top {
-      padding: 10px 0;
-      width: 90%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #f5f6f7;
-      font-size: 14px;
-      height: 30px;
-
-      .t-left {
-        width: 25%;
-        height: 100%;
-      }
-
-      .t-right {
-        width: 25%;
-        height: 100%;
-        text-align: center;
-        border-radius: 16px;
-        line-height: 30px;
-        color: #fff;
-        font-size: 12px;
-        background-color: #fc4424;
-      }
-    }
-
-    .checkin-success {
-      position: fixed;
-      top: 0;
-      left: 0;
+    .t-item {
+      margin: 6px 0;
+      padding: 20px;
       width: 100%;
-      height: 100vh;
-      background-color: rgba(225, 225, 225, 0.3);
-
-      .box {
-        padding: 10px 0 30px;
-        margin: 30vh auto;
-        width: 60%;
-        height: 30vh;
-        background-color: #fff;
-
-        .x {
-          margin: 10px 0;
-          width: 100%;
-          background-color: #fff;
-
-          button {
-            margin-left: 190px;
-            width: 24px;
-            height: 24px;
-            background-color: #fff;
-            border: none !important;
-            text-indent: -4px;
-            line-height: 20px;
-          }
-        }
-
-        .b-img {
-          width: 50%;
-          height: 112px;
-          margin: 0 auto;
-
-          img {
-            width: 100%;
-            height: 112px;
-          }
-        }
-
-        .b-text {
-          width: 100%;
-          display: flex;
-          flex-wrap: wrap;
-
-          .p {
-            margin: 10px 0;
-            text-align: center;
-            width: 100%;
-          }
-        }
-
-        .b-button {
-          display: flex;
-          width: 90%;
-          margin: 0 auto;
-
-          button {
-            font-size: 12px;
-            line-height: 40px;
-            width: 46%;
-            height: 40px;
-            border-radius: 50px;
-          }
-
-          .btn-left {
-            background-color: #fc4424;
-            color: #fff;
-          }
-
-          .btn-right {
-            border: 1px solid #fc4424;
-            color: #fc4424;
-            background-color: #fff;
-          }
-        }
-      }
-    }
-
-    .s-center {
-      padding: 10px 0;
-      width: 90%;
-      margin: 0 auto;
+      background-color: #fafafa;
+      border-radius: 10px;
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid #f5f6f7;
 
-      .c-item {
-        width: 11.5%;
-        font-size: 12px;
-        text-align: center;
-
-        .i-box {
-          border-radius: 10px;
-          margin: 10px 0;
-          width: 100%;
-          height: 34px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #f3f3f3;
-
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-
-        .bg-color {
-          background-color: #ffdbbb;
-        }
-      }
-    }
-
-    .s-text {
-      width: 90%;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-
-      .t-item {
-        margin: 6px 0;
-        padding: 20px;
-        width: 100%;
-        background-color: #fafafa;
-        border-radius: 10px;
-        display: flex;
-        justify-content: space-between;
-
-        .i-left {
-          width: 70%;
-          height: 30px;
-          display: flex;
-          flex-wrap: wrap;
-
-          .p {
-            width: 100%;
-            font-size: 14px;
-          }
-
-          .span {
-            width: 100%;
-            color: #fb4f31;
-            font-size: 12px;
-          }
-        }
-
-        .i-right {
-          width: 24%;
-          height: 30px;
-          line-height: 30px;
-          text-align: center;
-          color: #fb6045;
-          border: 2px solid #fb6045;
-          border-radius: 50px;
-          font-size: 14px;
-        }
-      }
-    }
-  }
-
-  .ico-item {
-    width: 94%;
-    margin: 10px auto 20px;
-    background-color: #fff;
-    border-radius: 10px;
-
-    .i-box {
-      padding: 20px 10px;
-      width: 90%;
-      display: flex;
-      flex-wrap: wrap;
-
-      .b-item {
-        margin-bottom: 10px;
-        text-align: center;
-        width: 25%;
-        height: 70px;
+      .i-left {
+        width: 70%;
+        height: 30px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-
-        .img-box {
-          width: 100%;
-
-          img {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
 
         .p {
-          margin: 10px 0;
-          font-size: 14px;
           width: 100%;
+          font-size: 14px;
         }
+
+        .span {
+          width: 100%;
+          color: #fb4f31;
+          font-size: 12px;
+        }
+      }
+
+      .i-right {
+        width: 24%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fb6045;
+        border: 2px solid #fb6045;
+        border-radius: 50px;
+        font-size: 14px;
       }
     }
   }
+}
+
+.ico-item {
+  width: 94%;
+  margin: 10px auto 20px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  .i-box {
+    padding: 20px 10px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .b-item {
+      margin-bottom: 10px;
+      text-align: center;
+      width: 25%;
+      height: 70px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .img-box {
+        width: 100%;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+
+      .p {
+        margin: 10px 0;
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+  }
+}
 </style>

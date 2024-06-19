@@ -20,7 +20,7 @@
       <view class="content-box1">
         <view class="box1-top">
           <view class="btop1-left">
-            ￥<span class="big">439.00</span> <span class="line">￥189.00</span>
+            ￥<view class="big">439.00</view> <view class="line">￥189.00</view>
           </view>
           <view class="btop1-right">
             <image src="/static/分享.png"></image>
