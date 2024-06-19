@@ -47,7 +47,7 @@
           <view class="recommend">
             <view class="recommend-con" v-for="(item, index) in list" :key="index" @click="navigateToDetail(item)">
               <view class="recom-img">
-                <img :src="item.img" alt="">
+                <image :src="item.img" alt=""></image>
               </view>
               <view class="recom-right">
                 <view class="recom-title">
@@ -361,7 +361,7 @@ page {
           .recom-img {
             width: 30%;
 
-            img {
+            image {
               width: 100%;
               height: 6.2rem;
             }
