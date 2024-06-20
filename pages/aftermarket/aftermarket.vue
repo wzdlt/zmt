@@ -9,12 +9,12 @@
         <view class="center-right">
           <view class="p1">男运动鞋秋季男鞋青少年正品透...</view>
           <view class="p2">标准白、42</view>
-          <viewclass="p3"><text class="span1">￥</text>890.00 <text class="span2">×1</text> </viewclass=>
+          <view class="p3"><text class="span1">￥</text>890.00 <text class="span2">×1</text> </view>
         </view>
       </view>
     </view>
     <view class="foot">
-      <view class="one">选择服务类型</p>
+      <view class="one">选择服务类型
         <view class="two" v-for="item in list" :key="item.id">
           <view class="three">
             <image class="image1" :src="item.img" mode=""></image>
@@ -24,6 +24,7 @@
         </view>
       </view>
     </view>
+		</view>
 </template>
 
 <script setup>
