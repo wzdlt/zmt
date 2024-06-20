@@ -373,7 +373,7 @@
         "navigationBarTitleText": "商家账户1",
         "enablePullDownRefresh": false,
         "navigationBarBackgroundColor": "#FC4424",
-        "navigationBarTextStyle": "#FFFFFF"
+        "navigationBarTextStyle" : "#FFFFFF"
       }
     },
     {
@@ -978,16 +978,16 @@
 			"style": {
 				"navigationBarTitleText": "商家账户1",
 				"enablePullDownRefresh": false,
-				"navigationBarBackgroundColor": "#FC4424",
-				"navigationBarTextStyle": "#FFFFFF"
+				"navigationBarBackgroundColor": "#FC4424"
+				// "navigationBarTextStyle": "#FFFFFF"
 			}
 		},
 		{
 			"path": "pages/trade/trade",
 			"style": {
 				"navigationBarTitleText": "二手交易",
-				"navigationBarBackgroundColor": "#FC4424",
-				"navigationBarTextStyle": "#FFFFFF"
+				"navigationBarBackgroundColor": "#FC4424"
+				// "navigationBarTextStyle": "#FFFFFF"
 			}
 		},
 		{

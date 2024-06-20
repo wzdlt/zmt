@@ -1,7 +1,7 @@
 <template>
   <view class="header">
     <view class="left" @click="switchToTab">
-      &lt;
+      <!-- &lt; -->
     </view>
 
     <view class="center">退货详情</view>
@@ -11,36 +11,32 @@
     <view class="b-top">退回商品</view>
     <view class="b-center">
       <view class="item">
-        <image class="i-ico">
-          <image src="../../static/image/icon-19.png" alt="" />
-        </image>
+        <view class="i-ico">
+          <image src="../../static/image/icon-19.png" alt=""></image>
+        </view>
+        <view class="i-text">提交申请</view>
       </view>
-      <view class="i-text">提交申请</view>
+      <view class="item">
+        <view class="i-ico">
+          <image src="../../static/image/icon-19.png" alt=""></image>
+        </view>
+        <view class="i-text">商家审核</view>
+      </view>
+      <view class="item">
+        <view class="i-ico">
+          <image src="../../static/image/icon-19.png" alt=""></image>
+        </view>
+        <view class="i-text">退回商品</view>
+      </view>
+      <view class="item">
+        <view class="i-ico">
+          <image src="../../static/image/icon-20.png" alt=""></image>
+        </view>
+        <view class="i-text">退款完成</view>
+      </view>
+      <hr class="one" />
+      <hr class="two" />
     </view>
-    <view class="item">
-      <image class="i-ico">
-        <image src="../../static/image/icon-19.png" alt="" />
-      </image>
-    </view>
-    <view class="i-text">商家审核</view>
-  </view>
-  <view class="item">
-    <image class="i-ico">
-      <image src="../../static/image/icon-19.png" alt="" />
-    </image>
-  </view>
-  <view class="i-text">退回商品</view>
-  </view>
-  <view class="item">
-    <image class="i-ico">
-      <image src="../../static/image/icon-20.png" alt="" />
-    </image>
-  </view>
-  <view class="i-text">退款完成</view>
-  </view>
-  <hr class="one" />
-  <hr class="two" />
-  </view>
   </view>
 
   <view class="body-box">

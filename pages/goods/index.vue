@@ -1,7 +1,7 @@
 <template>
   <view class="header">
     <view class="left" @click="syy">
-      &lt;
+      <!-- &lt; -->
     </view>
 
     <view class="center">确认订单</view>

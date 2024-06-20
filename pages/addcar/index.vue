@@ -3,7 +3,7 @@
       <view 
       class="left"
       @click="syy">
-          &lt;
+          <!-- &lt; -->
       </view>
   
       <view class="center">添加车辆</view>

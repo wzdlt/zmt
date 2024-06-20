@@ -1,7 +1,7 @@
 <template>
   <view class="header">
     <view class="left" @click="syy">
-      &lt;
+      <!-- &lt; -->
     </view>
   </view>
   <view id="app">

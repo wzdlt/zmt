@@ -1,7 +1,7 @@
 <template>
   <view class="header">
     <view class="left" @click="switchToTab">
-      &lt;
+      <!-- &lt; -->
     </view>
 
     <view class="center">我的余额</view>
@@ -32,7 +32,7 @@
     <view class="container">
       <view class="item" v-for="(item, index) in items" :key="index" @click="navigateToPage(item)">
         <view class="left" :class="item.iconClass">{{ item.text }}</view>
-        <view class="right">&gt;</view>
+        <view class="right"><!-- &gt; --></view>
       </view>
     </view>
   </view>

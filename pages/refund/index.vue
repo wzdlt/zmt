@@ -1,7 +1,7 @@
 <template>
   <view class="header">
     <view class="left" @click="switchToTab">
-      &lt;
+      <!-- &lt; -->
     </view>
 
     <view class="center">退货订单</view>

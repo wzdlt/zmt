@@ -65,7 +65,7 @@
             </view>
           </view>
           <view class="appraise-body-center">
-            <text>{{ item.content }}</text>
+            <view class="p">{{ item.content }}</view>
             <view class="photo" v-if="item.img.length > 0">
               <image v-for="(imgItem, i) in item.img" :src="imgItem" :key="i" mode=""></image>
             </view>
@@ -366,7 +366,7 @@ image {
         }
 
         .appraise-body-center {
-          p {
+          .p {
             font-size: 0.8rem;
           }
 

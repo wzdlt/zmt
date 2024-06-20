@@ -89,12 +89,6 @@ export default {
     }
   }
 
-
-
-
-
-
-
   /* 收款详细金额  */
   .box2 {
     width: 100%;
