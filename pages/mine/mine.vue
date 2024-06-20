@@ -3,7 +3,7 @@
     <view class="header">
       <view class="avatar">
         <view class="left">
-          <img src="../../static/image/logo.png" alt="" />
+          <image src="../../static/image/logo.png" alt=""></image>
         </view>
         <view class="right">
           <view class="p">阳光彩虹小马</view>
@@ -12,7 +12,7 @@
       </view>
       <view class="h-box">
         <view class="ico-box" v-for="(item, index) in icobox" :key="index" @click="handleItemClick(item)">
-          <img :src="item.icon" alt="" />
+          <image :src="item.icon" alt=""></image>
           <view class="p">{{ item.text }}</view>
         </view>
       </view>
@@ -27,7 +27,7 @@
       <view class="o-top">我的订单</view>
       <view class="o-box">
         <view class="box-item" v-for="(item, index) in box" :key="index" @click="navigateToPage(item)">
-          <img :src="item.icon" alt="" />
+          <image :src="item.icon" alt=""></image>
           <view class="p">{{ item.text }}</view>
         </view>
       </view>
@@ -43,7 +43,7 @@
             <button @tap="hideCheckInSuccess">x</button>
           </view>
           <view class="b-img">
-            <img src="../../static/image/success.png" alt="" />
+            <image src="../../static/image/success.png" alt=""></image>
           </view>
           <view class="b-text">
             <view class="p">恭喜您签到成功</view>
@@ -59,7 +59,7 @@
         <view class="c-item" v-for="(day, index) in days" :key="index">
           <view class="p">{{ `第${index + 1}天` }}</view>
           <view class="i-box" :class="{ 'bg-color': index === 0 }">
-            <img :src="imageSrc" alt="" />
+            <image :src="imageSrc" alt=""></image>
           </view>
         </view>
       </view>
@@ -77,7 +77,7 @@
       <view class="i-box">
         <view class="b-item" v-for="(item, index) in items" :key="index" @click="icoicobox(item)">
           <view class="img-box">
-            <img :src="item.icon" alt="" />
+            <image :src="item.icon" alt=""></image>
           </view>
           <view class="p">{{ item.text }}</view>
         </view>
@@ -324,7 +324,7 @@ const icoicobox = (item) => {
         height: 60px;
         margin-right: 20px;
 
-        img {
+        image {
           width: 60px;
           height: 60px;
           border-radius: 999em;
@@ -363,7 +363,7 @@ const icoicobox = (item) => {
         display: flex;
         flex-wrap: wrap;
 
-        img {
+        image {
           margin: 0 auto;
           width: 20px;
           height: 20px;
@@ -450,7 +450,7 @@ const icoicobox = (item) => {
       text-align: center;
       width: 20%;
 
-      img {
+      image {
         width: 30px;
         height: 30px;
       }
@@ -536,7 +536,7 @@ const icoicobox = (item) => {
         height: 112px;
         margin: 0 auto;
 
-        img {
+        image {
           width: 100%;
           height: 112px;
         }
@@ -604,7 +604,7 @@ const icoicobox = (item) => {
         align-items: center;
         background-color: #f3f3f3;
 
-        img {
+        image {
           width: 100%;
           height: 100%;
         }
@@ -687,7 +687,7 @@ const icoicobox = (item) => {
       .img-box {
         width: 100%;
 
-        img {
+        image {
           width: 24px;
           height: 24px;
         }

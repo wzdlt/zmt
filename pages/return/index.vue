@@ -11,24 +11,36 @@
     <view class="b-top">退回商品</view>
     <view class="b-center">
       <view class="item">
-        <view class="i-ico"><img src="../../static/image/icon-19.png" alt="" /></view>
-        <view class="i-text">提交申请</view>
+        <image class="i-ico">
+          <image src="../../static/image/icon-19.png" alt="" />
+        </image>
       </view>
-      <view class="item">
-        <view class="i-ico"><img src="../../static/image/icon-19.png" alt="" /></view>
-        <view class="i-text">商家审核</view>
-      </view>
-      <view class="item">
-        <view class="i-ico"><img src="../../static/image/icon-19.png" alt="" /></view>
-        <view class="i-text">退回商品</view>
-      </view>
-      <view class="item">
-        <view class="i-ico"><img src="../../static/image/icon-20.png" alt="" /></view>
-        <view class="i-text">退款完成</view>
-      </view>
-      <hr class="one" />
-      <hr class="two" />
+      <view class="i-text">提交申请</view>
     </view>
+    <view class="item">
+      <image class="i-ico">
+        <image src="../../static/image/icon-19.png" alt="" />
+      </image>
+    </view>
+    <view class="i-text">商家审核</view>
+  </view>
+  <view class="item">
+    <image class="i-ico">
+      <image src="../../static/image/icon-19.png" alt="" />
+    </image>
+  </view>
+  <view class="i-text">退回商品</view>
+  </view>
+  <view class="item">
+    <image class="i-ico">
+      <image src="../../static/image/icon-20.png" alt="" />
+    </image>
+  </view>
+  <view class="i-text">退款完成</view>
+  </view>
+  <hr class="one" />
+  <hr class="two" />
+  </view>
   </view>
 
   <view class="body-box">
@@ -36,7 +48,7 @@
       <view class="t-top">正茂通商户</view>
       <view class="t-center">
         <view class="c-left">
-          <img src="../../static/image/shoes.png" alt="" />
+          <image src="../../static/image/shoes.png" alt=""></image>
         </view>
         <view class="c-right">
           <view class="r-top">男运动鞋秋季男鞋青少年正品透气夏网面减震跑步休闲旅游鞋</view>
@@ -197,7 +209,7 @@ const toggleAbsoluteVisibility = () => {
         width: 10px;
         height: 10px;
 
-        img {
+        image {
           width: 100%;
           height: 100%;
         }
@@ -235,7 +247,7 @@ const toggleAbsoluteVisibility = () => {
       .c-left {
         width: 30%;
 
-        img {
+        image {
           width: 100px;
           height: 100px;
         }

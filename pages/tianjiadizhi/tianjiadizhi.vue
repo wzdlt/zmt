@@ -4,7 +4,9 @@
     <view class="top-top">
       <view class="top1">
         <uv-picker ref="picker" :columns="columns" @confirm="confirm"></uv-picker>
-        <view class="top3"><button @click="openPicker"> <text><img src="../../static/添加.png" alt=""></text>
+        <view class="top3"><button @click="openPicker"> <text>
+              <image src="../../static/添加.png" alt=""></image>
+            </text>
             <text>添加地址</text></button></view>
       </view>
     </view>
@@ -116,7 +118,7 @@ const list = ref([
       border: 1px solid red;
     }
 
-    img {
+    image {
       width: 10%;
       height: 20%;
 

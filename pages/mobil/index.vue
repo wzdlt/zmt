@@ -6,7 +6,7 @@
   </view>
   <view id="app">
     <view class="banner">
-      <img src="../../static/image/commodity.png" alt="" />
+      <image src="../../static/image/commodity.png" alt=""></image>
     </view>
 
     <view class="text-box">
@@ -48,7 +48,7 @@
       <!-- 弹出层顶部 -->
       <view class="p-top">
         <view class="t-img">
-          <img src="../../static/image/commodity.png" alt="" />
+          <image src="../../static/image/commodity.png" alt=""></image>
         </view>
         <view class="t-txt">
           <view class="t-color">￥{{ price }}</view>
@@ -87,7 +87,7 @@
     <view class="present">
       <view class="p-top">商品介绍</view>
       <view class="p-img">
-        <img src="../../static/image/present.jpg" alt="" />
+        <image src="../../static/image/present.jpg" alt=""></image>
       </view>
     </view>
 
@@ -191,7 +191,7 @@ page {
 .banner {
   width: 100%;
 
-  img {
+  image {
     width: 100%;
   }
 }
@@ -316,7 +316,7 @@ page {
       width: 100px;
       height: 100px;
 
-      img {
+      image {
         width: 100%;
         height: 100%;
       }
@@ -435,7 +435,7 @@ page {
   .p-img {
     width: 100%;
 
-    img {
+    image {
       width: 100%;
     }
   }
