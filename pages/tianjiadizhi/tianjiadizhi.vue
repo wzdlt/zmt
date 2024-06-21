@@ -115,7 +115,7 @@ const list = ref([
     .top3 {
 
       width: 100%;
-      border: 1px solid red;
+
     }
 
     image {
