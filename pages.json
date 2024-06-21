@@ -1195,6 +1195,12 @@
         "navigationBarTitleText": "申请退款"
       }
     },
+		{
+		  "path": "pages/search/search",
+		  "style": {
+		    "navigationBarTitleText": "搜索"
+		  }
+		},
     {
       "path": "pages/turntable/turntable",
       "style": {

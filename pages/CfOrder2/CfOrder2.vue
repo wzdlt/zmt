@@ -62,7 +62,7 @@
     </view>
     <view class="cforder-bottom">
       <view class="bottom-left">
-        <view class="fontcolor">合计：</view>￥<view class="price">530</view>.00
+        <view class="fontcolor">合计：</view>￥<view class="btn-price">530<view class="btn-price1">.00</view></view>
       </view>
       <view class="bottom-right">
         <button class="btn">立即支付</button>
@@ -257,10 +257,7 @@
       position: absolute;
       bottom: 0;
       width: 100%;
-      // padding: 10rpx;
       background-color: #fff;
-      // margin-top: 140rpx;
-      // height: 100rpx;
       padding: 20rpx;
       display: flex;
       align-items: center;
@@ -268,13 +265,20 @@
 
       .bottom-left {
         color: #fc3d1b;
-
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
         .fontcolor {
           color: #3a3a3a;
         }
 
-        .price {
+        .btn-price {
           font-size: 40rpx;
+					display: flex;
+					align-items: center;
+					.btn-price1{
+						font-size: 1rem;
+					}
         }
       }
 

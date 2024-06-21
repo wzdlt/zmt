@@ -114,6 +114,7 @@ const switchToTab = () => {
     height: 50px;
     text-align: center;
     line-height: 50px;
+		
   }
 
   .center {

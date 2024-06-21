@@ -17,8 +17,8 @@
       <view class="t-right">1.2km</view>
     </view>
     <view class="b-stary">
-      <uv-rate :count="5" allow-half v-model="selectedValue" active-color="#FFB800"></uv-rate>
-      <view class="num">{{ selectedValue }}</view>
+      <uv-rate :count="5" allow-half  active-color="#FFB800"></uv-rate>
+      <view class="num"><!-- {{ selectedValue }} --></view>
     </view>
     <view class="b-text">
       <view class="t-item">洗车</view>
@@ -277,6 +277,7 @@ page {
 
   image {
     width: 100%;
+
   }
 }
 
@@ -427,6 +428,7 @@ page {
 
             image {
               width: 100%;
+							height: 150px;
               border-radius: 6px 6px 0 0;
             }
           }

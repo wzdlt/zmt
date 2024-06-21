@@ -1,7 +1,7 @@
 <template>
 	<view class="box">
 		<!-- 搜索内容 -->
-		<view class="inpu">
+		<view class="inpu" @click="goSearch()">
 			<uv-input placeholder="请输入您要搜索的内容" prefixIcon="search" prefixIconStyle="font-size: 22px;color: #909399"
 				shape="circle" @click="search()"></uv-input>
 		</view>
@@ -236,6 +236,12 @@
 			}
 		},
 		methods: {
+			// 去搜索页
+			goSearch(){
+				uni.navigateTo({
+					url:'/pages/search/search'
+				})
+			},
 			// 去转盘
 			goto() {
 				uni.navigateTo({

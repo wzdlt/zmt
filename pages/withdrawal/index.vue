@@ -3,6 +3,7 @@
       <view 
       class="left"
       @click="syy">
+			<uv-icon name="arrow-leftward" color="#000000" size="24"></uv-icon>
           <!-- &lt; -->
       </view>
   

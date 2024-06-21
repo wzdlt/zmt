@@ -71,7 +71,7 @@
     <view class="tabs">
       <uv-tabs :list="list2" lineColor='#fc4424'  activeStyle='#030303' inactiveStyle='#8a8a8a'></uv-tabs>
       <view class="all1">
-        <view class="oil" v-for="item in 6" :key="item">
+        <view class="oil" v-for="item in 6" :key="item" @click="goTo()">
           <view class="oil-top">
             <image src="../../static/image/commodity.png" mode=""></image>
           </view>
@@ -175,6 +175,10 @@
       }
     },
     methods: {
+			// 条转商品详情
+			goTo(){
+				uni.navigateTo({ url: '/pages/shoplist1/shoplist1' })
+			},
       getData() {
         uni.request({
           method: 'GET',
