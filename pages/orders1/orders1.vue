@@ -271,6 +271,12 @@
 
               ::v-deep .uv-button-wrapper:nth-child(1) {
                 margin-right: 20rpx;
+                width: 160rpx;
+              }
+
+              ::v-deep .uv-button-wrapper:nth-child(2) {
+                margin-right: 20rpx;
+                width: 160rpx;
               }
             }
           }
