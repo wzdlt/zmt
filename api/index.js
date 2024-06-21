@@ -1,4 +1,4 @@
-import request from "../utils/request";
+import {request }from "../utils/request";
 export function getNumber(data) {
   return request({
     url: '',
@@ -43,9 +43,7 @@ export const zhuce = () => {
 // 发送短信验证码
 export const yanz = (mobile) => {
   return request.post('/login/send-sms', {
-    form: {
-      mobile,
-    }
+    mobile:mobile
   })
 }
 // export function yanz(data) {
