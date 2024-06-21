@@ -50,115 +50,103 @@
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				value: '',
-				list: [
-					'https://cdn.uviewui.com/uview/swiper/swiper3.png',
-					'https://cdn.uviewui.com/uview/swiper/swiper2.png',
-					'https://cdn.uviewui.com/uview/swiper/swiper1.png',
-				],
-				list1: [{
-					id: 1,
-					imgage: "../../static/image/商品.png",
-					text: "耐克NIKE 男子 休闲鞋 气垫运动鞋",
-					price: "￥120.00",
-					text1: "自营",
-					price2: "￥50"
-				}, {
-					id: 2,
-					imgage: "../../static/image/商品1.png",
-					text: "耐克NIKE 男子 休闲鞋 气垫运动鞋",
-					price: "￥120.00",
-					text1: "自营",
-					price2: "￥50"
-				}, {
-					id: 3,
-					imgage: "../../static/image/商品2.png",
-					text: "耐克NIKE 男子 休闲鞋 气垫运动鞋",
-					price: "￥120.00",
-					text1: "自营",
-					price2: "￥50"
-				}, {
-					id: 4,
-					imgage: "../../static/image/商品3.png",
-					text: "耐克NIKE 男子 休闲鞋 气垫运动鞋",
-					price: "￥120.00",
-					text1: "自营",
-					price2: "￥50"
-				}, {
-					id: 5,
-					imgage: "../../static/image/商品4.png",
-					text: "耐克NIKE 男子 休闲鞋 气垫运动鞋",
-					price: "￥120.00",
-					text1: "自营",
-					price2: "￥50"
-				}, {
-					id: 6,
-					imgage: "../../static/image/商品1.png",
-					text: "耐克NIKE 男子 休闲鞋 气垫运动鞋",
-					price: "￥120.00",
-					text1: "自营",
-					price2: "￥50"
-				}],
-				// 标签选项卡
+export default {
+	data() {
+		return {
+			value: '',
+			list: [
+				'https://cdn.uviewui.com/uview/swiper/swiper3.png',
+				'https://cdn.uviewui.com/uview/swiper/swiper2.png',
+				'https://cdn.uviewui.com/uview/swiper/swiper1.png',
+			],
+			list1: [{
+				id: 1,
+				imgage: "../../static/image/商品.png",
+				text: "耐克NIKE 男子 休闲鞋 气垫运动鞋",
+				price: "￥120.00",
+				text1: "自营",
+				price2: "￥50"
+			}, {
+				id: 2,
+				imgage: "../../static/image/商品1.png",
+				text: "耐克NIKE 男子 休闲鞋 气垫运动鞋",
+				price: "￥120.00",
+				text1: "自营",
+				price2: "￥50"
+			}, {
+				id: 3,
+				imgage: "../../static/image/商品2.png",
+				text: "耐克NIKE 男子 休闲鞋 气垫运动鞋",
+				price: "￥120.00",
+				text1: "自营",
+				price2: "￥50"
+			}, {
+				id: 4,
+				imgage: "../../static/image/商品3.png",
+				text: "耐克NIKE 男子 休闲鞋 气垫运动鞋",
+				price: "￥120.00",
+				text1: "自营",
+				price2: "￥50"
+			}, {
+				id: 5,
+				imgage: "../../static/image/商品4.png",
+				text: "耐克NIKE 男子 休闲鞋 气垫运动鞋",
+				price: "￥120.00",
+				text1: "自营",
+				price2: "￥50"
+			}, {
+				id: 6,
+				imgage: "../../static/image/商品1.png",
+				text: "耐克NIKE 男子 休闲鞋 气垫运动鞋",
+				price: "￥120.00",
+				text1: "自营",
+				price2: "￥50"
+			}],
+			// 标签选项卡
 
 
-			}
+		}
+	},
+	methods: {
+		change(e) {
+			console.log('change', e);
 		},
-		methods: {
-			change(e) {
-				console.log('change', e);
-			},
-			click(item) {
-				console.log('item', item);
-			}
+		click(item) {
+			console.log('item', item);
 		}
 	}
+}
 </script>
 
-<style scoped>
-	/* 全部大盒子 */
-	.box {
-		width: 100%;
-		background-color: #F5F5F5;
-
-	}
+<style lang="scss">
+/* 全部大盒子 */
+.box {
+	width: 100%;
+	background-color: #F5F5F5;
 
 	/* 输入框 */
 	.box-box1 {
 		background: linear-gradient(#FC492A, #F8AFA3);
+
+		.box1 {
+			width: 100%;
+			margin: auto;
+			justify-content: space-between;
+			display: flex;
+
+
+			.box1-left {
+				width: 90%;
+				display: flex;
+				z-index: 999;
+				margin-left: 20px;
+				background-color: white;
+				border-radius: 50rpx;
+			}
+		}
 	}
 
-	.box1 {
-		width: 100%;
-		margin: auto;
-		justify-content: space-between;
-		display: flex;
 
-
-	}
-
-	.box1-left {
-		width: 90%;
-		display: flex;
-		z-index: 999;
-		margin-left: 20px;
-		background-color: white;
-		border-radius: 50rpx;
-	}
-
-	.box1-right {
-		width: 10%;
-		height: 20px;
-		margin-right: 10px;
-	}
-
-	.box1-right .image1 {
-		height: 37px;
-		width: 100%;
-	}
 
 	/* 输入框左右 */
 	/* 轮播图 */
@@ -176,12 +164,13 @@
 		flex-wrap: wrap;
 		display: flex;
 		justify-content: space-around;
+
+		.box4-text image {
+			height: 180px;
+			width: 100%;
+		}
 	}
 
-	.box4-text image {
-		height: 180px;
-		width: 100%;
-	}
 
 	.box4-text {
 		width: 48%;
@@ -258,4 +247,5 @@
 		font-size: 11px;
 		color: #FD7158;
 	}
+}
 </style>
