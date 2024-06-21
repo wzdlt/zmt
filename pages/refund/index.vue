@@ -208,7 +208,7 @@ page {
       display: flex;
 
       .b-left {
-        width: 28%;
+        width: 45%;
         font-weight: 600;
         margin-left: 20px;
       }
