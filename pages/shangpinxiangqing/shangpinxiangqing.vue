@@ -20,7 +20,7 @@
       <view class="content-box1">
         <view class="box1-top">
           <view class="btop1-left">
-            ￥<view class="big">439.00</view>
+            ￥<text class="big">439.00</text>
             <view class="line">￥189.00</view>
           </view>
           <view class="btop1-right">
@@ -395,8 +395,8 @@ image {
         align-items: center;
 
         .btop1-left {
+          width: 60%;
           color: #fc4323;
-
           .big {
             font-size: 45rpx;
           }
