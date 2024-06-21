@@ -2,33 +2,17 @@
   <view id="searchbox">
     <view class="search">
       <view class="search-top">
-        <uv-search
-          placeholder="请输入您的搜索的内容"
-          shape="round"
-          :showAction="false"
-        ></uv-search>
+        <uv-search placeholder="请输入您的搜索的内容" shape="round" :showAction="false"></uv-search>
       </view>
       <view class="search-tabs">
         <!-- 选项卡头部 -->
-        <view
-          class="tab-item"
-          :class="{ active: activeTab === 'tab1' }"
-          @click="changeTab('tab1')"
-        >
+        <view class="tab-item" :class="{ active: activeTab === 'tab1' }" @click="changeTab('tab1')">
           综合排序
         </view>
-        <view
-          class="tab-item"
-          :class="{ active: activeTab === 'tab2' }"
-          @click="changeTab('tab2')"
-        >
+        <view class="tab-item" :class="{ active: activeTab === 'tab2' }" @click="changeTab('tab2')">
           销量
         </view>
-        <view
-          class="tab-item"
-          :class="{ active: activeTab === 'tab3' }"
-          @click="changeTab('tab3')"
-        >
+        <view class="tab-item" :class="{ active: activeTab === 'tab3' }" @click="changeTab('tab3')">
           价格
         </view>
       </view>
@@ -38,31 +22,24 @@
         <!-- 选项卡内容 -->
         <view v-if="activeTab === 'tab1'">
           <view class="recom-conter">
-            <view
-              class="recom-conter1"
-              v-for="(item, index) in recom"
-              :key="index"
-            >
-              <view class="recom-img"><image :src="item.img" alt="" ></image></view>
+            <view class="recom-conter1" v-for="(item, index) in recom" :key="index">
+              <view class="recom-img">
+                <image :src="item.img" alt=""></image>
+              </view>
               <view class="recom-content">
-                <view class="recom-text"
-                  ><text>{{ item.name }}</text
-                  >{{ item.text }}</view
-                >
+                <view class="recom-text"><text>{{ item.name }}</text>{{ item.text }}</view>
                 <view class="recom-red">
                   <view class="recom-red1">{{ item.text1 }}</view>
                   <view class="recom-red2">￥{{ item.text2 }}</view>
                 </view>
-                <view class="recom-price"
-                  >￥{{ item.pirce }}<text>.00</text></view
-                >
+                <view class="recom-price">￥{{ item.pirce }}<text>.00</text></view>
                 <view class="recom-price1">
                   <view>￥{{ item.pirce1 }} <text>.00</text></view>
                   <view>月销{{ item.num }}</view>
                 </view>
                 <view class="recom-bottom">
                   <image :src="item.img1" alt=""></image>
-                  <p>{{ item.text3 }}</p>
+                  <view class="p">{{ item.text3 }}</view>
                 </view>
               </view>
             </view>
@@ -306,7 +283,7 @@ export default {
                 height: 1rem;
               }
 
-              p {
+              .p {
                 padding-left: 10rpx;
                 color: #fc6348;
               }
