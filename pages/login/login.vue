@@ -7,15 +7,18 @@
           <form class="cl">
             <view class="t-a">
               <image src="../../static/image/loginphone.png" mode=""></image>
-              <input type="number" name="phone" placeholder="手机号" maxlength="11" v-model="phone" />
+              <input type="number" name="phone" placeholder="手机号" maxlength="11" v-model="mobile" />
             </view>
             <view class="t-a">
               <image src="../../static/image/login proving.png" mode=""></image>
-              <input type="number" name="code" maxlength="18" placeholder="验证码" v-model="pwd" />
-              <view class="t-a1" @tap="yan()">获取验证码</view>
+              <input type="number" name="code" maxlength="18" placeholder="验证码" v-model="msgCode" />
+              <!-- <view class="t-a1" @tap="yan()">获取验证码</view> -->
+              <view class="t-a1" @click="getCode()">获取验证码</view>
             </view>
-            <button @tap="login()">登 录</button>
-            <view class="reg" @tap="reg()">新用户<text style="color: #fc6045;">注册</text></view>
+            <!-- <button @tap="login()">登 录</button> -->
+            <button>登 录</button>
+            <view class="reg">新用户<text style="color: #fc6045;">注册</text></view>
+            <!-- <view class="reg" @tap="reg()">新用户<text style="color: #fc6045;">注册</text></view> -->
           </form>
         </view>
       </view>
@@ -39,62 +42,80 @@
 </template>
 
 <script>
+  import { yanz } from '../../api';
   export default {
     data() {
       return {
-        phone: '', //手机号码
-        pwd: '' //密码
+        mobile: '', //手机号码
+        msgCode: '' //验证码
       };
     },
     onLoad() {},
     methods: {
+      validFn() {
+        if (!/^1[3-9]\d{9}$/.test(this.mobile)) {
+          this.$toast('请输入正确的手机号')
+          return false
+        }
+      },
+      // 获取短信验证码
+      async getCode() {
+        console.log(this.mobile)
+        if (!this.validFn()) {
+          return
+        }
+        // 发送请求
+        const res = await yanz(this.mobile)
+        console.log(res)
+        this.$toast('短信发送成功，注意查收')
+      },
       //当前登录按钮操作
-      login() {
-        var that = this;
-        if (!that.phone) {
-          uni.showToast({
-            title: '请输入您的手机号',
-            icon: 'none'
-          });
-          return;
-        }
-        if (!/^[1][3,4,5,7,8,9][0-9]{9}$/.test(that.phone)) {
-          uni.showToast({
-            title: '请输入正确手机号',
-            icon: 'none'
-          });
-          return;
-        }
-        if (!that.pwd) {
-          uni.showToast({
-            title: '请输入您的验证码',
-            icon: 'none'
-          });
-          return;
-        }
-        uni.showToast({
-          title: '登录成功！',
-          icon: 'none'
-        });
-        uni.switchTab({
-          url: '/pages/index/index'
-        })
+      // login() {
+      //   var that = this;
+      //   if (!that.mobile) {
+      //     uni.showToast({
+      //       title: '请输入您的手机号',
+      //       icon: 'none'
+      //     });
+      //     return;
+      //   }
+      //   if (!/^[1][3,4,5,7,8,9][0-9]{9}$/.test(that.mobile)) {
+      //     uni.showToast({
+      //       title: '请输入正确手机号',
+      //       icon: 'none'
+      //     });
+      //     return;
+      //   }
+      //   if (!that.msgCode) {
+      //     uni.showToast({
+      //       title: '请输入您的验证码',
+      //       icon: 'none'
+      //     });
+      //     return;
+      //   }
+      //   uni.showToast({
+      //     title: '登录成功！',
+      //     icon: 'none'
+      //   });
+      //   uni.switchTab({
+      //     url: '/pages/index/index'
+      //   })
 
-      },
+      // },
       //获取验证码
-      yan() {
-        uni.showToast({
-          title: '您的验证码是：1234',
-          icon: 'none'
-        });
-      },
+      // yan() {
+      //   uni.showToast({
+      //     title: '您的验证码是：1234',
+      //     icon: 'none'
+      //   });
+      // },
       //注册按钮点击
-      reg() {
-        uni.showToast({
-          title: '注册跳转',
-          icon: 'none'
-        });
-      }
+      // reg() {
+      //   uni.showToast({
+      //     title: '注册跳转',
+      //     icon: 'none'
+      //   });
+      // }
     }
   };
 </script>
